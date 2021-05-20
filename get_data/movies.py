@@ -55,7 +55,7 @@ for page in range(1, 6):
             'poster_path': movie.get('poster_path'),
             'backdrop_path': movie.get('backdrop_path'),
             'release_date': movie.get('release_date'),
-            'genre_id': movie.get('genre_ids'),
+            'genres': movie.get('genre_ids'),
             # credit
             'director': director,
             # Provider
@@ -65,6 +65,12 @@ for page in range(1, 6):
             # details
             'country': country,
             'runtime': runtime,
+
+            # custome data
+            'pick_users': [],
+            'wish_users': [],
+            'watch_users': [],
+            'dislike_users': [],
         }
         movies.append(movie_data)
 

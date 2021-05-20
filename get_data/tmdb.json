@@ -141,7 +141,7 @@
 			"poster_path": "/yvcNQv8fth51nWuaLwfpr50IRiO.jpg",
 			"backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
 			"release_date": "2021-04-07",
-			"genre_id": [
+			"genres": [
 				28,
 				14,
 				12
@@ -151,7 +151,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 110
+			"runtime": 110,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -163,7 +167,7 @@
 			"poster_path": "/rEm96ib0sPiZBADNKBHKBv5bve9.jpg",
 			"backdrop_path": "/fPGeS6jgdLovQAKunNHX8l0avCy.jpg",
 			"release_date": "2021-04-29",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				53,
@@ -174,7 +178,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 109
+			"runtime": 109,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -186,7 +194,7 @@
 			"poster_path": "/sqo672rKMXiLRC5kVcGvBRebkp.jpg",
 			"backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
 			"release_date": "2021-03-24",
-			"genre_id": [
+			"genres": [
 				878,
 				28,
 				18
@@ -196,7 +204,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 113
+			"runtime": 113,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -208,7 +220,7 @@
 			"poster_path": "/s9zJFEy4usXVFAa52AWT4ZCwR27.jpg",
 			"backdrop_path": "/n2y7T8wJVjJ8yLhQXQgNCpsC3ga.jpg",
 			"release_date": "2021-04-30",
-			"genre_id": [
+			"genres": [
 				10751,
 				16,
 				35
@@ -218,7 +230,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 9
+			"runtime": 9,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -230,7 +246,7 @@
 			"poster_path": "/oXQtH8O7pCvXaDKGB8OAjiPVDi5.jpg",
 			"backdrop_path": "/6zbKgwgaaCyyBXE4Sun4oWQfQmi.jpg",
 			"release_date": "2021-03-26",
-			"genre_id": [
+			"genres": [
 				28,
 				53,
 				80,
@@ -241,7 +257,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 92
+			"runtime": 92,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -253,7 +273,7 @@
 			"poster_path": "/dkokENeY5Ka30BFgWAqk14mbnGs.jpg",
 			"backdrop_path": "/c7dFSqZQYqNNJVpacpIGZe3gkLW.jpg",
 			"release_date": "2021-04-02",
-			"genre_id": [
+			"genres": [
 				16,
 				35,
 				14
@@ -263,7 +283,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 6
+			"runtime": 6,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -275,7 +299,7 @@
 			"poster_path": "/b4gYVcl8pParX8AjkN90iQrWrWO.jpg",
 			"backdrop_path": "/lkInRiMtLgl9u9xE0By5hqf66K8.jpg",
 			"release_date": "2021-03-31",
-			"genre_id": [
+			"genres": [
 				27
 			],
 			"director": "Evan Spiliotopoulos",
@@ -283,7 +307,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 99
+			"runtime": 99,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -295,7 +323,7 @@
 			"poster_path": "/qd7iPB26bwMPZqRcnflzAeDkMn.jpg",
 			"backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
 			"release_date": "2021-03-18",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				14,
@@ -306,7 +334,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 242
+			"runtime": 242,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -318,7 +350,7 @@
 			"poster_path": "/tf9nWFyJ745mBFkXZtPWabDYBR3.jpg",
 			"backdrop_path": "/lHhc60NXYzswU4TvKSo45nY9Jzs.jpg",
 			"release_date": "2021-04-04",
-			"genre_id": [
+			"genres": [
 				16,
 				35,
 				10751,
@@ -329,7 +361,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "France",
-			"runtime": 52
+			"runtime": 52,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -341,7 +377,7 @@
 			"poster_path": "/tDAQALgC407eg3SVAgehbiMwqo0.jpg",
 			"backdrop_path": "/xPpXYnCWfjkt3zzE0dpCNME1pXF.jpg",
 			"release_date": "2020-10-16",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				12,
@@ -353,7 +389,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Japan",
-			"runtime": 117
+			"runtime": 117,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -365,7 +405,7 @@
 			"poster_path": "/VierXpXqiLK5mRY2FWoVXOYquh.jpg",
 			"backdrop_path": "/7prYzufdIOy1KCTZKVWpjBFqqNr.jpg",
 			"release_date": "2021-03-03",
-			"genre_id": [
+			"genres": [
 				16,
 				12,
 				14,
@@ -377,7 +417,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 107
+			"runtime": 107,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -389,7 +433,7 @@
 			"poster_path": "/oJ9BWm2wWlkuKWAZOwIRIHgxAJo.jpg",
 			"backdrop_path": "/z7HLq35df6ZpRxdMAE0qE3Ge4SJ.jpg",
 			"release_date": "2021-04-09",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				35,
@@ -400,7 +444,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 107
+			"runtime": 107,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -412,7 +460,7 @@
 			"poster_path": "/AoWY1gkcNzabh229Icboa1Ff0BM.jpg",
 			"backdrop_path": "/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg",
 			"release_date": "2021-04-16",
-			"genre_id": [
+			"genres": [
 				28,
 				80,
 				53
@@ -422,7 +470,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 96
+			"runtime": 96,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -434,7 +486,7 @@
 			"poster_path": "/tMS2qcbhbkFpcwLnbUE9o9IK4HH.jpg",
 			"backdrop_path": "/7HtvmsLrDeiAgDGa1W3m6senpfE.jpg",
 			"release_date": "2021-01-07",
-			"genre_id": [
+			"genres": [
 				12,
 				16,
 				10751
@@ -444,7 +496,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Australia",
-			"runtime": 88
+			"runtime": 88,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -456,7 +512,7 @@
 			"poster_path": "/f72kG7cFnu1XXVtKnk3hzLxPZO8.jpg",
 			"backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
 			"release_date": "2021-01-15",
-			"genre_id": [
+			"genres": [
 				28,
 				53,
 				80
@@ -466,7 +522,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 108
+			"runtime": 108,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -478,7 +538,7 @@
 			"poster_path": "/keEnkeAvifw8NSEC4f6WsqeLJgF.jpg",
 			"backdrop_path": "/jFINtstDUh0vHOGImpMAmLrPcXy.jpg",
 			"release_date": "2021-02-12",
-			"genre_id": [
+			"genres": [
 				28,
 				27,
 				35
@@ -488,7 +548,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 88
+			"runtime": 88,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -500,7 +564,7 @@
 			"poster_path": "/jlmuSzTXOppShgYZbeetWTFTi6P.jpg",
 			"backdrop_path": "/ovggmAOu1IbPGTQE8lg4lBasNC7.jpg",
 			"release_date": "2021-02-24",
-			"genre_id": [
+			"genres": [
 				878,
 				28,
 				12,
@@ -511,7 +575,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 109
+			"runtime": 109,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -523,7 +591,7 @@
 			"poster_path": "/ss6A2u6YiHTEWeVR01GtTUoO2Xj.jpg",
 			"backdrop_path": "/srYya1ZlI97Au4jUYAktDe3avyA.jpg",
 			"release_date": "2020-12-16",
-			"genre_id": [
+			"genres": [
 				14,
 				28,
 				12
@@ -533,7 +601,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 150
+			"runtime": 150,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -545,7 +617,7 @@
 			"poster_path": "/eEmyuyNg4A3LEntaPrUiMueWtLA.jpg",
 			"backdrop_path": "/z8TvnEVRenMSTemxYZwLGqFofgF.jpg",
 			"release_date": "2020-12-03",
-			"genre_id": [
+			"genres": [
 				14,
 				28,
 				12
@@ -555,7 +627,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Germany",
-			"runtime": 104
+			"runtime": 104,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -567,7 +643,7 @@
 			"poster_path": "/aMikd8jW6lZGmJgJ158biCjbNqZ.jpg",
 			"backdrop_path": "/ouOojiypBE6CD1aqcHPVq7cJf2R.jpg",
 			"release_date": "2021-05-05",
-			"genre_id": [
+			"genres": [
 				53,
 				18,
 				28,
@@ -578,7 +654,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Canada",
-			"runtime": 100
+			"runtime": 100,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -590,7 +670,7 @@
 			"poster_path": "/rYoITBMgw14m4cucXNOAw3qBS6c.jpg",
 			"backdrop_path": "/9ns9463dwOeo1CK1JU2wirL5Yi1.jpg",
 			"release_date": "2021-02-11",
-			"genre_id": [
+			"genres": [
 				35,
 				10751,
 				16
@@ -600,7 +680,11 @@
 			"watcha": true,
 			"wavve": true,
 			"country": "United States of America",
-			"runtime": 101
+			"runtime": 101,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -612,7 +696,7 @@
 			"poster_path": "/stgQ2xe3M55zchovGeTDxenQPPe.jpg",
 			"backdrop_path": "/jedggylU3FyIN7XRAl9WY8mrT6H.jpg",
 			"release_date": "2021-05-12",
-			"genre_id": [
+			"genres": [
 				878,
 				53,
 				18
@@ -622,7 +706,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 100
+			"runtime": 100,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -634,7 +722,7 @@
 			"poster_path": "/mQ8vALvqA0z0qglG3gI6xpVcslo.jpg",
 			"backdrop_path": "/czHYg6LQ5926OL8wj5kC09pNR12.jpg",
 			"release_date": "2021-05-07",
-			"genre_id": [
+			"genres": [
 				27,
 				35
 			],
@@ -643,7 +731,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United Kingdom",
-			"runtime": 94
+			"runtime": 94,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -655,7 +747,7 @@
 			"poster_path": "/1n5q3XpEhCe7TnGHzsHs5pwVT8O.jpg",
 			"backdrop_path": "/h9DIlghaiTxbQbt1FIwKNbQvEL.jpg",
 			"release_date": "2019-12-19",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				53
@@ -665,7 +757,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "South Korea",
-			"runtime": 128
+			"runtime": 128,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -677,7 +773,7 @@
 			"poster_path": "/qJiaB4RJMM5Oh6A4rqrEOHQUJbu.jpg",
 			"backdrop_path": "/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg",
 			"release_date": "2020-12-25",
-			"genre_id": [
+			"genres": [
 				10751,
 				16,
 				35,
@@ -690,7 +786,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 101
+			"runtime": 101,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -702,7 +802,7 @@
 			"poster_path": "/e4REOC6CZW8J6FslA4nRvdQXFXR.jpg",
 			"backdrop_path": "/8LHSDyRizQ4kQz5rEHPKyXPvMG3.jpg",
 			"release_date": "2021-04-27",
-			"genre_id": [
+			"genres": [
 				16,
 				10752,
 				878
@@ -712,7 +812,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 84
+			"runtime": 84,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -724,7 +828,7 @@
 			"poster_path": "/gGkFDz4waJJqdrnGhnaUVZZHPHR.jpg",
 			"backdrop_path": "/lOSdUkGQmbAl5JQ3QoHqBZUbZhC.jpg",
 			"release_date": "2021-01-15",
-			"genre_id": [
+			"genres": [
 				53,
 				28,
 				878
@@ -734,7 +838,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 116
+			"runtime": 116,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -746,7 +854,7 @@
 			"poster_path": "/AmUGn1rJ9XDDP6DYn9OA2uV8MIg.jpg",
 			"backdrop_path": "/eTgQlyIQH0nA5BsmYpvCzSPAorg.jpg",
 			"release_date": "2021-03-05",
-			"genre_id": [
+			"genres": [
 				53,
 				28,
 				18
@@ -756,7 +864,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "France",
-			"runtime": 80
+			"runtime": 80,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -768,7 +880,7 @@
 			"poster_path": "/95S6PinQIvVe4uJAd82a2iGZ0rA.jpg",
 			"backdrop_path": "/fRrpOILyXuWaWLmqF7kXeMVwITQ.jpg",
 			"release_date": "2020-07-09",
-			"genre_id": [
+			"genres": [
 				27,
 				53,
 				12,
@@ -779,7 +891,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 98
+			"runtime": 98,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -791,7 +907,7 @@
 			"poster_path": "/4SEAkDj7nflDPqCwD1LxrGkldTt.jpg",
 			"backdrop_path": "/6TPZSJ06OEXeelx1U1VIAt0j9Ry.jpg",
 			"release_date": "2021-01-29",
-			"genre_id": [
+			"genres": [
 				28,
 				80,
 				53
@@ -801,7 +917,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Spain",
-			"runtime": 106
+			"runtime": 106,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -813,7 +933,7 @@
 			"poster_path": "/a8AwGuBb99TU45jxh6dKyuJ0uvf.jpg",
 			"backdrop_path": "/y0SiXoTLQp93NbLQ4XhgVz18UAS.jpg",
 			"release_date": "2021-02-06",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				14
@@ -823,7 +943,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "China",
-			"runtime": 117
+			"runtime": 117,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -835,7 +959,7 @@
 			"poster_path": "/rwRh4fHnAWpQyOYTBHkOac0aSmP.jpg",
 			"backdrop_path": "/cjaOSjsjV6cl3uXdJqimktT880L.jpg",
 			"release_date": "2020-11-25",
-			"genre_id": [
+			"genres": [
 				10751,
 				14,
 				16,
@@ -846,7 +970,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 95
+			"runtime": 95,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -858,7 +986,7 @@
 			"poster_path": "/pwDvkDyaHEU9V7cApQhbcSJMG1w.jpg",
 			"backdrop_path": "/uQtqiAu2bBlokqjlURVLEha6zoi.jpg",
 			"release_date": "2021-02-26",
-			"genre_id": [
+			"genres": [
 				80,
 				18
 			],
@@ -867,7 +995,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 140
+			"runtime": 140,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -879,7 +1011,7 @@
 			"poster_path": "/vOefWMYqC1S3aiCTD5MD8HeXl0Y.jpg",
 			"backdrop_path": "/drulhSX7P5TQlEMQZ3JoXKSDEfz.jpg",
 			"release_date": "2021-02-05",
-			"genre_id": [
+			"genres": [
 				18,
 				14,
 				878
@@ -889,7 +1021,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "South Korea",
-			"runtime": 136
+			"runtime": 136,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -901,7 +1037,7 @@
 			"poster_path": "/kIHgjAkuzvKBnmdstpBOo4AfZah.jpg",
 			"backdrop_path": "/aMFl4wOPhJ7NVua6SgU9zIJvFSx.jpg",
 			"release_date": "2020-09-26",
-			"genre_id": [
+			"genres": [
 				16,
 				10751,
 				35,
@@ -912,7 +1048,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "France",
-			"runtime": 55
+			"runtime": 55,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -924,7 +1064,7 @@
 			"poster_path": "/4VlXER3FImHeFuUjBShFamhIp9M.jpg",
 			"backdrop_path": "/9xeEGUZjgiKlI69jwIOi0hjKUIk.jpg",
 			"release_date": "2020-04-12",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				14
@@ -934,7 +1074,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 80
+			"runtime": 80,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -946,7 +1090,7 @@
 			"poster_path": "/1HjYMW5Je0D8JkRl5DEXJSdVtDK.jpg",
 			"backdrop_path": "/jiqD14fg7UTZOT6qgvzTmfRYpWI.jpg",
 			"release_date": "2020-02-05",
-			"genre_id": [
+			"genres": [
 				28,
 				80
 			],
@@ -955,7 +1099,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 109
+			"runtime": 109,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -967,7 +1115,7 @@
 			"poster_path": "/wcrjc1uwQaqoqtqi67Su4VCOYo0.jpg",
 			"backdrop_path": "/gUttUEqsrvaMlK5oL5TSQ54iE96.jpg",
 			"release_date": "2021-05-14",
-			"genre_id": [
+			"genres": [
 				80,
 				18,
 				9648,
@@ -978,7 +1126,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 102
+			"runtime": 102,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -990,7 +1142,7 @@
 			"poster_path": "/9epfyKS1rRdD4Hk8wFFU40Wucgr.jpg",
 			"backdrop_path": "/fX8e94MEWSuTJExndVYxKsmA4Hw.jpg",
 			"release_date": "2020-09-30",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				80
@@ -1000,7 +1152,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "China",
-			"runtime": 107
+			"runtime": 107,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1012,7 +1168,7 @@
 			"poster_path": "/xXI5Lg6mJLEesTggRJBrq50vrqU.jpg",
 			"backdrop_path": "/v0bFTXnLNh9cjvpIckJpIM2t9nf.jpg",
 			"release_date": "2021-02-09",
-			"genre_id": [
+			"genres": [
 				27
 			],
 			"director": "Toor Mian",
@@ -1020,7 +1176,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United Kingdom",
-			"runtime": 87
+			"runtime": 87,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1032,7 +1192,7 @@
 			"poster_path": "/A1Gy5HX3DKGaNW1Ay30NTIVJqJ6.jpg",
 			"backdrop_path": "/a9zFUuxzChmAlIybVge9IZt1hH0.jpg",
 			"release_date": "2021-03-26",
-			"genre_id": [
+			"genres": [
 				35
 			],
 			"director": "Kitao Sakurai",
@@ -1040,7 +1200,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 86
+			"runtime": 86,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1052,7 +1216,7 @@
 			"poster_path": "/h3oT6lZcYC2khtZnzHBgqthj5W.jpg",
 			"backdrop_path": "/jnq4fV53Px9HvUZD2bQIxtGSwS7.jpg",
 			"release_date": "2021-01-22",
-			"genre_id": [
+			"genres": [
 				80,
 				18,
 				28
@@ -1062,7 +1226,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United Kingdom",
-			"runtime": 90
+			"runtime": 90,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1074,7 +1242,7 @@
 			"poster_path": "/fJ0i5MKbBTKJGYY2uxsiUMdwMc6.jpg",
 			"backdrop_path": "/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
 			"release_date": "2020-07-02",
-			"genre_id": [
+			"genres": [
 				28,
 				80,
 				18,
@@ -1085,7 +1253,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1097,7 +1269,7 @@
 			"poster_path": "/rNY5FOY8yvcJicfNuNHLpeOt63O.jpg",
 			"backdrop_path": "/3ombg55JQiIpoPnXYb2oYdr6DtP.jpg",
 			"release_date": "2020-10-25",
-			"genre_id": [
+			"genres": [
 				878,
 				28
 			],
@@ -1106,7 +1278,11 @@
 			"watcha": false,
 			"wavve": true,
 			"country": "France",
-			"runtime": 113
+			"runtime": 113,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1118,7 +1294,7 @@
 			"poster_path": "/y56HkHAbSZQJjQaxlqCaRI3lIHu.jpg",
 			"backdrop_path": "/9guoVF7zayiiUq5ulKQpt375VIy.jpg",
 			"release_date": "2019-12-20",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				14,
@@ -1129,7 +1305,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Japan",
-			"runtime": 104
+			"runtime": 104,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1141,7 +1321,7 @@
 			"poster_path": "/lc8TJW5z261JqSz3oSy5GES2ZXj.jpg",
 			"backdrop_path": "/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
 			"release_date": "2018-09-28",
-			"genre_id": [
+			"genres": [
 				878,
 				28
 			],
@@ -1150,7 +1330,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "China",
-			"runtime": 112
+			"runtime": 112,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1162,7 +1346,7 @@
 			"poster_path": "/79bNNmoZh3I3fMepbFOeHUVtVlv.jpg",
 			"backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
 			"release_date": "2020-11-20",
-			"genre_id": [
+			"genres": [
 				14,
 				28,
 				878
@@ -1172,7 +1356,11 @@
 			"watcha": false,
 			"wavve": true,
 			"country": "Cyprus",
-			"runtime": 102
+			"runtime": 102,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1184,7 +1372,7 @@
 			"poster_path": "/8MdVJYHKp7JFvTMkLkZOou13LYV.jpg",
 			"backdrop_path": "/qAhedRxRYWZAgZ8O8pHIl6QHdD7.jpg",
 			"release_date": "2019-08-01",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				35
@@ -1194,7 +1382,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 137
+			"runtime": 137,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1206,7 +1398,7 @@
 			"poster_path": "/wrCwH6WOvXQvVuqcKNUrLDCDxdw.jpg",
 			"backdrop_path": "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
 			"release_date": "2019-10-02",
-			"genre_id": [
+			"genres": [
 				80,
 				53,
 				18
@@ -1216,7 +1408,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Canada",
-			"runtime": 122
+			"runtime": 122,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1228,7 +1424,7 @@
 			"poster_path": "/iqO2sTFqm6XwEXmlLxKDX75RPjY.jpg",
 			"backdrop_path": "/54yrEMg3KeTbpr3kYpIGU04a9D5.jpg",
 			"release_date": "2021-04-16",
-			"genre_id": [
+			"genres": [
 				28,
 				27,
 				9648
@@ -1238,7 +1434,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Canada",
-			"runtime": 80
+			"runtime": 80,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1250,7 +1450,7 @@
 			"poster_path": "/wetccvr46psfBoTfJEIxqrP0GeS.jpg",
 			"backdrop_path": "/vfuzELmhBjBTswXj2Vqxnu5ge4g.jpg",
 			"release_date": "2021-01-28",
-			"genre_id": [
+			"genres": [
 				53,
 				80
 			],
@@ -1259,7 +1459,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 128
+			"runtime": 128,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1271,7 +1475,7 @@
 			"poster_path": "/4ddGXWTeJKL6hWivydfsl7C7eF7.jpg",
 			"backdrop_path": "/3N316jUSdhvPyYTW29G4v9ebbcS.jpg",
 			"release_date": "2020-01-15",
-			"genre_id": [
+			"genres": [
 				53,
 				28,
 				80
@@ -1281,7 +1485,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 124
+			"runtime": 124,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1293,7 +1501,7 @@
 			"poster_path": "/4U1SBHmwHkNA0eHZ2n1CuiC1K1g.jpg",
 			"backdrop_path": "/u5WUCO6irZoq27qbYYrtLUrCGDV.jpg",
 			"release_date": "2021-01-26",
-			"genre_id": [
+			"genres": [
 				27,
 				53
 			],
@@ -1302,7 +1510,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Germany",
-			"runtime": 110
+			"runtime": 110,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1314,7 +1526,7 @@
 			"poster_path": "/hGPGRRz6FTIRed1zestdWrV2Iwd.jpg",
 			"backdrop_path": "/yuxdzbQHEecWGOvaXeEYVtIyAfn.jpg",
 			"release_date": "2021-03-12",
-			"genre_id": [
+			"genres": [
 				878,
 				27
 			],
@@ -1323,7 +1535,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Canada",
-			"runtime": 105
+			"runtime": 105,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1335,7 +1551,7 @@
 			"poster_path": "/xZ2KER2gOHbuHP2GJoODuXDSZCb.jpg",
 			"backdrop_path": "/7KL4yJ4JsbtS1BNRilUApLvMnc5.jpg",
 			"release_date": "2021-02-11",
-			"genre_id": [
+			"genres": [
 				53,
 				18,
 				27
@@ -1345,7 +1561,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Sweden",
-			"runtime": 86
+			"runtime": 86,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1357,7 +1577,7 @@
 			"poster_path": "/rHfYTIPjSiameKP8zJCQscEJ5wo.jpg",
 			"backdrop_path": "/jw0849O7WLarbYKJkA9WpRLeGKG.jpg",
 			"release_date": "2021-04-02",
-			"genre_id": [
+			"genres": [
 				35,
 				10749
 			],
@@ -1366,7 +1586,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Netherlands",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1378,7 +1602,7 @@
 			"poster_path": "/13B6onhL6FzSN2KaNeQeMML05pS.jpg",
 			"backdrop_path": "/nz8xWrTKZzA5A7FgxaM4kfAoO1W.jpg",
 			"release_date": "2020-12-17",
-			"genre_id": [
+			"genres": [
 				878,
 				28
 			],
@@ -1387,7 +1611,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Canada",
-			"runtime": 92
+			"runtime": 92,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1399,7 +1627,7 @@
 			"poster_path": "/tmghT8HaddVIS9hEXIOI9GuDchi.jpg",
 			"backdrop_path": "/y07caIA4yErsDOZ2IzfSDGzTz7B.jpg",
 			"release_date": "2021-04-03",
-			"genre_id": [
+			"genres": [
 				27,
 				878,
 				28,
@@ -1411,7 +1639,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 90
+			"runtime": 90,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1423,7 +1655,7 @@
 			"poster_path": "/vaEX9f8ud7iF0G7EoyGxAyRNV1p.jpg",
 			"backdrop_path": "/y3XMIea7mwTzxt3NFFXi5YJKeFJ.jpg",
 			"release_date": "2007-08-04",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				14
@@ -1433,7 +1665,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Japan",
-			"runtime": 94
+			"runtime": 94,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1445,7 +1681,7 @@
 			"poster_path": "/oaxrs3OvIjJWK7ztuf6PQMCAB0P.jpg",
 			"backdrop_path": "/jIND6Q2Jc6Kfp4fLzgzf5an1C3s.jpg",
 			"release_date": "2021-04-28",
-			"genre_id": [
+			"genres": [
 				35,
 				80
 			],
@@ -1454,7 +1690,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Brazil",
-			"runtime": 94
+			"runtime": 94,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1466,7 +1706,7 @@
 			"poster_path": "/zYVzWFobhJXLyrkjKRsmQaa1YyG.jpg",
 			"backdrop_path": "/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg",
 			"release_date": "2020-10-25",
-			"genre_id": [
+			"genres": [
 				10751,
 				14,
 				12,
@@ -1478,7 +1718,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Mexico",
-			"runtime": 106
+			"runtime": 106,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1490,7 +1734,7 @@
 			"poster_path": "/6DoKA0l2TaHvw9BbP6YbMuAnxV3.jpg",
 			"backdrop_path": "/z2UtGA1WggESspi6KOXeo66lvLx.jpg",
 			"release_date": "2021-05-21",
-			"genre_id": [
+			"genres": [
 				18,
 				878,
 				53
@@ -1500,7 +1744,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1512,7 +1760,7 @@
 			"poster_path": "/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg",
 			"backdrop_path": "/lmZFxXgJE3vgrciwuDib0N8CfQo.jpg",
 			"release_date": "2018-04-25",
-			"genre_id": [
+			"genres": [
 				12,
 				28,
 				878
@@ -1522,7 +1770,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 149
+			"runtime": 149,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1534,7 +1786,7 @@
 			"poster_path": "/xD9mc8JCVXA8T8u4Od7qOUBuGH4.jpg",
 			"backdrop_path": "/xrAaJAn3hqkInq5kE1AGJqIGXyT.jpg",
 			"release_date": "2021-04-29",
-			"genre_id": [
+			"genres": [
 				27
 			],
 			"director": "Christopher Smith",
@@ -1542,7 +1794,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United Kingdom",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1554,7 +1810,7 @@
 			"poster_path": "/pMyCYtgfBmMisX3RFc5eH6zIV5Y.jpg",
 			"backdrop_path": "/k99D5W4qtLK0nuPQSSzCG9FimcD.jpg",
 			"release_date": "2021-05-20",
-			"genre_id": [
+			"genres": [
 				35,
 				18,
 				80,
@@ -1565,7 +1821,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 96
+			"runtime": 96,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1577,7 +1837,7 @@
 			"poster_path": "/d45gDeSa3eDpYo2Aj6AJ7SeHx0t.jpg",
 			"backdrop_path": "/6hgItrYQEG33y0I7yP2SRl2ei4w.jpg",
 			"release_date": "2020-09-02",
-			"genre_id": [
+			"genres": [
 				10749,
 				18
 			],
@@ -1586,7 +1846,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 105
+			"runtime": 105,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1598,7 +1862,7 @@
 			"poster_path": "/ffJX00pcQDGvzhz6RSngeYuSb6U.jpg",
 			"backdrop_path": "/xOukYlFEuiY9FZXd5kjWiigjBJA.jpg",
 			"release_date": "2020-09-11",
-			"genre_id": [
+			"genres": [
 				99,
 				10402
 			],
@@ -1607,7 +1871,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 95
+			"runtime": 95,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1619,7 +1887,7 @@
 			"poster_path": "/sDF28VJ1obkxZ2UPm9BYvGdf5vS.jpg",
 			"backdrop_path": "/sLK03Ed0D8EOoqLFBjrOcYSz8Tm.jpg",
 			"release_date": "2021-02-19",
-			"genre_id": [
+			"genres": [
 				80,
 				53,
 				18
@@ -1629,7 +1897,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 116
+			"runtime": 116,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1641,7 +1913,7 @@
 			"poster_path": "/8UoKkpLVnl2LrK0GG1z9JuKCart.jpg",
 			"backdrop_path": "/las0P4Dua54XrZ73VQmGUaH1z0U.jpg",
 			"release_date": "2021-03-08",
-			"genre_id": [
+			"genres": [
 				16,
 				28,
 				18,
@@ -1652,7 +1924,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Japan",
-			"runtime": 155
+			"runtime": 155,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1664,7 +1940,7 @@
 			"poster_path": "/bFZEYiLYIKklMDBEDdqC1CqdJU0.jpg",
 			"backdrop_path": "/2M2JxEv3HSpjnZWjY9NOdGgfUd.jpg",
 			"release_date": "2020-09-03",
-			"genre_id": [
+			"genres": [
 				53,
 				28,
 				80,
@@ -1675,7 +1951,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Thailand",
-			"runtime": 99
+			"runtime": 99,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1687,7 +1967,7 @@
 			"poster_path": "/rCcL0gv0frDkGLktAbmaAsz7TX6.jpg",
 			"backdrop_path": "/1R6cvRtZgsYCkh8UFuWFN33xBP4.jpg",
 			"release_date": "2020-04-24",
-			"genre_id": [
+			"genres": [
 				18,
 				28,
 				53
@@ -1697,7 +1977,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 116
+			"runtime": 116,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1709,7 +1993,7 @@
 			"poster_path": "/mWZ2aujwBdFEONvRQv05zPBGy7J.jpg",
 			"backdrop_path": "/dEh93Ni98JWh7fmhD56ZlOFQmoT.jpg",
 			"release_date": "2020-09-03",
-			"genre_id": [
+			"genres": [
 				80,
 				18,
 				53
@@ -1719,7 +2003,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "South Korea",
-			"runtime": 131
+			"runtime": 131,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1731,7 +2019,7 @@
 			"poster_path": "/qs6gz6atyQcAvqC6qZaslOjliUG.jpg",
 			"backdrop_path": "/6mKAKhj8POVGqV1GsroS5mGIUe9.jpg",
 			"release_date": "2020-02-04",
-			"genre_id": [
+			"genres": [
 				14,
 				28,
 				12
@@ -1741,7 +2029,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1753,7 +2045,7 @@
 			"poster_path": "/5S45aZzCo6rIeE8zLsffi5lCYz6.jpg",
 			"backdrop_path": "/zlqMASc3vEtdym2OvXgE7fC6onT.jpg",
 			"release_date": "2020-03-05",
-			"genre_id": [
+			"genres": [
 				28,
 				878
 			],
@@ -1762,7 +2054,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "China",
-			"runtime": 110
+			"runtime": 110,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1774,7 +2070,7 @@
 			"poster_path": "/9umVH1R5Z2I1Fqzg7qwMIR2gpKG.jpg",
 			"backdrop_path": "/2F6zpkkMianLO9JRRvnujpW4bzp.jpg",
 			"release_date": "2021-03-26",
-			"genre_id": [
+			"genres": [
 				14,
 				27,
 				10770
@@ -1784,7 +2080,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 82
+			"runtime": 82,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1796,13 +2096,17 @@
 			"poster_path": "/qmIE6PwIA9a5fkB1mn9hdtpOUa5.jpg",
 			"backdrop_path": null,
 			"release_date": "2019-12-17",
-			"genre_id": [],
+			"genres": [],
 			"director": "Andrés Madrigal Alvarado",
 			"netflix": false,
 			"watcha": false,
 			"wavve": false,
 			"country": "",
-			"runtime": 16
+			"runtime": 16,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1814,7 +2118,7 @@
 			"poster_path": "/j8MRnCjuN7kpM8w3B5hM5mrvTaE.jpg",
 			"backdrop_path": "/wu1uilmhM4TdluKi2ytfz8gidHf.jpg",
 			"release_date": "2020-08-14",
-			"genre_id": [
+			"genres": [
 				16,
 				14,
 				12,
@@ -1826,7 +2130,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "South Korea",
-			"runtime": 95
+			"runtime": 95,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1838,7 +2146,7 @@
 			"poster_path": "/2xnf2ZaGXudvgBKPtVXMkNeooh1.jpg",
 			"backdrop_path": "/sPeqIdCYvcmeZe5fCu7JgMnf1HL.jpg",
 			"release_date": "2021-05-04",
-			"genre_id": [
+			"genres": [
 				16,
 				35,
 				878
@@ -1848,7 +2156,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 3
+			"runtime": 3,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1860,7 +2172,7 @@
 			"poster_path": "/4ISu3R5OQQ39aWCzWWYrB9reSQD.jpg",
 			"backdrop_path": "/wzJRB4MKi3yK138bJyuL9nx47y6.jpg",
 			"release_date": "2020-08-22",
-			"genre_id": [
+			"genres": [
 				28,
 				53,
 				878
@@ -1870,7 +2182,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United Kingdom",
-			"runtime": 150
+			"runtime": 150,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1882,7 +2198,7 @@
 			"poster_path": "/uwfXUJuog7hRfiDrWrNC9SQJxGI.jpg",
 			"backdrop_path": "/7JENyUT8ABxcvrcijDBVpdjgCY9.jpg",
 			"release_date": "2021-05-12",
-			"genre_id": [
+			"genres": [
 				53,
 				27,
 				9648
@@ -1892,7 +2208,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 93
+			"runtime": 93,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1904,7 +2224,7 @@
 			"poster_path": "/szGpS43AM11mGzTdxFQ5wOis3EH.jpg",
 			"backdrop_path": "/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg",
 			"release_date": "2021-05-19",
-			"genre_id": [
+			"genres": [
 				28,
 				53,
 				80
@@ -1914,7 +2234,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 145
+			"runtime": 145,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1926,7 +2250,7 @@
 			"poster_path": "/acQ5lwnQGwre8n3m8JzTTcNKc5h.jpg",
 			"backdrop_path": "/1umKVgbjFG5Cho5ZKTpcvRFJjuJ.jpg",
 			"release_date": "2020-01-16",
-			"genre_id": [
+			"genres": [
 				35,
 				53,
 				80
@@ -1936,7 +2260,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Argentina",
-			"runtime": 114
+			"runtime": 114,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1948,7 +2276,7 @@
 			"poster_path": "/nWBPLkqNApY5pgrJFMiI9joSI30.jpg",
 			"backdrop_path": "/vKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg",
 			"release_date": "2021-03-05",
-			"genre_id": [
+			"genres": [
 				35
 			],
 			"director": "Craig Brewer",
@@ -1956,7 +2284,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 110
+			"runtime": 110,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1968,7 +2300,7 @@
 			"poster_path": "/n7KDDIWOY5IZrGlkeizuFMZfJFl.jpg",
 			"backdrop_path": "/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg",
 			"release_date": "2019-12-04",
-			"genre_id": [
+			"genres": [
 				12,
 				35,
 				14
@@ -1978,7 +2310,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 123
+			"runtime": 123,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -1990,7 +2326,7 @@
 			"poster_path": "/einwZHGGZ3DIbrLg2eehaTsvBBY.jpg",
 			"backdrop_path": "/eqVgQwv8HfDN2tv4XWhqW5GryV4.jpg",
 			"release_date": "2019-07-29",
-			"genre_id": [
+			"genres": [
 				27,
 				35
 			],
@@ -1999,7 +2335,11 @@
 			"watcha": false,
 			"wavve": true,
 			"country": "Canada",
-			"runtime": 72
+			"runtime": 72,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2011,7 +2351,7 @@
 			"poster_path": "/rJkDiGzHgFNBf8LUHX8IOL0IiVh.jpg",
 			"backdrop_path": "/8ChCpCYxh9YXusmHwcE9YzP0TSG.jpg",
 			"release_date": "2021-05-26",
-			"genre_id": [
+			"genres": [
 				35,
 				80
 			],
@@ -2020,7 +2360,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 134
+			"runtime": 134,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2032,7 +2376,7 @@
 			"poster_path": "/8jDvtdH327I8TgX3UPdkAsZF1dA.jpg",
 			"backdrop_path": "/5VKquU8PNujrxLmsYGHf2TCRNFQ.jpg",
 			"release_date": "2020-01-24",
-			"genre_id": [
+			"genres": [
 				878,
 				28,
 				12,
@@ -2045,7 +2389,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 108
+			"runtime": 108,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2057,7 +2405,7 @@
 			"poster_path": "/6ssoBXQOxNhrsGJoM6Tcvm57V79.jpg",
 			"backdrop_path": "/9NlswPRK5Kap6KVr59Feah9EBLP.jpg",
 			"release_date": "2020-05-08",
-			"genre_id": [
+			"genres": [
 				36,
 				28,
 				12
@@ -2067,7 +2415,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Spain",
-			"runtime": 96
+			"runtime": 96,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2079,7 +2431,7 @@
 			"poster_path": "/n78LK2t1uQP68Ud0VXHRe0HmKOp.jpg",
 			"backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
 			"release_date": "2019-04-24",
-			"genre_id": [
+			"genres": [
 				12,
 				878,
 				28
@@ -2089,7 +2441,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 181
+			"runtime": 181,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2101,7 +2457,7 @@
 			"poster_path": "/yhhJPePGHGtJ6LBVKCyfJg5EBnA.jpg",
 			"backdrop_path": "/zogWnCSztU8xvabaepQnAwsOtOt.jpg",
 			"release_date": "2020-08-07",
-			"genre_id": [
+			"genres": [
 				28,
 				80,
 				18
@@ -2111,7 +2467,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 95
+			"runtime": 95,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2123,7 +2483,7 @@
 			"poster_path": "/14FU3Ah6lDrIPLvP2bvyDODuWXn.jpg",
 			"backdrop_path": "/9Is9OrQUnKczCfsLSbsbx8YSmES.jpg",
 			"release_date": "2021-03-18",
-			"genre_id": [
+			"genres": [
 				16,
 				35,
 				14
@@ -2133,7 +2493,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Russia",
-			"runtime": 104
+			"runtime": 104,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2145,7 +2509,7 @@
 			"poster_path": "/jds6n8dUaixg0diKYlCta5nS6BV.jpg",
 			"backdrop_path": "/EBfcY3sguZcAWVZdGkwIIr1RjB.jpg",
 			"release_date": "2018-01-22",
-			"genre_id": [
+			"genres": [
 				80,
 				18
 			],
@@ -2154,7 +2518,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 98
+			"runtime": 98,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2166,7 +2534,7 @@
 			"poster_path": "/2fwjJmtkgn1G1aHEWlfBFSfyCPG.jpg",
 			"backdrop_path": "/m03jul0YdVEOFXEQVUv6pOVQYGL.jpg",
 			"release_date": "2018-06-28",
-			"genre_id": [
+			"genres": [
 				10751,
 				14,
 				35,
@@ -2177,7 +2545,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 97
+			"runtime": 97,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2189,7 +2561,7 @@
 			"poster_path": "/742vR63T1AcXzYwHypQpzZd89vh.jpg",
 			"backdrop_path": "/8XiTPU1zfy41Xgg96TCHXj4uQJf.jpg",
 			"release_date": "2019-06-28",
-			"genre_id": [
+			"genres": [
 				28,
 				12,
 				878
@@ -2199,7 +2571,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 129
+			"runtime": 129,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2211,7 +2587,7 @@
 			"poster_path": "/8S4kyQTZfQ6lMCC4HrxlyfIsI0q.jpg",
 			"backdrop_path": "/7TxeZVg2evMG42p0uSbMJpWNQ8A.jpg",
 			"release_date": "2020-06-26",
-			"genre_id": [
+			"genres": [
 				10751,
 				16,
 				14
@@ -2221,7 +2597,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "Australia",
-			"runtime": 96
+			"runtime": 96,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2233,7 +2613,7 @@
 			"poster_path": "/lr3cE3j39N1UmqKk7GucK5mZIEE.jpg",
 			"backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
 			"release_date": "2018-03-28",
-			"genre_id": [
+			"genres": [
 				878,
 				12,
 				28
@@ -2243,7 +2623,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 140
+			"runtime": 140,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2255,7 +2639,7 @@
 			"poster_path": "/ghx93NNkUHStNFIoXRoCMbfsxHv.jpg",
 			"backdrop_path": "/vVpEOvdxVBP2aV166j5Xlvb5Cdc.jpg",
 			"release_date": "2019-05-15",
-			"genre_id": [
+			"genres": [
 				28,
 				53,
 				80
@@ -2265,7 +2649,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 130
+			"runtime": 130,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2277,7 +2665,7 @@
 			"poster_path": "/kBKKXVbVwIP81u8Bnhguux48Sdn.jpg",
 			"backdrop_path": "/iID0at69rWzZOIarUIFrfDOFJA.jpg",
 			"release_date": "2021-02-12",
-			"genre_id": [
+			"genres": [
 				27,
 				14,
 				18,
@@ -2288,7 +2676,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 84
+			"runtime": 84,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2300,7 +2692,7 @@
 			"poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
 			"backdrop_path": "/3Ef8PWUiP1ehO1ESEroxb736srR.jpg",
 			"release_date": "2021-04-30",
-			"genre_id": [
+			"genres": [
 				53,
 				28,
 				80
@@ -2310,7 +2702,11 @@
 			"watcha": false,
 			"wavve": false,
 			"country": "United States of America",
-			"runtime": 105
+			"runtime": 105,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	},
 	{
@@ -2322,7 +2718,7 @@
 			"poster_path": "/mQbxBKeRuAofS5p2w4mK7DqtS97.jpg",
 			"backdrop_path": "/zMrk2G3XsnfYKiIp1NEfdtvDyBH.jpg",
 			"release_date": "2020-09-04",
-			"genre_id": [
+			"genres": [
 				12,
 				14
 			],
@@ -2331,7 +2727,11 @@
 			"watcha": true,
 			"wavve": false,
 			"country": "China",
-			"runtime": 115
+			"runtime": 115,
+			"pick_users": [],
+			"wish_users": [],
+			"watch_users": [],
+			"dislike_users": []
 		}
 	}
 ]

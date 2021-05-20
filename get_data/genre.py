@@ -2,7 +2,7 @@ import json
 import requests
 from pprint import pprint
 
-API_KEY = 'fe7f6fee767abe126d012ca0b0f22fca'
+API_KEY = ''
 URL = f'https://api.themoviedb.org/3/genre/movie/list?api_key={API_KEY}&language=ko-KR'
 
 genre_json = requests.get(URL).json()
