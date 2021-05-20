@@ -22,7 +22,7 @@ class Movie(models.Model):
     # 0보다 작은 정수값 허용 x 
     director = models.CharField(max_length=50)
     runtime = models.IntegerField(validators=[MinValueValidator(0)])
-    countries = models.CharField(max_length=50)
+    country = models.CharField(max_length=50)
     netflix = models.BooleanField()
     watcha = models.BooleanField()
     wavve = models.BooleanField()
