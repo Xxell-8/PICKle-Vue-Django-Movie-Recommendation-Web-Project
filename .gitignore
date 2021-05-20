@@ -287,6 +287,7 @@ test/
 node_modules/
 npm-debug.log
 yarn-error.log
+.env.local
 
 ### Windows ###
 # Windows thumbnail cache files
