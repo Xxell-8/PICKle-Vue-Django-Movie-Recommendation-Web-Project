@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # local apps
     'movies',
     'accounts',
+    'community',
     # 3rd-party
     'rest_framework',
     'corsheaders',
