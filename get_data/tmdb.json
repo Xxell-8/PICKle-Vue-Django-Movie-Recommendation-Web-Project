@@ -1,0 +1,2337 @@
+[
+	{
+		"model": "movies.genre",
+		"pk": 28,
+		"fileds": {
+			"name": "액션"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 12,
+		"fileds": {
+			"name": "모험"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 16,
+		"fileds": {
+			"name": "애니메이션"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 35,
+		"fileds": {
+			"name": "코미디"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 80,
+		"fileds": {
+			"name": "범죄"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 99,
+		"fileds": {
+			"name": "다큐멘터리"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 18,
+		"fileds": {
+			"name": "드라마"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 10751,
+		"fileds": {
+			"name": "가족"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 14,
+		"fileds": {
+			"name": "판타지"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 36,
+		"fileds": {
+			"name": "역사"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 27,
+		"fileds": {
+			"name": "공포"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 10402,
+		"fileds": {
+			"name": "음악"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 9648,
+		"fileds": {
+			"name": "미스터리"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 10749,
+		"fileds": {
+			"name": "로맨스"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 878,
+		"fileds": {
+			"name": "SF"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 10770,
+		"fileds": {
+			"name": "TV 영화"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 53,
+		"fileds": {
+			"name": "스릴러"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 10752,
+		"fileds": {
+			"name": "전쟁"
+		}
+	},
+	{
+		"model": "movies.genre",
+		"pk": 37,
+		"fileds": {
+			"name": "서부"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 460465,
+		"fields": {
+			"title": "모탈 컴뱃",
+			"overview": "어스렐름와 아웃월드의 최강 챔피언들이 지구의 운명을 걸고 벌이는 서바이벌 대혈전 모탈 컴뱃. MMA 격투 선수 콜 영은 대전을 앞두고 선택 받은 전사들을 사전에 제거하려는 서브제로의 공격을 받는다. 지구와 가족을 보호하고 자기 혈통의 비밀을 알아내기 위해 모탈 컴뱃 토너먼트에 참가해 죽음의 전투를 치러야 한다!",
+			"poster_path": "/yvcNQv8fth51nWuaLwfpr50IRiO.jpg",
+			"backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+			"release_date": "2021-04-07",
+			"genre_id": [
+				28,
+				14,
+				12
+			],
+			"director": "Simon McQuoid",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 110
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 567189,
+		"fields": {
+			"title": "톰 클랜시의 위드아웃 리모스",
+			"overview": "톰 클랜시의 동명 소설을 원작으로 아직 레인보우 팀이 구성되기 전 CIA요원 시절의 존 클라크 이야기",
+			"poster_path": "/rEm96ib0sPiZBADNKBHKBv5bve9.jpg",
+			"backdrop_path": "/fPGeS6jgdLovQAKunNHX8l0avCy.jpg",
+			"release_date": "2021-04-29",
+			"genre_id": [
+				28,
+				12,
+				53,
+				10752
+			],
+			"director": "Stefano Sollima",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 109
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 399566,
+		"fields": {
+			"title": "고질라 VS. 콩",
+			"overview": "콩과 보호자들은 정착할 수 있는 곳을 찾아 특별하고 강력한 유대감을 형성하고 있는 지아와 함께 여정을 떠나게 된다. 그러던 중 지구 파괴를 위한 회심의 날을 휘두르는 고질라와 마주하게 되고, 보이지 않는 힘에 의해 맞붙게 된 두 전설의 대결은 지구 깊은 곳에 도사린 수수께끼의 시작에 불과할 뿐이었는데…",
+			"poster_path": "/sqo672rKMXiLRC5kVcGvBRebkp.jpg",
+			"backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+			"release_date": "2021-03-24",
+			"genre_id": [
+				878,
+				28,
+				18
+			],
+			"director": "Adam Wingard",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 113
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 811367,
+		"fields": {
+			"title": "22 vs. Earth",
+			"overview": "",
+			"poster_path": "/s9zJFEy4usXVFAa52AWT4ZCwR27.jpg",
+			"backdrop_path": "/n2y7T8wJVjJ8yLhQXQgNCpsC3ga.jpg",
+			"release_date": "2021-04-30",
+			"genre_id": [
+				10751,
+				16,
+				35
+			],
+			"director": "Kevin Nolting",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 9
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 615457,
+		"fields": {
+			"title": "노바디",
+			"overview": "비범한 과거를 숨긴 채 남들과 다를 바 없는 평범한 일상을 사는 한 가정의 가장 ‘허치’ 매일 출근을 하고, 분리수거를 하고 일과 가정 모두 나름 최선을 다하지만 아들한테는 무시당하고 아내와의 관계도 소원하다. 그러던 어느 날, 집안에 강도가 들고 허치는 한 번의 반항도 하지 못하고 당한다. 더 큰 위험으로부터 가족을 지키기 위한 선택이었는데 모두 무능력하다고 ‘허치’를 비난하고, 결국 그동안 참고 억눌렀던 분노가 폭발하고 만다.",
+			"poster_path": "/oXQtH8O7pCvXaDKGB8OAjiPVDi5.jpg",
+			"backdrop_path": "/6zbKgwgaaCyyBXE4Sun4oWQfQmi.jpg",
+			"release_date": "2021-03-26",
+			"genre_id": [
+				28,
+				53,
+				80,
+				35
+			],
+			"director": "Ilya Naishuller",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 92
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 813258,
+		"fields": {
+			"title": "Monster Pets: A Hotel Transylvania Short",
+			"overview": "",
+			"poster_path": "/dkokENeY5Ka30BFgWAqk14mbnGs.jpg",
+			"backdrop_path": "/c7dFSqZQYqNNJVpacpIGZe3gkLW.jpg",
+			"release_date": "2021-04-02",
+			"genre_id": [
+				16,
+				35,
+				14
+			],
+			"director": "Derek Drymon",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 6
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 632357,
+		"fields": {
+			"title": "언홀리",
+			"overview": "",
+			"poster_path": "/b4gYVcl8pParX8AjkN90iQrWrWO.jpg",
+			"backdrop_path": "/lkInRiMtLgl9u9xE0By5hqf66K8.jpg",
+			"release_date": "2021-03-31",
+			"genre_id": [
+				27
+			],
+			"director": "Evan Spiliotopoulos",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 99
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 791373,
+		"fields": {
+			"title": "잭 스나이더의 저스티스 리그",
+			"overview": "슈퍼맨이 죽고 지구에 어둠의 그림자가 드리운다. 마더박스를 차지하기 위해 빌런 스테픈울프가 파라데몬 군단을 이끌고 지구에 온 것이다. 지구를 지키기 위해 목숨을 바친 슈퍼맨의 희생이 헛되지 않도록 하기 위해 브루스 웨인은 다이애나 프린스와 적에 맞서기로 한다. 배트맨과 원더 우먼은 새로이 등장한 위협에 맞서 싸우기 위해 특별한 능력을 가진 메타휴먼, 아쿠아맨과 사이보그, 플래시를 찾아가 설득하여 힘을 합친다. 드디어 한 팀이 된 저스티스 리그. 혹시 스테픈울프와 데사드 그리고 다크사이드를 물리치기에 너무 늦어버린 것이 아닐까?",
+			"poster_path": "/qd7iPB26bwMPZqRcnflzAeDkMn.jpg",
+			"backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+			"release_date": "2021-03-18",
+			"genre_id": [
+				28,
+				12,
+				14,
+				878
+			],
+			"director": "Zack Snyder",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 242
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 726684,
+		"fields": {
+			"title": "Miraculous World Shanghai, la légende de Ladydragon",
+			"overview": "",
+			"poster_path": "/tf9nWFyJ745mBFkXZtPWabDYBR3.jpg",
+			"backdrop_path": "/lHhc60NXYzswU4TvKSo45nY9Jzs.jpg",
+			"release_date": "2021-04-04",
+			"genre_id": [
+				16,
+				35,
+				10751,
+				12
+			],
+			"director": "Thomas Astruc",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "France",
+			"runtime": 52
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 635302,
+		"fields": {
+			"title": "극장판 귀멸의 칼날: 무한열차 편",
+			"overview": "혈귀로 변해버린 여동생 ‘네즈코’를 인간으로 되돌릴 단서를 찾아 비밀조직 귀살대에 들어간 ‘탄지로.’ ‘젠이츠’, ‘이노스케’와 새로운 임무 수행을 위해 무한열차에 탑승 후 귀살대 최강 검사 염주 ‘렌고쿠’와 합류한다. 달리는 무한열차에서 승객들이 하나 둘 흔적 없이 사라지자 숨어있는 식인 혈귀의 존재를 직감하는 ‘렌고쿠’. 귀살대 ‘탄지로’ 일행과 최강 검사 염주 ‘렌고쿠’는 어둠 속을 달리는 무한열차에서 모두의 목숨을 구하기 위해 예측불가능한 능력을 가진 혈귀와 목숨을 건 혈전을 시작하는데…",
+			"poster_path": "/tDAQALgC407eg3SVAgehbiMwqo0.jpg",
+			"backdrop_path": "/xPpXYnCWfjkt3zzE0dpCNME1pXF.jpg",
+			"release_date": "2020-10-16",
+			"genre_id": [
+				16,
+				28,
+				12,
+				14,
+				18
+			],
+			"director": "Haruo Sotozaki",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Japan",
+			"runtime": 117
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 527774,
+		"fields": {
+			"title": "라야와 마지막 드래곤",
+			"overview": "인간과 드래곤이 평화롭게 공존하던 신비의 땅, 쿠만드라 왕국. 악의 세력 드룬이 들이닥치자, 드래곤들은 인간을 구하기 위해 스스로를 희생하고 사라진다. 500년 후 부활한 드룬이 세상을 공포에 빠뜨리자, 전사 라야는 분열된 쿠만드라를 구하기 위해 전설 속 마지막 드래곤을 찾아 모험을 떠난다. 라야는 험난한 여정을 겪으며 세상을 구하기 위해서는 전설 속 드래곤보다 더 중요한 것이 있다는 것을 깨닫게 되는데…",
+			"poster_path": "/VierXpXqiLK5mRY2FWoVXOYquh.jpg",
+			"backdrop_path": "/7prYzufdIOy1KCTZKVWpjBFqqNr.jpg",
+			"release_date": "2021-03-03",
+			"genre_id": [
+				16,
+				12,
+				14,
+				10751,
+				28
+			],
+			"director": "Don Hall",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 107
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 615678,
+		"fields": {
+			"title": "썬더 포스",
+			"overview": "초능력을 가진 악당들을 소탕하라. 사이가 소원해진 두 친구가 도시의 수호자로 나선다. 계획에 없던 슈퍼 팀이지만 싸워보자고, 친구!",
+			"poster_path": "/oJ9BWm2wWlkuKWAZOwIRIHgxAJo.jpg",
+			"backdrop_path": "/z7HLq35df6ZpRxdMAE0qE3Ge4SJ.jpg",
+			"release_date": "2021-04-09",
+			"genre_id": [
+				28,
+				12,
+				35,
+				14
+			],
+			"director": "Ben Falcone",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 107
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 804435,
+		"fields": {
+			"title": "뱅퀴시",
+			"overview": "",
+			"poster_path": "/AoWY1gkcNzabh229Icboa1Ff0BM.jpg",
+			"backdrop_path": "/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg",
+			"release_date": "2021-04-16",
+			"genre_id": [
+				28,
+				80,
+				53
+			],
+			"director": "George Gallo",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 96
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 681260,
+		"fields": {
+			"title": "Maya the Bee: The Golden Orb",
+			"overview": "",
+			"poster_path": "/tMS2qcbhbkFpcwLnbUE9o9IK4HH.jpg",
+			"backdrop_path": "/7HtvmsLrDeiAgDGa1W3m6senpfE.jpg",
+			"release_date": "2021-01-07",
+			"genre_id": [
+				12,
+				16,
+				10751
+			],
+			"director": "Alexs Stadermann",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Australia",
+			"runtime": 88
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 634528,
+		"fields": {
+			"title": "마크맨",
+			"overview": "최고의 사격수였다가 은퇴한 군인 ‘짐’(리암 니슨)은 애리조나 국경 지역을 지키며 조용한 말년을 보내고 있다. 어느 날, 우연히 멕시코 마약 카르텔에 쫓기는 모자를 구해주지만 무자비한 놈들의 공격에 소년의 어머니가 숨을 거둔다. 소년을 시카고에 있는 친척에게 데려가 달라는 그녀의 마지막 부탁을 외면할 수 없었던 ‘짐’은 길을 나서고 마약 카르텔의 표적이 되어 숨막히는 추격전을 벌이는데…",
+			"poster_path": "/f72kG7cFnu1XXVtKnk3hzLxPZO8.jpg",
+			"backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
+			"release_date": "2021-01-15",
+			"genre_id": [
+				28,
+				53,
+				80
+			],
+			"director": "Robert Lorenz",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 108
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 643586,
+		"fields": {
+			"title": "윌리의 원더랜드",
+			"overview": "차가 고장난 주인공이 수리비 대신에 버려진 테마파크에서 하룻밤 청소부로 일하며 악령이 씐 인형 로봇들을 상대로 사투를 벌이는 이야기",
+			"poster_path": "/keEnkeAvifw8NSEC4f6WsqeLJgF.jpg",
+			"backdrop_path": "/jFINtstDUh0vHOGImpMAmLrPcXy.jpg",
+			"release_date": "2021-02-12",
+			"genre_id": [
+				28,
+				27,
+				35
+			],
+			"director": "Kevin Lewis",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 88
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 412656,
+		"fields": {
+			"title": "카오스 워킹",
+			"overview": "모든 생각이 실시간으로 노출되는 노이즈에 감염된 세상 뉴 월드. 토드는 이곳에 불시착한 의문의 유입자 바이올라와 마주하게 된다. 혼돈의 세상 속 숨겨진 비밀에 의문을 품은 두 사람은 뉴 월드를 탈출할 계획을 세우고, 뉴 월드의 통치자 데이비드는 위험을 직감하고 이들을 추격하기 위해 모든 수단을 동원하는데…",
+			"poster_path": "/jlmuSzTXOppShgYZbeetWTFTi6P.jpg",
+			"backdrop_path": "/ovggmAOu1IbPGTQE8lg4lBasNC7.jpg",
+			"release_date": "2021-02-24",
+			"genre_id": [
+				878,
+				28,
+				12,
+				53
+			],
+			"director": "Doug Liman",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 109
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 464052,
+		"fields": {
+			"title": "원더 우먼 1984",
+			"overview": "사랑의 힘으로 시련을 딛고 진정한 슈퍼히어로로 거듭난 원더 우먼 다이애나 프린스는 고고학자로서 인간들 사이에서 조용히 살고 있다. 다이애나의 마음 한편엔 세상을 떠난 연인 스티브 트레버의 빈자리가 여전하다. 그녀의 주변이 어수선해지기 시작한 건 동료 바바라가 관리 중이던 고대 유물을 수상한 석유 부자 맥스 로드에게 맡기고서부터. 사람들의 소원을 들어주는 대가로 그들에게서 가장 소중한 것을 앗아가는 빌런이 세상을 어지럽히기 시작하고, 다이애나의 앞엔 거짓말처럼 죽었던 스티브가 나타나는데...",
+			"poster_path": "/ss6A2u6YiHTEWeVR01GtTUoO2Xj.jpg",
+			"backdrop_path": "/srYya1ZlI97Au4jUYAktDe3avyA.jpg",
+			"release_date": "2020-12-16",
+			"genre_id": [
+				14,
+				28,
+				12
+			],
+			"director": "Patty Jenkins",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 150
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 458576,
+		"fields": {
+			"title": "몬스터 헌터",
+			"overview": "UN합동 보안 작전부 아르테미스 대위(밀라 요보비치)는 행방불명된 팀원들을 찾기 위해 나서지만 실종된 그들과 같은 이상 현상으로 거대 몬스터의 세계로 빠진다. 하지만 눈앞에 닥친 강력한 몬스터들의 습격으로 유일한 생존자가 된 그녀는 몬스터 헌터(토니 자)와 마주하게 되는데… 다시 인류의 세계로 돌아갈 수 있는 방법은 단 하나. 몬스터와 맞서 반드시 살아남아야 한다!",
+			"poster_path": "/eEmyuyNg4A3LEntaPrUiMueWtLA.jpg",
+			"backdrop_path": "/z8TvnEVRenMSTemxYZwLGqFofgF.jpg",
+			"release_date": "2020-12-03",
+			"genre_id": [
+				14,
+				28,
+				12
+			],
+			"director": "Paul W. S. Anderson",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Germany",
+			"runtime": 104
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 578701,
+		"fields": {
+			"title": "내가 죽기를 바라는 자들",
+			"overview": "화재 현장에서 세 명의 아이를 구하지 못한 죄책감과 트라우마로 감시탑에 배정된 공수소방대원 한나는 거대 범죄의 증거를 가지고 도주 중인 소년을 만난다. 한편 소년을 쫓던 두 명의 킬러는 사람들의 눈을 돌리기 위해 불을 내고 삽시간에 번져가는데…  죽이려는 자와 지키려는 자, 거대한 불길 속에서 치닫는 생사를 건 대결. 그날 밤, 삶과 죽음이 타오르는 불길 속에 모두가 있었다!",
+			"poster_path": "/aMikd8jW6lZGmJgJ158biCjbNqZ.jpg",
+			"backdrop_path": "/ouOojiypBE6CD1aqcHPVq7cJf2R.jpg",
+			"release_date": "2021-05-05",
+			"genre_id": [
+				53,
+				18,
+				28,
+				9648
+			],
+			"director": "Taylor Sheridan",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Canada",
+			"runtime": 100
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 587807,
+		"fields": {
+			"title": "톰과 제리",
+			"overview": "생쥐 제리는 성대한 결혼식이 열리게 될 뉴욕의 한 고급 호텔로 이사를 오게 되고, 이벤트 플래너 카일라는 제리를 잡기 위해서 고양이 톰을 고용한다. 하지만 우당탕탕 사고뭉치들의 역대급 대소동은 카일라의 커리어는 물론 결혼식과 호텔까지도 위험에 빠뜨리게 되는데…",
+			"poster_path": "/rYoITBMgw14m4cucXNOAw3qBS6c.jpg",
+			"backdrop_path": "/9ns9463dwOeo1CK1JU2wirL5Yi1.jpg",
+			"release_date": "2021-02-11",
+			"genre_id": [
+				35,
+				10751,
+				16
+			],
+			"director": "Tim Story",
+			"netflix": false,
+			"watcha": true,
+			"wavve": true,
+			"country": "United States of America",
+			"runtime": 101
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 471498,
+		"fields": {
+			"title": "O2",
+			"overview": "한 젊은 여성이 냉동 수면 장치에서 눈을 뜬다. 사라진 기억과 폐쇄된 공간, 그리고 급속도로 고갈되어 가는 산소. 살아남으려면 자신이 누군지부터 기억해내야 한다. 누운 자리가 그대로 관이 되기 전에.",
+			"poster_path": "/stgQ2xe3M55zchovGeTDxenQPPe.jpg",
+			"backdrop_path": "/jedggylU3FyIN7XRAl9WY8mrT6H.jpg",
+			"release_date": "2021-05-12",
+			"genre_id": [
+				878,
+				53,
+				18
+			],
+			"director": "Alexandre Aja",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 100
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 647302,
+		"fields": {
+			"title": "Benny Loves You",
+			"overview": "",
+			"poster_path": "/mQ8vALvqA0z0qglG3gI6xpVcslo.jpg",
+			"backdrop_path": "/czHYg6LQ5926OL8wj5kC09pNR12.jpg",
+			"release_date": "2021-05-07",
+			"genre_id": [
+				27,
+				35
+			],
+			"director": "Karl Holt",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United Kingdom",
+			"runtime": 94
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 581387,
+		"fields": {
+			"title": "백두산",
+			"overview": "대한민국 관측 역사상 최대 규모의 백두산 폭발 발생. 갑작스러운 재난에 한반도는 순식간에 아비규환이 되고, 남과 북 모두를 집어삼킬 추가 폭발이 예측된다. 사상 초유의 재난을 막기 위해 전유경은 백두산 폭발을 연구해 온 지질학 교수 강봉래의 이론에 따른 작전을 계획하고, 전역을 앞둔 특전사 EOD 대위 조인창이 남과 북의 운명이 걸린 비밀 작전에 투입된다. 작전의 키를 쥔 북한 무력부 소속 일급 자원 리준평과 접선에 성공한 인창. 하지만 준평은 속을 알 수 없는 행동으로 인창을 곤란하게 만든다. 한편, 인창이 북한에서 펼쳐지는 작전에 투입된 사실도 모른 채 서울에 홀로 남은 최지영은 재난에 맞서 살아남기 위해 고군분투하고 그 사이, 백두산 마지막 폭발까지의 시간은 점점 가까워 가는데…",
+			"poster_path": "/1n5q3XpEhCe7TnGHzsHs5pwVT8O.jpg",
+			"backdrop_path": "/h9DIlghaiTxbQbt1FIwKNbQvEL.jpg",
+			"release_date": "2019-12-19",
+			"genre_id": [
+				28,
+				12,
+				53
+			],
+			"director": "Lee Hae-jun",
+			"netflix": false,
+			"watcha": true,
+			"wavve": false,
+			"country": "South Korea",
+			"runtime": 128
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 508442,
+		"fields": {
+			"title": "소울",
+			"overview": "뉴욕에서 음악 선생님으로 일하던 조는 꿈에 그리던 최고의 밴드와 재즈 클럽에서 연주하게 된 그 날, 예기치 못한 사고로 영혼이 되어 태어나기 전 세상에 떨어진다. 탄생 전 영혼들이 멘토와 함께 자신의 관심사를 발견하면 지구 통행증을 발급하는 태어나기 전 세상. 조는 그 곳에서 유일하게 지구에 가고 싶어하지 않는 시니컬한 영혼 22의 멘토가 된다. 링컨, 간디, 테레사 수녀도 멘토되길 포기한 영혼 22, 꿈의 무대에 서려면 22의 지구 통행증이 필요한 조. 그는 다시 지구로 돌아가 꿈의 무대에 설 수 있을까?",
+			"poster_path": "/qJiaB4RJMM5Oh6A4rqrEOHQUJbu.jpg",
+			"backdrop_path": "/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg",
+			"release_date": "2020-12-25",
+			"genre_id": [
+				10751,
+				16,
+				35,
+				18,
+				10402,
+				14
+			],
+			"director": "Pete Docter",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 101
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 736069,
+		"fields": {
+			"title": "저스티스 소사이어티: 월드 워 II",
+			"overview": "",
+			"poster_path": "/e4REOC6CZW8J6FslA4nRvdQXFXR.jpg",
+			"backdrop_path": "/8LHSDyRizQ4kQz5rEHPKyXPvMG3.jpg",
+			"release_date": "2021-04-27",
+			"genre_id": [
+				16,
+				10752,
+				878
+			],
+			"director": "Jeff Wamester",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 84
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 775996,
+		"fields": {
+			"title": "아웃사이드 더 와이어",
+			"overview": "가까운 미래 치열한 접전 지역. 드론 조종사가 원치 않게 이곳에 파견된다. 그의 지휘관은 기밀 속 존재인 사이보그. 둘은 함께 핵 공격을 막는 위험한 임무에 뛰어든다.",
+			"poster_path": "/gGkFDz4waJJqdrnGhnaUVZZHPHR.jpg",
+			"backdrop_path": "/lOSdUkGQmbAl5JQ3QoHqBZUbZhC.jpg",
+			"release_date": "2021-01-15",
+			"genre_id": [
+				53,
+				28,
+				878
+			],
+			"director": "Mikael Håfström",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 116
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 793723,
+		"fields": {
+			"title": "상티넬",
+			"overview": "상처는 한 번이면 충분하다. 중동에서 군사 작전 중 트라우마를 입고 귀국한 클라라. 하지만 불온한 지중해의 공기는 그녀를 치유해 주지 못하는데. 가족이 다치고 평화에 균열이 생기는 순간, 훈련된 전사의 본능이 눈을 뜬다.",
+			"poster_path": "/AmUGn1rJ9XDDP6DYn9OA2uV8MIg.jpg",
+			"backdrop_path": "/eTgQlyIQH0nA5BsmYpvCzSPAorg.jpg",
+			"release_date": "2021-03-05",
+			"genre_id": [
+				53,
+				28,
+				18
+			],
+			"director": "Julien Leclercq",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "France",
+			"runtime": 80
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 522444,
+		"fields": {
+			"title": "블랙 워터: 아비스",
+			"overview": "에릭-젠과 빅터-욜란다 커플은 친구 캐시가 최근에 발견한 동굴탐험에 함께 참가한다. 그렇게 시작한 탐험은 넓은 공간과 함께 물이 모인곳은 찾게 된다. 주변을 살피던중 갑작스러운 물의 유입으로 고립에 위험에 쳐하게 된다. 그리고, 물속에 악어가 있는걸 확인하게 되는데...",
+			"poster_path": "/95S6PinQIvVe4uJAd82a2iGZ0rA.jpg",
+			"backdrop_path": "/fRrpOILyXuWaWLmqF7kXeMVwITQ.jpg",
+			"release_date": "2020-07-09",
+			"genre_id": [
+				27,
+				53,
+				12,
+				9648
+			],
+			"director": "Andrew Traucki",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 98
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 587996,
+		"fields": {
+			"title": "빌로우제로",
+			"overview": "혹한의 밤 산간 도로를 달리던 죄수 호송 차량이 불의의 습격을 당한다. 겨우 살아남지만 재소자들과 차량에 갇힌 경관 마르틴. 차 안에는 탈출을 감행하려는 재소자들이, 밖에는 정체불명의 공격자가 도사리고 있다. 어떻게 벗어날 것인가.",
+			"poster_path": "/4SEAkDj7nflDPqCwD1LxrGkldTt.jpg",
+			"backdrop_path": "/6TPZSJ06OEXeelx1U1VIAt0j9Ry.jpg",
+			"release_date": "2021-01-29",
+			"genre_id": [
+				28,
+				80,
+				53
+			],
+			"director": "Lluís Quílez",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "Spain",
+			"runtime": 106
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 663558,
+		"fields": {
+			"title": "신신방: 나타중생",
+			"overview": "오토바이 레이서이자 배달원과 지역유지의 아들 사이에서 생긴 갈등으로 인해 삼천년전 그들이 가문간 원수지간이었다는 사실이 밝혀지면서 일어나는 이야기",
+			"poster_path": "/a8AwGuBb99TU45jxh6dKyuJ0uvf.jpg",
+			"backdrop_path": "/y0SiXoTLQp93NbLQ4XhgVz18UAS.jpg",
+			"release_date": "2021-02-06",
+			"genre_id": [
+				16,
+				28,
+				14
+			],
+			"director": "Zhao Ji",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "China",
+			"runtime": 117
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 529203,
+		"fields": {
+			"title": "크루즈 패밀리: 뉴 에이지",
+			"overview": "동굴을 떠나 새로운 거주지를 찾아 나선 크루즈 패밀리. 우여곡절 끝에 찾은 완벽한 트리 하우스에서 진화된 인류, 베터맨 패밀리와 마주한다. 도구를 사용하고 ‘집’에서 안전하게 살아가는 지능형 베터맨 패밀리와 맨손으로 사냥하고 자연과 함께 살아가는 본능형 크루즈 패밀리는 너무나도 다른 삶의 방식으로 사사건건 부딪힌다. 반면 처음으로 여자 사람친구를 만난 ‘이프’와 ‘던’은 가족들과 달리 우정을 쌓아가지만 점점 두 가족에게 예상치 못한 위협이 닥쳐오는데…",
+			"poster_path": "/rwRh4fHnAWpQyOYTBHkOac0aSmP.jpg",
+			"backdrop_path": "/cjaOSjsjV6cl3uXdJqimktT880L.jpg",
+			"release_date": "2020-11-25",
+			"genre_id": [
+				10751,
+				14,
+				16,
+				35
+			],
+			"director": "Joel Crawford",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 95
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 544401,
+		"fields": {
+			"title": "체리",
+			"overview": "이라크 전쟁 참전 후 PTSD를 겪으며 약물 중독과 은행강도에 손을 댄 군인의 이야기",
+			"poster_path": "/pwDvkDyaHEU9V7cApQhbcSJMG1w.jpg",
+			"backdrop_path": "/uQtqiAu2bBlokqjlURVLEha6zoi.jpg",
+			"release_date": "2021-02-26",
+			"genre_id": [
+				80,
+				18
+			],
+			"director": "Anthony Russo",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 140
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 581389,
+		"fields": {
+			"title": "승리호",
+			"overview": "2092년, 지구는 병들고 우주 위성궤도에 인류의 새로운 보금자리인 UTS가 만들어졌다. 돈 되는 일이라면 뭐든 하는 조종사 태호, 과거 우주 해적단을 이끌었던 장선장, 갱단 두목이었지만 이제는 기관사가 된 타이거 박, 평생 이루고 싶은 꿈을 가진 작살잡이 로봇 업동이, 이들은 우주쓰레기를 주워 돈을 버는 청소선 승리호의 선원들이다. 어느 날 사고 우주정을 수거한 승리호는 그 안에 숨어있던 대량살상무기로 알려진 인간형 로봇 도로시를 발견한다. 돈이 절실한 선원들은 도로시를 거액의 돈과 맞바꾸기 위한 위험한 거래를 계획하는데...",
+			"poster_path": "/vOefWMYqC1S3aiCTD5MD8HeXl0Y.jpg",
+			"backdrop_path": "/drulhSX7P5TQlEMQZ3JoXKSDEfz.jpg",
+			"release_date": "2021-02-05",
+			"genre_id": [
+				18,
+				14,
+				878
+			],
+			"director": "Jo Sung-hee",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "South Korea",
+			"runtime": 136
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 755812,
+		"fields": {
+			"title": "미라큘러스 월드 : 뉴욕, 하나 된 영웅들",
+			"overview": "",
+			"poster_path": "/kIHgjAkuzvKBnmdstpBOo4AfZah.jpg",
+			"backdrop_path": "/aMFl4wOPhJ7NVua6SgU9zIJvFSx.jpg",
+			"release_date": "2020-09-26",
+			"genre_id": [
+				16,
+				10751,
+				35,
+				12
+			],
+			"director": "Thomas Astruc",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "France",
+			"runtime": 55
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 664767,
+		"fields": {
+			"title": "모탈 컴뱃 레전드: 스콜피온의 복수",
+			"overview": "한 세대에 한 번 꼴로 개최되는 외계와 지구의 챔피언들 간의 토너먼트를 통해 세계의 운명을 결정짓게 되는 이야기. 지구의 수호자인 라이덴 경은 지구에서 가장 강력한 파이터들을 모아 최후의 대결인, 모탈 컴뱃에서 사악한 빌런 상췡으로부터 지구를 지켜야 하는데...",
+			"poster_path": "/4VlXER3FImHeFuUjBShFamhIp9M.jpg",
+			"backdrop_path": "/9xeEGUZjgiKlI69jwIOi0hjKUIk.jpg",
+			"release_date": "2020-04-12",
+			"genre_id": [
+				16,
+				28,
+				14
+			],
+			"director": "Ethan Spaulding",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 80
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 495764,
+		"fields": {
+			"title": "버즈 오브 프레이: 할리 퀸의 황홀한 해방",
+			"overview": "오랜 연인이던 조커와 헤어진 할리 퀸은 처음 맞이한 해방에 황홀함을 느낀다. 하지만 조커라는 방패막이 사라지자 평생 처음 무방비 상태에 놓인 할리 퀸을 고담시에서 가장 비열한 범죄왕 로만 시오니스와 고담의 모든 갱들이 노린다. 통제 불능의 상태에서 카산드라라는 소매치기가 로만의 부하에게서 모든 권력과 고담시 지하 세계 전체의 지배권을 차지할 열쇠인 금융 정보가 암호화되어 있는 다이아몬드를 훔치면서 사건을 걷잡을 수 없이 급변한다. 로만 손에 죽을 위기에 처한 할리 퀸은 헌트리스, 블랙 카나리, 르네 몬토야와 새로운 팀을 결성해 로만에 맞서는데...",
+			"poster_path": "/1HjYMW5Je0D8JkRl5DEXJSdVtDK.jpg",
+			"backdrop_path": "/jiqD14fg7UTZOT6qgvzTmfRYpWI.jpg",
+			"release_date": "2020-02-05",
+			"genre_id": [
+				28,
+				80
+			],
+			"director": "Cathy Yan",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 109
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 520663,
+		"fields": {
+			"title": "우먼 인 윈도",
+			"overview": "광장 공포증으로 집에서만 지내는 정신과 의사. 그녀는 건넛집에 이사한 가족을 관찰하기 시작한다. 그리고 창문 너머 잔혹한 범죄를 목격한다. 진실을 찾으려는 그녀의 집착, 그 끝은 어디일까.",
+			"poster_path": "/wcrjc1uwQaqoqtqi67Su4VCOYo0.jpg",
+			"backdrop_path": "/gUttUEqsrvaMlK5oL5TSQ54iE96.jpg",
+			"release_date": "2021-05-14",
+			"genre_id": [
+				80,
+				18,
+				9648,
+				53
+			],
+			"director": "Joe Wright",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 102
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 604822,
+		"fields": {
+			"title": "뱅가드",
+			"overview": "탕환팅이 이끄는 국제 민간 경호업체 뱅가드. 새해 축제가 한창인 런던 한복판에서 VIP 고객이 범죄 조직에 납치되고 뱅가드는 그를 구출하는 데 성공한다. 이에 분노한 범죄 조직은 VIP 고객의 딸을 새로운 타깃으로 삼고, 그들보다 먼저 아프리카에 있는 그녀를 찾아 보호하는 과정에서 뱅가드의 팀원 레이전위가 위험에 처한다. 두바이로 넘어가 구출 작전을 펼치던 뱅가드는 거대한 배후 세력의 음모와 마주하게 되는데…",
+			"poster_path": "/9epfyKS1rRdD4Hk8wFFU40Wucgr.jpg",
+			"backdrop_path": "/fX8e94MEWSuTJExndVYxKsmA4Hw.jpg",
+			"release_date": "2020-09-30",
+			"genre_id": [
+				28,
+				12,
+				80
+			],
+			"director": "Stanley Tong",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "China",
+			"runtime": 107
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 631583,
+		"fields": {
+			"title": "Sacrifice",
+			"overview": "",
+			"poster_path": "/xXI5Lg6mJLEesTggRJBrq50vrqU.jpg",
+			"backdrop_path": "/v0bFTXnLNh9cjvpIckJpIM2t9nf.jpg",
+			"release_date": "2021-02-09",
+			"genre_id": [
+				27
+			],
+			"director": "Toor Mian",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United Kingdom",
+			"runtime": 87
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 578908,
+		"fields": {
+			"title": "배드 트립",
+			"overview": "평범한 여행은 재미없잖아? 뉴욕으로 가는 길, 두 친구가 못된 장난을 꾸민다. 몰래카메라로 사람들을 놀라게 해주자. 진짜 일반인들을! 그리하여 탄생한 기절초풍 코미디.",
+			"poster_path": "/A1Gy5HX3DKGaNW1Ay30NTIVJqJ6.jpg",
+			"backdrop_path": "/a9zFUuxzChmAlIybVge9IZt1hH0.jpg",
+			"release_date": "2021-03-26",
+			"genre_id": [
+				35
+			],
+			"director": "Kitao Sakurai",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 86
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 644083,
+		"fields": {
+			"title": "트위스트",
+			"overview": "",
+			"poster_path": "/h3oT6lZcYC2khtZnzHBgqthj5W.jpg",
+			"backdrop_path": "/jnq4fV53Px9HvUZD2bQIxtGSwS7.jpg",
+			"release_date": "2021-01-22",
+			"genre_id": [
+				80,
+				18,
+				28
+			],
+			"director": "Martin Owen",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United Kingdom",
+			"runtime": 90
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 539885,
+		"fields": {
+			"title": "에이바",
+			"overview": "타깃 제거 100%, 실패 확률 0% 킬러 에이바. 프랑스 최대의 사기범을 제거하는 작전에 투입된 그녀는 임무 중 조직의 금기를 깨트린다. 한편, 그 사실을 알게 된 새로운 보스 사이먼은 그녀를 제거할 것을 명령하게 되는데… 죽거나, 죽이거나 타깃이 된 그녀, 살기 위한 킬링 액션이 시작된다!",
+			"poster_path": "/fJ0i5MKbBTKJGYY2uxsiUMdwMc6.jpg",
+			"backdrop_path": "/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
+			"release_date": "2020-07-02",
+			"genre_id": [
+				28,
+				80,
+				18,
+				53
+			],
+			"director": "Tate Taylor",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 560144,
+		"fields": {
+			"title": "스카이라인: 라스트 워",
+			"overview": "몸의 외계인이지만 사람의 두뇌가 이식된 파일럿과 지구인이 공존하는 세상. 파일럿을 구하기 위해 외계 행성으로 향한 일행이 돌연변이 생물체에 맞서고, 더 큰 음모로 위기를 겪으며 진행된다.",
+			"poster_path": "/rNY5FOY8yvcJicfNuNHLpeOt63O.jpg",
+			"backdrop_path": "/3ombg55JQiIpoPnXYb2oYdr6DtP.jpg",
+			"release_date": "2020-10-25",
+			"genre_id": [
+				878,
+				28
+			],
+			"director": "Liam O'Donnell",
+			"netflix": false,
+			"watcha": false,
+			"wavve": true,
+			"country": "France",
+			"runtime": 113
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 592350,
+		"fields": {
+			"title": "나의 히어로 아카데미아 더 무비: 히어로즈 라이징",
+			"overview": "눈이 계속 내리는 겨울 어느 밤, 히어로 사회를 파괴하려고 계획하는 시가라키 토무라가 인솔하는 빌런 연합과 그 움직임을 사전에 포착한 히어로들의 전투가 전개되는 가운데, 남모르게 조용히 꿈틀거리는 \"뭔가\"가 일어나고, 그 자리를 떠났다. 마침 이즈쿠 일행의 유에이 고교 히어로과 1학년 A반이 은퇴한 No.1 히어로 올마이트의 뒤를 이어 \"차세대 영웅 육성 프로젝트\"의 일환으로 학급 전원에서 기간 한정의 교외 히어로 활동을 위해 일본의 훨씬 남쪽에 위치한 외딴 섬 \"나부 섬\"을 찾았다. 얼마 전 큰 사건이 일어나지 않았던 평화로운 섬에서 이들은 주재 영웅으로서 섬사람들의 생활을 도우며 분주했고, 그러면서도 한가한 시간을 보내고 있었다. 그러나 그 정적을 부수듯이, 갑자기 빌런들이 나부 섬을 덮쳐, 차례차례로 섬의 시설을 파괴해 간다. 그들을 지휘하는 것은, \"나인\". 그날 밤, 눈을 뜬 \"뭔가\"그 자체였다. 이즈쿠와 바쿠고 등의 1학년 A반의 멤버는 힘을 모아 빌런에 맞선다! 과연 섬을 덮치는 나인의 목적이란!? 그리고 이즈쿠 일행의 1학년 A반의 \"뉴 히어로\"들은 이 가장 흉악한 빌런으로부터 섬의 사람들을 지킬 수 있을까!?",
+			"poster_path": "/y56HkHAbSZQJjQaxlqCaRI3lIHu.jpg",
+			"backdrop_path": "/9guoVF7zayiiUq5ulKQpt375VIy.jpg",
+			"release_date": "2019-12-20",
+			"genre_id": [
+				16,
+				28,
+				14,
+				12
+			],
+			"director": "Kenji Nagasaki",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Japan",
+			"runtime": 104
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 335983,
+		"fields": {
+			"title": "베놈",
+			"overview": "진실을 위해서라면 몸을 사리지 않고 사회의 부조리를 취재하는 정의로운 열혈 기자 에디 브록. 거대 기업 라이프 파운데이션의 생체실험에 의혹을 품고 뒤를 쫓던 그는 이들의 사무실에 잠입했다가 실험실에서 외계 생물체 심비오트의 기습 공격을 받게 된다. 심비오트가 숙주의 몸과 정신을 지배할 때 능력을 발휘하는 베놈은 에디의 몸에 기생하며 갖가지 소동을 일으킨다. 한편 비밀리에 인간과 심비오트를 결합해 새로운 생명체를 만들려는 시도를 계속하던 라이프 파운데이션의 회장 드레이크 또한 심비오트의 숙주가 된다.",
+			"poster_path": "/lc8TJW5z261JqSz3oSy5GES2ZXj.jpg",
+			"backdrop_path": "/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+			"release_date": "2018-09-28",
+			"genre_id": [
+				878,
+				28
+			],
+			"director": "Ruben Fleischer",
+			"netflix": false,
+			"watcha": true,
+			"wavve": false,
+			"country": "China",
+			"runtime": 112
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 590706,
+		"fields": {
+			"title": "주짓수",
+			"overview": "혜성이 지구에 나타나고 제이크는 미지의 존재를 피해 달아나다 칼을 맞고 절벽 밑 바다로 떨어진다.  미얀마의 한 어부가 정신을 잃은 제이크를 발견하고 어부의 아내가 그를 치료한 뒤 미군 기지로 향한다.  그녀는 6년마다 혜성이 지구를 지날 때 죽음의 전사가 사원의 구멍을 통해 나타난다고 말하고 제이크를 넘겨준 뒤 미군 기지를 떠난다.  제이크의 몸에서 방사능이 검출되는 것을 수상히 여긴 육군 정보부 요원은 제이크를 심문하지만 제이크는 이전 일을 아무것도 기억하지 못한다.  얼마 후 쿠엥이 나타나 수많은 미군을 제압하고 제이크를 구해 기지에서 달아난다.  해리건, 마이라 등의 동료들과 재회한 제이크는 외계 존재 브랙스에 대한 이야기를 듣게 된다.  그리고 브랙스와 대결하지 않고 도망가면 마을 사람들이 대신 죽게 된다는 사실을 알게 된다.  제이크와 연인 마이라, 아버지 와일리 카르멘 9명의 전사는 치유능력과 첨단 무기로 무장한 브랙스와의 일전을 준비하는데...",
+			"poster_path": "/79bNNmoZh3I3fMepbFOeHUVtVlv.jpg",
+			"backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
+			"release_date": "2020-11-20",
+			"genre_id": [
+				14,
+				28,
+				878
+			],
+			"director": "Dimitri Logothetis",
+			"netflix": false,
+			"watcha": false,
+			"wavve": true,
+			"country": "Cyprus",
+			"runtime": 102
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 384018,
+		"fields": {
+			"title": "분노의 질주: 홉스 & 쇼",
+			"overview": "이상한 약물에 의해 강력한 파워를 얻게 된 아나키스트 브릭스턴 로어(이드리스 엘바)는 인류를 천천히, 그리고 영원히 다른 존재로 바꿔버릴 수 있는 생화학무기를 손에 넣고 자신은 진화형 인간이 된다. 그런데 데카드 쇼(제이슨 스타뎀)의 동생이자 M16 요원인 해티 쇼(바네사 커비)가 치명적인 병원균이 들어 있는 실린더를 브릭스턴의 손에서 훔쳐 달아난다. 양국으로부터 해티의 행방을 찾아달라는 명령을 받은 루크(드웨인 존슨)와 데카드는 유전자 조작으로 사실상 파괴 불가능한 존재가 되어버린 브릭스턴을 상대로 힘겨운 싸움도 이겨나가야 하는데...",
+			"poster_path": "/8MdVJYHKp7JFvTMkLkZOou13LYV.jpg",
+			"backdrop_path": "/qAhedRxRYWZAgZ8O8pHIl6QHdD7.jpg",
+			"release_date": "2019-08-01",
+			"genre_id": [
+				28,
+				12,
+				35
+			],
+			"director": "David Leitch",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 137
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 475557,
+		"fields": {
+			"title": "조커",
+			"overview": "홀어머니와 사는 아서 플렉은 코미디언을 꿈꾸지만 그의 삶은 좌절과 절망으로 가득 차 있다. 광대 아르바이트는 그에게 모욕을 가져다주기 일쑤고, 긴장하면 웃음을 통제할 수 없는 신경병 증세는 그를 더욱 고립시킨다. 정부 예산 긴축으로 인해 정신과 약물을 지원하던 공공의료 서비스마저 없어져 버린 어느 날, 아서는 지하철에서 시비를 걸어온 증권사 직원들에게 얻어맞던 와중에 동료가 건네준 권총으로 그들을 쏴 버리고 만다. 군중들은 지배계급에 대한 저항의 아이콘이 된 그를 추종하기 시작하며 광대 마스크로 얼굴을 가리고 거리로 쏟아져 나오기 시작하는데...",
+			"poster_path": "/wrCwH6WOvXQvVuqcKNUrLDCDxdw.jpg",
+			"backdrop_path": "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
+			"release_date": "2019-10-02",
+			"genre_id": [
+				80,
+				53,
+				18
+			],
+			"director": "Todd Phillips",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Canada",
+			"runtime": 122
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 722780,
+		"fields": {
+			"title": "For the Sake of Vicious",
+			"overview": "",
+			"poster_path": "/iqO2sTFqm6XwEXmlLxKDX75RPjY.jpg",
+			"backdrop_path": "/54yrEMg3KeTbpr3kYpIGU04a9D5.jpg",
+			"release_date": "2021-04-16",
+			"genre_id": [
+				28,
+				27,
+				9648
+			],
+			"director": "Reese Eveneshen ",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Canada",
+			"runtime": 80
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 602269,
+		"fields": {
+			"title": "더 리틀 씽즈",
+			"overview": "캘리포니아의 작은 마을 케른 카운티의 부보안관 조 디콘은 LA 강도사건의 용의자인 켄드릭스의 증거물을 가지러 LASD로 향한다. 하지만 증거물을 내일 인계할 수 있다는 답변을 들은 조는 하룻밤을 그곳에서 머무르게 된다. 한편 2달 만에 4명의 여자를 잔인하게 살해한 연쇄 살인범을 추적하는 수사 책임자 짐 백스터는 아무런 단서나 용의자를 찾지 못하고 있다. 조 디콘이 과거 유명한 강력계 형사였다는 사실을 알게 된 짐은 오래전 함께 근무했던 형사 샐과 만나고 있는 디콘에게 5번째 희생자 줄리의 살인 현장에 함께 가서 도움을 달라고 요청한다. 디콘은 피가 난무한 잔인한 살인 현장에서 과거 자신의 모습이 떠오르고 또다시 사건에 집착하기 시작한다. 디콘은 휴가를 내고 감식반 플로를 통해 희생자의 관련 파일을 입수한다. 얼마 후 론다에 대한 실종 신고가 접수되고 또다시 6번째 희생자가 발생한다. 그러던 어느 날, 사건에 집요하게 매달리던 디콘은 어플라이언스 가전제품 매장에 근무하는 직원 앨버트를 유력한 용의자로 지목하는데...",
+			"poster_path": "/wetccvr46psfBoTfJEIxqrP0GeS.jpg",
+			"backdrop_path": "/vfuzELmhBjBTswXj2Vqxnu5ge4g.jpg",
+			"release_date": "2021-01-28",
+			"genre_id": [
+				53,
+				80
+			],
+			"director": "John Lee Hancock",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 128
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 38700,
+		"fields": {
+			"title": "나쁜 녀석들: 포에버",
+			"overview": "마이애미 강력반의 베테랑 형사 마이크는 여전히 범죄자를 소탕하는 데 열성적이지만, 그의 파트너 마커스는 이제 일선에서 물러나 가족과 함께 시간을 보내고 싶어한다. 마커스의 은퇴를 만류하던 마이크가 정체를 알 수 없는 거대 조직의 위협을 받으며 일생일대의 위험에 빠지게 된다. 가족만큼 중요한 마이크를 위해 마커스가 합류하고, 우리의 나쁜 녀석들은 신식 무기와 기술을 장착한 루키팀 AMMO와 함께 힘을 합쳐 일생일대 마지막 미션을 수행하게 되는데…",
+			"poster_path": "/4ddGXWTeJKL6hWivydfsl7C7eF7.jpg",
+			"backdrop_path": "/3N316jUSdhvPyYTW29G4v9ebbcS.jpg",
+			"release_date": "2020-01-15",
+			"genre_id": [
+				53,
+				28,
+				80
+			],
+			"director": "Adil El Arbi",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 124
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 630586,
+		"fields": {
+			"title": "롱 턴",
+			"overview": "젠은 에너지 비영리단체를 운영하는 연인 대리우스, 암 전문의 밀라와 앱 개발자 애덤, 뉴욕에서 식당을 운영하는 루이스, 개리와 함께 여행을 떠난다. 애팔래치아 산맥을 하이킹하려는 젠 일행은 버지니아 메인 카운티에서 숙소를 잡는다. 숙소 주인은 산속에서 길을 벗어나면 위험하다고 젠에게 경고한다. 다음 날 아침 하이킹을 시작한 젠 일행은 산속의 멋진 풍경에 감탄한다. 선두로 가던 대리우스는 길을 벗어나 남북 전쟁 당시 요새가 있는 곳으로 가보자고 제안한다. 몇 시간 뒤 일행이 길을 잃었음을 느낀 순간 거대한 통나무가 위에서 굴러 떨어진다. 통나무에 깔려 개리가 처참한 모습으로 죽고 젠은 위에 누군가 지나가는 모습을 본다. 휴대폰도 되지 않는 그곳에서 비가 내리고 일행은 서로 다투기 시작한다. 밤이 되어 야영을 한 후 아침에 깨어난 그들은 모든 사람의 휴대폰과 함께 밀라가 사라졌음을 알게 된다. 그곳에 어린 소녀 루시가 나타나고 루시를 쫓던 애덤이 쇠사슬로 된 덫에 묶인 채 땅 속 구멍으로 사라진다. 그 후 해골을 쓴  두 명의 남자가 애덤을 데리고 가는 것을 본 대리우스, 젠, 루이스는 그들을 막아선다. 애덤은 그들이 자신을 납치한다고 생각하고 새뮤얼의 두개골을 으깨버린다. 얼마 후 밀라가 아무 일 없는 듯한 모습으로 나타나지만, 일행은 해골을 쓴 사냥꾼들로부터 공격을 받는다. 달아나던 밀라는 함정에 빠져 죽고, 나머지 젠, 대리우스, 애덤, 루이스는 그들에게 잡혀 어디론가 끌려간다. 존의 단체에 끌려간 젠과 대리우스, 애덤과 루이스는 그들의 법에 따라 재판을 받는다. 애덤은 새뮤얼 살인에 대한 형벌로 사형을, 젠과 대리우스, 루이스는 거짓 증언에 대해 보지도, 듣지도, 말하지도 못하는 형벌을 선고받는다. 한편 젠이 6주 동안 아무런 연락이 없자 스캇은 메인 카운티의 경찰서에 젠의 실종 신고를 접수하고 딸을 찾기 시작하는데...",
+			"poster_path": "/4U1SBHmwHkNA0eHZ2n1CuiC1K1g.jpg",
+			"backdrop_path": "/u5WUCO6irZoq27qbYYrtLUrCGDV.jpg",
+			"release_date": "2021-01-26",
+			"genre_id": [
+				27,
+				53
+			],
+			"director": "Mike P. Nelson",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Germany",
+			"runtime": 110
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 515454,
+		"fields": {
+			"title": "드림 스캐너",
+			"overview": "악몽과 불면증에 시달리던 '세라' 숙면에 대한 희망으로 대학 수면 임상시험에 참여하지만, 악몽 속 검은 그림자는 여전히 그녀를 괴롭힌다.  숙면을 미끼로 비밀리에 자신의 꿈을 스캔한다는 걸 알게 되지만 그녀 역시 꿈속 그림자를 밝혀내기 위해 실험은 계속된다.  꿈속 검은 그림자의 실체에 다가가게 되자 그림자는 꿈이 아닌 현실에 모습을 드러내기 시작한다. 과연 꿈속 그림자의 정체는 무엇인가?",
+			"poster_path": "/hGPGRRz6FTIRed1zestdWrV2Iwd.jpg",
+			"backdrop_path": "/yuxdzbQHEecWGOvaXeEYVtIyAfn.jpg",
+			"release_date": "2021-03-12",
+			"genre_id": [
+				878,
+				27
+			],
+			"director": "Anthony Scott Burns",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Canada",
+			"runtime": 105
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 649087,
+		"fields": {
+			"title": "레드 닷",
+			"overview": "아내의 임신 후 사이가 멀어지기 시작한 부부. 관계를 회복하기 위해 산속으로 둘만의 하이킹 여행을 떠난다. 하지만 그들의 텐트에 드리운 죽음의 그림자. 누군가 그들에게 총구를 겨눈다. 그들을 죽여야만 하는 정체불명의 누군가가.",
+			"poster_path": "/xZ2KER2gOHbuHP2GJoODuXDSZCb.jpg",
+			"backdrop_path": "/7KL4yJ4JsbtS1BNRilUApLvMnc5.jpg",
+			"release_date": "2021-02-11",
+			"genre_id": [
+				53,
+				18,
+				27
+			],
+			"director": "Alain Darborg",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "Sweden",
+			"runtime": 86
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 802504,
+		"fields": {
+			"title": "저스트 세이 예스",
+			"overview": "로맨스 없인 못 사는 로터. 완벽한 결혼식을 준비했건만 갑자기 파혼당한다. 게다가 SNS 없인 못 사는 동생이 로터의 상사와 약혼해 언니의 결혼식 계획을 냉큼 훔치기까지. 이제 로터의 목표는 새 동료와 손잡고 전 남친을 되찾는 것.",
+			"poster_path": "/rHfYTIPjSiameKP8zJCQscEJ5wo.jpg",
+			"backdrop_path": "/jw0849O7WLarbYKJkA9WpRLeGKG.jpg",
+			"release_date": "2021-04-02",
+			"genre_id": [
+				35,
+				10749
+			],
+			"director": "Aram van de Rest",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "Netherlands",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 651571,
+		"fields": {
+			"title": "브리치",
+			"overview": "지구 내의 파괴적인 역병을 피해 탈출한 성간 운행 방주는 새로운 위협 - 인류에게 남은 모든 것을 몰살시키려는 형체 변형 외계인 군대의 공격 - 으로부터 공격을 받게 된다.",
+			"poster_path": "/13B6onhL6FzSN2KaNeQeMML05pS.jpg",
+			"backdrop_path": "/nz8xWrTKZzA5A7FgxaM4kfAoO1W.jpg",
+			"release_date": "2020-12-17",
+			"genre_id": [
+				878,
+				28
+			],
+			"director": "John Suits",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Canada",
+			"runtime": 92
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 791910,
+		"fields": {
+			"title": "라이즈 오브 더 머미",
+			"overview": "",
+			"poster_path": "/tmghT8HaddVIS9hEXIOI9GuDchi.jpg",
+			"backdrop_path": "/y07caIA4yErsDOZ2IzfSDGzTz7B.jpg",
+			"release_date": "2021-04-03",
+			"genre_id": [
+				27,
+				878,
+				28,
+				9648,
+				53
+			],
+			"director": "Antonia Johnstone",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 90
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 20982,
+		"fields": {
+			"title": "나루토 질풍전 극장판 1기 - 나루토의 죽음",
+			"overview": "미래 예언과 마귀 봉인 능력을 지닌 원령나라의 무녀가 부활한 마귀의 표적으로 지목되자 나루토와 친구들은 무녀를 지키기 위해 길을 떠난다. 그러나 원령나라에 도착한 일행에게 무녀는 나루토의 죽음을 예언하고 이에 모두들 충격에 휩싸이는데...",
+			"poster_path": "/vaEX9f8ud7iF0G7EoyGxAyRNV1p.jpg",
+			"backdrop_path": "/y3XMIea7mwTzxt3NFFXi5YJKeFJ.jpg",
+			"release_date": "2007-08-04",
+			"genre_id": [
+				16,
+				28,
+				14
+			],
+			"director": "Hajime Kamegaki",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Japan",
+			"runtime": 94
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 812592,
+		"fields": {
+			"title": "Os Salafrários",
+			"overview": "",
+			"poster_path": "/oaxrs3OvIjJWK7ztuf6PQMCAB0P.jpg",
+			"backdrop_path": "/jIND6Q2Jc6Kfp4fLzgzf5an1C3s.jpg",
+			"release_date": "2021-04-28",
+			"genre_id": [
+				35,
+				80
+			],
+			"director": "Pedro Antônio",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "Brazil",
+			"runtime": 94
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 531219,
+		"fields": {
+			"title": "로알드 달의 마녀를 잡아라",
+			"overview": "사고로 부모를 잃은 한 소년이 할머니와 함께 작은 시골 마을에 살게 된다. 어느 날 소년은 할머니와 장을 보러 갔다가 마트에서 어린이를 싫어하는 사악한 마녀를 만나게 되고, 할머니는 마녀들의 눈을 피해 소년을 호화로운 해변 리조트로 피신 시킨다. 소년과 할머니가 리조트에 도착한 바로 그 날, 전 세계의 마녀들도 바로 그 리조트로 모이는데... 마녀를 본다면 그 자리에서 당장 도망쳐!",
+			"poster_path": "/zYVzWFobhJXLyrkjKRsmQaa1YyG.jpg",
+			"backdrop_path": "/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg",
+			"release_date": "2020-10-25",
+			"genre_id": [
+				10751,
+				14,
+				12,
+				35,
+				27
+			],
+			"director": "Robert Zemeckis",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Mexico",
+			"runtime": 106
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 520763,
+		"fields": {
+			"title": "콰이어트 플레이스 2",
+			"overview": "괴생명체에 의한 무차별적 공격으로 황폐해진 세상,  아이들 대신 죽음을 선택한 아빠의 희생 이후 살아남은 가족들은 위험에 노출된다. 극한 상황에 내몰린 엄마 '에블린'은 갓 태어난 막내를 포함 세 아이와의 생존을 위해 놈들에 맞서기 위한 반격을 준비하고 또 다른 생존자들을 찾아 길을 나서는데...  생존을 위한 사투는 계속된다!",
+			"poster_path": "/6DoKA0l2TaHvw9BbP6YbMuAnxV3.jpg",
+			"backdrop_path": "/z2UtGA1WggESspi6KOXeo66lvLx.jpg",
+			"release_date": "2021-05-21",
+			"genre_id": [
+				18,
+				878,
+				53
+			],
+			"director": "John Krasinski",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 299536,
+		"fields": {
+			"title": "어벤져스: 인피니티 워",
+			"overview": "타노스는 6개의 인피니티 스톤을 획득해 신으로 군림하려 한다. 그것은 곧 인류의 절반을 학살해 우주의 균형을 맞추겠다는 뜻. 타노스는 닥터 스트레인지가 소유한 타임 스톤, 비전의 이마에 박혀 있는 마인드 스톤을 차지하기 위해 지구를 침략한다. 아이언맨과 스파이더맨은 가디언즈 오브 갤럭시의 멤버들과 타노스를 상대한다. 지구에선 캡틴 아메리카, 완다, 블랙 위도우, 블랙 팬서 등이 비전을 지키기 위해 뭉친다.",
+			"poster_path": "/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg",
+			"backdrop_path": "/lmZFxXgJE3vgrciwuDib0N8CfQo.jpg",
+			"release_date": "2018-04-25",
+			"genre_id": [
+				12,
+				28,
+				878
+			],
+			"director": "Anthony Russo",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 149
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 573680,
+		"fields": {
+			"title": "The Banishing",
+			"overview": "",
+			"poster_path": "/xD9mc8JCVXA8T8u4Od7qOUBuGH4.jpg",
+			"backdrop_path": "/xrAaJAn3hqkInq5kE1AGJqIGXyT.jpg",
+			"release_date": "2021-04-29",
+			"genre_id": [
+				27
+			],
+			"director": "Christopher Smith",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United Kingdom",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 556867,
+		"fields": {
+			"title": "브레이킹 뉴스 인 유바 카운티",
+			"overview": "착한 중년 주부 수는 가정과 직장 어디에서도 관심을 받지 못한다. 남편 칼과 여동생 낸시 역시 수의 생일조차 기억하지 못한다. 범죄 조직원 미나와 레이는 리타의 가게에서 일하는 칼의 동생 피티를 통해 칼의 직장을 알아낸다. 은행 직원 칼을 찾아간 미나는 아버지의 범죄 자금 3백만 달러를 세탁하라고 협박한다. 도망갈 결심을 한 칼은 3백만 달러를 가지고 내연녀 리아가 기다리는 모텔로 향한다. 저녁 식사를 함께 하기 위해 칼을 찾았던 수는  칼이 리아와 바람피우는 장면을 목격하고 그것을 들킨 칼은 심장마비로 사망한다. 수는 '글로리아 마이클 쇼'에서 13살 소녀 엠마를 찾는 부모가 사람들에게 관심, 애정 그리고 격려를 받는다는 사실을 알게 된다. 수는 칼의 시신과 짐을 모텔 놀이터에 매장한 뒤 집으로 돌아온다. 그리고 수는 글로리아 쇼에서 엠마를 찾을 때까지 다른 사연을 소개하지 않겠다는 말에 집안 집기들을 부순다. 그때 도착한 여동생 낸시에게 수는 칼이 납치된 것 같은데 경찰이 도와주지 않는다고 말한다. 낸시가 일하는 방송국을 통해 칼의 납치 사건이 보도된 뒤, 형사 해리스와 존스가 수의 집을 찾는다. 한편 사라진 칼과 돈을 찾기 위해 은행을 찾은 미나는 스티브를 칼의 사무실에서 죽인다. 수는 글로리아를 찾아가 칼이 납치된 이유가 엠마를 누가 납치했는지 알았기 때문이라고 거짓말한다. 결국 글로리아 마이클 쇼에 출연한 수는 많은 사람들의 관심을 받게 된다. 며칠 뒤 미나와 레이가 수를 찾아와 칼이 어디 있는지 말하라고 수를 협박하는데...",
+			"poster_path": "/pMyCYtgfBmMisX3RFc5eH6zIV5Y.jpg",
+			"backdrop_path": "/k99D5W4qtLK0nuPQSSzCG9FimcD.jpg",
+			"release_date": "2021-05-20",
+			"genre_id": [
+				35,
+				18,
+				80,
+				53
+			],
+			"director": "Tate Taylor",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 96
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 613504,
+		"fields": {
+			"title": "애프터: 그 후",
+			"overview": "\"너만의 테사는 더 이상 없어!\"  첫사랑 하딘이 자신과의 연애를 내기에 걸었다는 비밀을 알게 된 '테사'  둘은 헤어지지만 서로의 살결과 숨결을 끊지 못하며 아슬아슬한 썸을 이어간다. 이후 대학 졸업을 앞둔 취준생 테사는 대형 출판사의 인턴십에 합격하고  거친 하딘과는 180도 다른 젠틀한 직장 남사친 '트레버'를 만나게 된다. \"테사의 두 번째 남자를 만났다\" 런던으로 떠나기 전에 테사를 향한 진심을 전하고 싶었던 '하딘' 테사의 용서를 기다리며 과거의 잘못을 하나씩 고쳐나간다.  워크숍 파티에서 취한 테사의 연락에 하딘은 기대 반, 걱정 반 마음으로 결국 테사의 호텔 룸에 찾아가고, 샤워실에서 그녀석 '트레버'와 마주치는데…",
+			"poster_path": "/d45gDeSa3eDpYo2Aj6AJ7SeHx0t.jpg",
+			"backdrop_path": "/6hgItrYQEG33y0I7yP2SRl2ei4w.jpg",
+			"release_date": "2020-09-02",
+			"genre_id": [
+				10749,
+				18
+			],
+			"director": "Roger Kumble",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 105
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 736604,
+		"fields": {
+			"title": "The Boy from Medellín",
+			"overview": "",
+			"poster_path": "/ffJX00pcQDGvzhz6RSngeYuSb6U.jpg",
+			"backdrop_path": "/xOukYlFEuiY9FZXd5kjWiigjBJA.jpg",
+			"release_date": "2020-09-11",
+			"genre_id": [
+				99,
+				10402
+			],
+			"director": "Matthew Heineman",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 95
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 579051,
+		"fields": {
+			"title": "실크 로드",
+			"overview": "개인이 마약을 하든 뭘 하든 국가의 통제는 억압이라 생각하는 상위 1% 비합법적 천재 ‘로스’. 뛰어난 두뇌와 치밀한 계획으로 비트코인을 이용해 흔적 없이 마약 쿨거래가 가능한 다크 웹사이트 ‘실크로드’를 만든다. ‘실크로드’로 돈맛을 알고 세상을 향한 X를 날렸다고 생각한 바로 그 순간, 정체불명 누군가가 말을 걸어오는데…",
+			"poster_path": "/sDF28VJ1obkxZ2UPm9BYvGdf5vS.jpg",
+			"backdrop_path": "/sLK03Ed0D8EOoqLFBjrOcYSz8Tm.jpg",
+			"release_date": "2021-02-19",
+			"genre_id": [
+				80,
+				53,
+				18
+			],
+			"director": "Tiller Russell",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 116
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 283566,
+		"fields": {
+			"title": "신 에반게리온 극장판 :||",
+			"overview": "",
+			"poster_path": "/8UoKkpLVnl2LrK0GG1z9JuKCart.jpg",
+			"backdrop_path": "/las0P4Dua54XrZ73VQmGUaH1z0U.jpg",
+			"release_date": "2021-03-08",
+			"genre_id": [
+				16,
+				28,
+				18,
+				878
+			],
+			"director": "Mahiro Maeda",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Japan",
+			"runtime": 155
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 553604,
+		"fields": {
+			"title": "어니스트 씨프",
+			"overview": "희대의 폭파 전문 은행털이범 ‘톰’. 어떠한 증거도 남기지 않는 뛰어난 범행으로 8년간 FBI의 추적을 따돌린 그는 새로운 인생을 시작하기 위해 자수를 결심한다.  그러나 돈을 노리는 부패한 FBI의 음모와 가공할 위협이 그를 기다리고 있는데…",
+			"poster_path": "/bFZEYiLYIKklMDBEDdqC1CqdJU0.jpg",
+			"backdrop_path": "/2M2JxEv3HSpjnZWjY9NOdGgfUd.jpg",
+			"release_date": "2020-09-03",
+			"genre_id": [
+				53,
+				28,
+				80,
+				18
+			],
+			"director": "Mark Williams",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Thailand",
+			"runtime": 99
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 545609,
+		"fields": {
+			"title": "익스트랙션",
+			"overview": "세계에서 가장 위험한 도시로 납치된 의뢰인의 아들을 구하기 위해  전직 특수부대 출신 용병이 거대 범죄 조직에 맞서 벌이는 리얼 액션 구출극.",
+			"poster_path": "/rCcL0gv0frDkGLktAbmaAsz7TX6.jpg",
+			"backdrop_path": "/1R6cvRtZgsYCkh8UFuWFN33xBP4.jpg",
+			"release_date": "2020-04-24",
+			"genre_id": [
+				18,
+				28,
+				53
+			],
+			"director": "Sam Hargrave",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 116
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 606523,
+		"fields": {
+			"title": "낙원의 밤",
+			"overview": "범죄조직의 에이스 태구는 사랑하는 누나와 조카를 의문의 교통사고로 한순간에 잃는다. 참혹한 비극의 배후에 상대 조직이 있음을 직감한 태구는 모든 것을 걸고 복수를 실행한다. 거사를 마친 태구는 몸을 숨긴 제주도에서 불법 무기상 삼촌과 단둘이 사는, 죽음의 그림자를 간직한 재연을 만나는데...",
+			"poster_path": "/mWZ2aujwBdFEONvRQv05zPBGy7J.jpg",
+			"backdrop_path": "/dEh93Ni98JWh7fmhD56ZlOFQmoT.jpg",
+			"release_date": "2020-09-03",
+			"genre_id": [
+				80,
+				18,
+				53
+			],
+			"director": "Park Hoon-jung",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "South Korea",
+			"runtime": 131
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 666750,
+		"fields": {
+			"title": "드래곤하트: 벤전스",
+			"overview": "루카스는 4명의 악랄한 패거리가 부모를 잔인하게 살해하고 집을 불태우는 걸 목격한다. 숨어서 목숨을 건진 루카스는 라즈반 왕을 찾아가 부모를 죽인 범죄자들을 잡아 달라고 신고하지만 왕은 아무 말 없이 루카스를 무시한다. 루카스는 부모의 복수를 위해 소 두 마리를 판 돈을 가지고 용병을 구하기 위해 맥주홀로 간다. 그곳에서 다리우스가 루카스의 용병이 되겠다고 다가오지만, 루카스의 돈을 탐낸 다른 용병들과의 싸움이 발생한다. 싸움을 진압하기 위해 나타난 왕실 근위대를 피해 달아난 루카스는 용병을 구하지 못하고 돈을 잃고 만다.  모든 것을 잃은 루카스는 복수를 위해 마지막으로 소원을 이루어준다는 용을 찾아 나선다. 용 시벳은 처음에는 복수를 도와줄 수 없다고 거절하지만, 말로 변신하여 루카스를 도와준다. 그리고 맥주홀에서 만난 다리우스가 나타나 루카스와 함께 동행하며 살인자들을 찾아 나서는데...",
+			"poster_path": "/qs6gz6atyQcAvqC6qZaslOjliUG.jpg",
+			"backdrop_path": "/6mKAKhj8POVGqV1GsroS5mGIUe9.jpg",
+			"release_date": "2020-02-04",
+			"genre_id": [
+				14,
+				28,
+				12
+			],
+			"director": "Ivan Silvestrini",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 338762,
+		"fields": {
+			"title": "블러드샷",
+			"overview": "아내와 함께 휴가를 보내던 특수 부대원 ‘레이’(빈 디젤)는 정체불명의 적에게 납치되어 살해당한다. 혈액 속에 수많은 나노봇을 주입하는 최첨단 프로젝트 블러드샷을 통해 부활한 레이. 놀라운 치유력과 가공할 만한 파워의 슈퍼 히어로로 업그레이드된 레이는 아내를 죽인 놈을 찾아 무차별적인 복수의 질주를 시작한다. 하지만, 자신이 진짜라고 생각했던 것들이 거짓임을 깨닫게 되는데… 복수의 시작, 액션의 끝! 2020년 액션 블록버스터의 최종 진화를 확인하라!",
+			"poster_path": "/5S45aZzCo6rIeE8zLsffi5lCYz6.jpg",
+			"backdrop_path": "/zlqMASc3vEtdym2OvXgE7fC6onT.jpg",
+			"release_date": "2020-03-05",
+			"genre_id": [
+				28,
+				878
+			],
+			"director": "Dave Wilson",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "China",
+			"runtime": 110
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 794960,
+		"fields": {
+			"title": "Blood Moon",
+			"overview": "",
+			"poster_path": "/9umVH1R5Z2I1Fqzg7qwMIR2gpKG.jpg",
+			"backdrop_path": "/2F6zpkkMianLO9JRRvnujpW4bzp.jpg",
+			"release_date": "2021-03-26",
+			"genre_id": [
+				14,
+				27,
+				10770
+			],
+			"director": "Emma Tammi",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 82
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 667388,
+		"fields": {
+			"title": "Ruega por nosotros",
+			"overview": "",
+			"poster_path": "/qmIE6PwIA9a5fkB1mn9hdtpOUa5.jpg",
+			"backdrop_path": null,
+			"release_date": "2019-12-17",
+			"genre_id": [],
+			"director": "Andrés Madrigal Alvarado",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "",
+			"runtime": 16
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 400160,
+		"fields": {
+			"title": "스폰지밥 무비: 핑핑이 구출 대작전",
+			"overview": "우리 핑핑이가 어디로 갔을까? 설마, 납치당한 건가? 사랑하는 반려 달팽이를 찾아 떠나는 스폰지밥. 뚱이도 함께 가야지. 비키니 시티를 벗어나 미지의 세계로, 출발이다!",
+			"poster_path": "/j8MRnCjuN7kpM8w3B5hM5mrvTaE.jpg",
+			"backdrop_path": "/wu1uilmhM4TdluKi2ytfz8gidHf.jpg",
+			"release_date": "2020-08-14",
+			"genre_id": [
+				16,
+				14,
+				12,
+				35,
+				10751
+			],
+			"director": "Tim Hill",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "South Korea",
+			"runtime": 95
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 825597,
+		"fields": {
+			"title": "Maggie Simpson in The Force Awakens from Its Nap",
+			"overview": "",
+			"poster_path": "/2xnf2ZaGXudvgBKPtVXMkNeooh1.jpg",
+			"backdrop_path": "/sPeqIdCYvcmeZe5fCu7JgMnf1HL.jpg",
+			"release_date": "2021-05-04",
+			"genre_id": [
+				16,
+				35,
+				878
+			],
+			"director": "David Silverman",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 3
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 577922,
+		"fields": {
+			"title": "테넷",
+			"overview": "주도자는 미국의 한 요원으로 우크라이나 국립 오페라 극장의 한 사건에 투입되었다가 우크라이나 요원들에게 붙잡히게 되고 고문을 받지만 CIA가 준 자살 약을 먹고 자살을 택하게 된다. 그러나 이내 다시 눈을 뜬 주인공은 의문의 한 남자로부터 임무를 부여받는다. 그가 주도자에게 줄 수 있는 건 하나의 제스처와 하나의 단어 뿐. 시간의 흐름을 뒤집는 인버전을 통해 현재와 미래를 오가며 세상을 파괴하려는 사토르를 막기 위해 투입된 작전의 주도자는 인버전에 대한 정보를 가진 닐과 미술품 감정사이자 사토르에 대한 복수심이 가득한 그의 아내 캣과 협력해 미래의 공격에 맞서 제3차 세계대전을 막아야 한다.",
+			"poster_path": "/4ISu3R5OQQ39aWCzWWYrB9reSQD.jpg",
+			"backdrop_path": "/wzJRB4MKi3yK138bJyuL9nx47y6.jpg",
+			"release_date": "2020-08-22",
+			"genre_id": [
+				28,
+				53,
+				878
+			],
+			"director": "Christopher Nolan",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United Kingdom",
+			"runtime": 150
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 602734,
+		"fields": {
+			"title": "스파이럴",
+			"overview": "경찰서로 배달된 의문의 소포. 그리고 시작된 경찰 연쇄살인. 또 다른 살인이 시작되기 전 단서를 찾고 사건을 해결하라!",
+			"poster_path": "/uwfXUJuog7hRfiDrWrNC9SQJxGI.jpg",
+			"backdrop_path": "/7JENyUT8ABxcvrcijDBVpdjgCY9.jpg",
+			"release_date": "2021-05-12",
+			"genre_id": [
+				53,
+				27,
+				9648
+			],
+			"director": "Darren Lynn Bousman",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 93
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 385128,
+		"fields": {
+			"title": "분노의 질주: 더 얼티메이트",
+			"overview": "도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해 전 세계를 위기로 빠트릴 위험천만한 계획을 세운다는 사실을 알게 되고, 이를 막기 위해 다시 한번 패밀리들을 소환한다. 가장 가까운 자가 한순간, 가장 위험한 적이 된 상황 도미닉과 패밀리들은 이에 반격할 놀라운 컴백과 작전을 세우고 지상도, 상공도, 국경도 경계가 없는 불가능한 대결이 시작되는데...",
+			"poster_path": "/szGpS43AM11mGzTdxFQ5wOis3EH.jpg",
+			"backdrop_path": "/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg",
+			"release_date": "2021-05-19",
+			"genre_id": [
+				28,
+				53,
+				80
+			],
+			"director": "Justin Lin",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 145
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 609242,
+		"fields": {
+			"title": "세기의 도둑",
+			"overview": "페르난도는 부에노스 아이레스 북쪽 부촌 아카수소의 은행을 털기로 작정한다. 왕년의 절도범 루이스는 페르난도의 계획에 시큰둥하지만 그의 치밀한 계획에 사로잡혀 인생을 건 마지막 은행강도에 동참한다. 다섯명의 무장강도단은 은행을 습격하고, 곧 경찰 특수부대와 인질협상가가 뛰어들지만 진압은 쉽지가 않다. 그리고 마침내 경찰이 은행에 진입한 순간, 그들을 기다리고 있던 것은 또 다른 반전이었다.",
+			"poster_path": "/acQ5lwnQGwre8n3m8JzTTcNKc5h.jpg",
+			"backdrop_path": "/1umKVgbjFG5Cho5ZKTpcvRFJjuJ.jpg",
+			"release_date": "2020-01-16",
+			"genre_id": [
+				35,
+				53,
+				80
+			],
+			"director": "Ariel Winograd",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Argentina",
+			"runtime": 114
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 484718,
+		"fields": {
+			"title": "커밍 2 아메리카",
+			"overview": "아킴과 세미가 돌아왔다! 풍요로운 자문다 왕국의 왕위에 오른 아킴 왕(에디 머피)과 충직한 심복 세미 (아세니오 홀)는 아프리카의 위대한 조국을 떠나 세계를 가로질러 모든 게 시작되었던 뉴욕의 퀸스를 향해 포복절도할 새로운 모험을 떠난다.",
+			"poster_path": "/nWBPLkqNApY5pgrJFMiI9joSI30.jpg",
+			"backdrop_path": "/vKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg",
+			"release_date": "2021-03-05",
+			"genre_id": [
+				35
+			],
+			"director": "Craig Brewer",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 110
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 512200,
+		"fields": {
+			"title": "쥬만지: 넥스트 레벨",
+			"overview": "쥬만지 게임으로부터 가까스로 탈출해 평화로운 일상을 보내고 있었던 스펜서와 친구들. 어느 날, 스펜서는 망가져버린 쥬만지 게임 속으로 사라지고 그를 찾기 위해 친구들은 다시 위험천만한 게임 속으로 들어간다. 우연히 함께 빨려 들어간 스펜서의 할아버지 에디&마일로와 랜덤으로 선택된 새로운 아바타가 된 이들은 정글부터 설산, 사막까지 한층 진화된 예측 불가능한 게임 속에서 목숨을 건 미션을 수행하게 되는데...",
+			"poster_path": "/n7KDDIWOY5IZrGlkeizuFMZfJFl.jpg",
+			"backdrop_path": "/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg",
+			"release_date": "2019-12-04",
+			"genre_id": [
+				12,
+				35,
+				14
+			],
+			"director": "Jake Kasdan",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 123
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 607383,
+		"fields": {
+			"title": "아쿠아슬래시",
+			"overview": "뜨거운 태양이 내리는 한 여름, 밸리 힐 고등학교 학생들이 졸업파티를 위해 워터파크에 도착한다 . 80년대 스타일로 신나는 음악과 춤, 캠프 파이어와 함께 광란의 파티를 즐기는 그들. 다음 날, 상금이 걸린 워터 슬라이드 대회가 열리고 신나게 물놀이를 즐기던 중, 누군가 슬라이드에 거대한 칼을 꽂아놓은 충격적인 사실이 드러나며 워터파크는 공포의 피바다가 된다.",
+			"poster_path": "/einwZHGGZ3DIbrLg2eehaTsvBBY.jpg",
+			"backdrop_path": "/eqVgQwv8HfDN2tv4XWhqW5GryV4.jpg",
+			"release_date": "2019-07-29",
+			"genre_id": [
+				27,
+				35
+			],
+			"director": "Renaud Gauthier",
+			"netflix": false,
+			"watcha": false,
+			"wavve": true,
+			"country": "Canada",
+			"runtime": 72
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 337404,
+		"fields": {
+			"title": "크루엘라",
+			"overview": "재능은 있지만 밑바닥 인생을 살던 에스텔라는 재스퍼와 호레이스를 운명처럼 만나 뛰어난 패션 감각을 이용해 완벽한 변장과 빠른 손놀림으로 런던 거리를 싹쓸이한다. 도둑질이 지겹게 느껴질 때쯤, 런던 패션계를 꽉 쥐고 있는 남작 부인을 만나 충격적 사건을 겪게 되면서 런던 패션계를 발칵 뒤집을 파격 아이콘 크루엘라로 새롭게 태어나게 되는데...",
+			"poster_path": "/rJkDiGzHgFNBf8LUHX8IOL0IiVh.jpg",
+			"backdrop_path": "/8ChCpCYxh9YXusmHwcE9YzP0TSG.jpg",
+			"release_date": "2021-05-26",
+			"genre_id": [
+				35,
+				80
+			],
+			"director": "Craig Gillespie",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 134
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 582306,
+		"fields": {
+			"title": "어쌔신 33 A.D.",
+			"overview": "한 억만 장자가 젊은 과학자그룹에게 물질 전달의 과학을 연구 할 수있는 무제한의 재원을 제공하여 결국 과학자들은 시간 여행의 비밀을 밝혀낸다. 하지만 프로젝트가 극단주의자들의  배경이 된다는 것을 깨닫고 억만 장자는 시간을 거슬러 올라가 예수가 죽음에서 살아 나지 않았음을 증명하려고 하는데...",
+			"poster_path": "/8jDvtdH327I8TgX3UPdkAsZF1dA.jpg",
+			"backdrop_path": "/5VKquU8PNujrxLmsYGHf2TCRNFQ.jpg",
+			"release_date": "2020-01-24",
+			"genre_id": [
+				878,
+				28,
+				12,
+				9648,
+				36,
+				14
+			],
+			"director": "Jim Carroll",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 108
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 631939,
+		"fields": {
+			"title": "리전에어스 트레일",
+			"overview": "",
+			"poster_path": "/6ssoBXQOxNhrsGJoM6Tcvm57V79.jpg",
+			"backdrop_path": "/9NlswPRK5Kap6KVr59Feah9EBLP.jpg",
+			"release_date": "2020-05-08",
+			"genre_id": [
+				36,
+				28,
+				12
+			],
+			"director": "Jose Magan",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Spain",
+			"runtime": 96
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 299534,
+		"fields": {
+			"title": "어벤져스: 엔드게임",
+			"overview": "어벤져스의 패배 이후 지구는 초토화됐고 남은 절반의 사람들은 정신적 고통을 호소하며 하루하루를 근근이 버텨나간다. 와칸다에서 싸우다 생존한 히어로들과 우주의 타이탄 행성에서 싸우다 생존한 히어로들이 뿔뿔이 흩어졌는데, 아이언맨과 네뷸라는 우주를 떠돌고 있고 지구에 남아 있는 어벤져스 멤버들은 닉 퓨리가 마지막에 신호를 보내다 만 송신기만 들여다보며 혹시 모를 우주의 응답을 기다리는 중이다. 애초 히어로의 삶을 잠시 내려놓고 가족과 시간을 보내던 호크아이 역시 헤아릴 수 없는 마음의 상처를 입은 채 사라지고 마는데...",
+			"poster_path": "/n78LK2t1uQP68Ud0VXHRe0HmKOp.jpg",
+			"backdrop_path": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+			"release_date": "2019-04-24",
+			"genre_id": [
+				12,
+				878,
+				28
+			],
+			"director": "Anthony Russo",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 181
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 531499,
+		"fields": {
+			"title": "택스 콜렉터",
+			"overview": "LA 지역 갱들을 관리하며 상납금을 수금하는 최고의 파트너 ‘크리퍼’와 ‘데이비드’. 세상 무서울 것 없는 이들 앞에 조직을 통째로 삼키려는 무법자 ‘코네호’가 나타난다. 지독하고 거칠게 살아남은 두 사람은 조직과 모든 것을 지키기 위해 무자비한 피의 전쟁을 시작하는데…",
+			"poster_path": "/yhhJPePGHGtJ6LBVKCyfJg5EBnA.jpg",
+			"backdrop_path": "/zogWnCSztU8xvabaepQnAwsOtOt.jpg",
+			"release_date": "2020-08-07",
+			"genre_id": [
+				28,
+				80,
+				18
+			],
+			"director": "David Ayer",
+			"netflix": false,
+			"watcha": true,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 95
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 797394,
+		"fields": {
+			"title": "마법 관리국과 비밀 요원들",
+			"overview": "동화 속의 헨젤과 그레텔은 잊어라. 이제는 특수 요원 헨젤과 그레텔! 사라진 왕을 찾으려면 무엇이 필요할까? 진정한 마법과 영리한 두뇌, 무엇보다 믿음직한 파트너지!",
+			"poster_path": "/14FU3Ah6lDrIPLvP2bvyDODuWXn.jpg",
+			"backdrop_path": "/9Is9OrQUnKczCfsLSbsbx8YSmES.jpg",
+			"release_date": "2021-03-18",
+			"genre_id": [
+				16,
+				35,
+				14
+			],
+			"director": "Alexey Tsitsilin",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "Russia",
+			"runtime": 104
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 489932,
+		"fields": {
+			"title": "몬스터",
+			"overview": "강도에 이은 살인 사건에 연루될 줄은 상상도 못 했다. 재능 있고 성실한 고등학생이 억울한 누명을 쓴다. 자신의 결백과 진실을 주장하는 소년. 하지만 법정은 이미 그에 대한 심판을 끝냈다.",
+			"poster_path": "/jds6n8dUaixg0diKYlCta5nS6BV.jpg",
+			"backdrop_path": "/EBfcY3sguZcAWVZdGkwIIr1RjB.jpg",
+			"release_date": "2018-01-22",
+			"genre_id": [
+				80,
+				18
+			],
+			"director": "Anthony Mandler",
+			"netflix": true,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 98
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 400155,
+		"fields": {
+			"title": "몬스터 호텔 3",
+			"overview": "평생 몬스터 호텔을 지키며  단 하루도 쉴 틈이 없었던 몬스터 호텔 주인 드라큘라 ‘드락’.  아빠의 생애 첫 휴가를 위해 딸 ‘마비스’는 일생일대 크루즈 가족 여행을 계획하고,  여름을 맞이한 몬스터 호텔 가족들은 인간 세상으로 생애 첫 바캉스를 떠난다.  시작부터 좌충우돌인 바캉스에서 ‘드락’은 미모의 크루즈 선장 ‘에리카’에게 첫눈에 반하고,  급기야 그녀의 무시무시한 비밀이 밝혀지면서 완벽했던 몬스터 호텔 가족들의 휴가는 오싹한 악몽으로 뒤바뀌는데! 그래서 진짜 휴가는 언제 가는 거죠?",
+			"poster_path": "/2fwjJmtkgn1G1aHEWlfBFSfyCPG.jpg",
+			"backdrop_path": "/m03jul0YdVEOFXEQVUv6pOVQYGL.jpg",
+			"release_date": "2018-06-28",
+			"genre_id": [
+				10751,
+				14,
+				35,
+				16
+			],
+			"director": "Genndy Tartakovsky",
+			"netflix": false,
+			"watcha": true,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 97
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 429617,
+		"fields": {
+			"title": "스파이더맨: 파 프롬 홈",
+			"overview": "어벤져스 멤버들과 타노스와의 대접전을 마친 뒤, 지난 5년 동안 사라졌던 사람들이 동시에 돌아왔다. 아이언맨이 떠난 채 한동안 지구를 구할 히어로가 공석인 상황을 수습할 히어로는 현재 스파이더맨 피터 파커뿐이다. 친구들과의 유럽 현장학습 도중 닉 퓨리의 부름을 받게 된 피터는 미스테리오라는 정체 모를 히어로와 힘을 합쳐 엘리멘탈이라는 괴생명체를 무찔러야 하는 상황에 처한다. 그런데 피터는 지구를 구하는 일보다 MJ에게 멋지게 고백할 계획이 우선인데...",
+			"poster_path": "/742vR63T1AcXzYwHypQpzZd89vh.jpg",
+			"backdrop_path": "/8XiTPU1zfy41Xgg96TCHXj4uQJf.jpg",
+			"release_date": "2019-06-28",
+			"genre_id": [
+				28,
+				12,
+				878
+			],
+			"director": "Jon Watts",
+			"netflix": true,
+			"watcha": true,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 129
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 520946,
+		"fields": {
+			"title": "100% 울프: 푸들이 될 순 없어",
+			"overview": "유서 깊은 늑대인간 가문의 후계자 프레디는 자랑스러운 아버지의 뒤를 이어 위기에 빠진 인간들을 구하는 임무를 수행할 날만을 손꼽아 기다리고 있다. 드디어 꿈에 그리던 변신의 순간! 늑대가 아니라 귀여운 푸들이 되어 버린 프레디. 프레디는 자신이 순도 100% 늑대인간이라는 것을 증명하기 위해 가문의 비밀이 담겨 있는 보물 문스톤을 찾아나서는데…!",
+			"poster_path": "/8S4kyQTZfQ6lMCC4HrxlyfIsI0q.jpg",
+			"backdrop_path": "/7TxeZVg2evMG42p0uSbMJpWNQ8A.jpg",
+			"release_date": "2020-06-26",
+			"genre_id": [
+				10751,
+				16,
+				14
+			],
+			"director": "Alexs Stadermann",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "Australia",
+			"runtime": 96
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 333339,
+		"fields": {
+			"title": "레디 플레이어 원",
+			"overview": "2045년, 암울한 현실과 달리 가상현실 오아시스에서는 누구든 원하는 캐릭터로 상상하는 모든 걸 할 수 있다. 웨이드 와츠의 유일한 낙은 오아시스에 접속하는 것. 어느 날 오아시스의 창시자인 괴짜 천재 제임스 할리데이는 자신이 가상현실 속에 숨겨둔 3개의 미션에서 우승하는 사람에게 오아시스의 소유권과 막대한 유산을 상속한다는 유언을 남기고, 그가 사랑했던 80년대 대중문화 속에 힌트가 있음을 알린다. 와츠가 첫 번째 수수께끼를 푸는 데 성공하자 이를 저지하기 위해 현실에서 살인도 마다하지 않는 IOI라는 거대 기업이 뛰어드는데...",
+			"poster_path": "/lr3cE3j39N1UmqKk7GucK5mZIEE.jpg",
+			"backdrop_path": "/q7fXcrDPJcf6t3rzutaNwTzuKP1.jpg",
+			"release_date": "2018-03-28",
+			"genre_id": [
+				878,
+				12,
+				28
+			],
+			"director": "Steven Spielberg",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 140
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 458156,
+		"fields": {
+			"title": "존 윅 3: 파라벨룸",
+			"overview": "사랑하는 아내와 반려견이 죽은 후 복수를 위해 돌아온 전설의 킬러, 존 윅은 성역 콘티넨탈 호텔에서는 살인하면 안 된다는 룰을 깨면서 전세계 킬러들의 표적이 된다. 전편에서 존 윅이 국제암살자연맹에서 파문당한 직후 1시간 동안 도망갈 시간을 내어 준 윈스턴은 최고회의로부터 그를 도왔다는 이유로 자리에서 물러날 것을 요구받는다. 현상금이 1400만달러로 불어난 존 윅은 옛 동료이자 현재 카사블랑카 콘티넨탈 호텔의 지점장인 소피아에게 도움을 청한다.",
+			"poster_path": "/ghx93NNkUHStNFIoXRoCMbfsxHv.jpg",
+			"backdrop_path": "/vVpEOvdxVBP2aV166j5Xlvb5Cdc.jpg",
+			"release_date": "2019-05-15",
+			"genre_id": [
+				28,
+				53,
+				80
+			],
+			"director": "Chad Stahelski",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 130
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 786300,
+		"fields": {
+			"title": "Tentacles",
+			"overview": "",
+			"poster_path": "/kBKKXVbVwIP81u8Bnhguux48Sdn.jpg",
+			"backdrop_path": "/iID0at69rWzZOIarUIFrfDOFJA.jpg",
+			"release_date": "2021-02-12",
+			"genre_id": [
+				27,
+				14,
+				18,
+				10770
+			],
+			"director": "Clara Aranovich",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 84
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 808023,
+		"fields": {
+			"title": "더 버츄오소",
+			"overview": "",
+			"poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
+			"backdrop_path": "/3Ef8PWUiP1ehO1ESEroxb736srR.jpg",
+			"release_date": "2021-04-30",
+			"genre_id": [
+				53,
+				28,
+				80
+			],
+			"director": "Nick Stagliano",
+			"netflix": false,
+			"watcha": false,
+			"wavve": false,
+			"country": "United States of America",
+			"runtime": 105
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 337401,
+		"fields": {
+			"title": "뮬란",
+			"overview": "무예에 남다른 재능을 지닌 뮬란은 좋은 집안과 인연을 맺어 가문을 빛내길 바라는 부모님의 뜻에 따라 본연의 모습을 억누르고 성장한다. 어느 날, 북쪽 오랑캐들이 침입하자 황제는 징집령을 내리고 뮬란은 아픈 아버지를 대신해 가족들 몰래 전장에 나가기로 결심한다. 여자라는 게 발각되면 목숨을 잃을 수도 있는 상황 속에서 뮬란은 타고난 용기와 지혜로 역경을 이겨내며 전사로 성장한다. 마침내 잔인무도한 적장 보리 칸과 마녀 시아니앙을 마주하게 된 뮬란. 그녀는 위험에 빠진 동료와 가족을 구하고 진정한 전사로 거듭날 수 있을 것인가?",
+			"poster_path": "/mQbxBKeRuAofS5p2w4mK7DqtS97.jpg",
+			"backdrop_path": "/zMrk2G3XsnfYKiIp1NEfdtvDyBH.jpg",
+			"release_date": "2020-09-04",
+			"genre_id": [
+				12,
+				14
+			],
+			"director": "Niki Caro",
+			"netflix": false,
+			"watcha": true,
+			"wavve": false,
+			"country": "China",
+			"runtime": 115
+		}
+	}
+]
