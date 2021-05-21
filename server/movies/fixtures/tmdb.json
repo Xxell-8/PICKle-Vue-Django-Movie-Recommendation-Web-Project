@@ -131,8 +131,7 @@
 		"fields": {
 			"name": "서부"
 		}
-	}
-][
+	},
 	{
 		"model": "movies.movie",
 		"pk": 567189,
