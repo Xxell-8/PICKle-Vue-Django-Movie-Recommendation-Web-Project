@@ -1,6 +1,5 @@
 from django.db import models
 from django.conf import settings
-from django.core.validators import MinValueValidator
 
 
 class Genre(models.Model):
@@ -17,11 +16,11 @@ class Movie(models.Model):
     title = models.CharField(max_length=50)
     overview = models.TextField()
     poster_path = models.CharField(max_length=500)
-    backdrop_path = models.CharField(max_length=500)
+    backdrop_path = models.CharField(max_length=500, null=True)
     release_date = models.DateField()
     # 0보다 작은 정수값 허용 x 
     director = models.CharField(max_length=50)
-    runtime = models.IntegerField(validators=[MinValueValidator(0)])
+    runtime = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     netflix = models.BooleanField()
     watcha = models.BooleanField()
