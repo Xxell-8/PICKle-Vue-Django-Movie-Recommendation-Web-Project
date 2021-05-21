@@ -13,7 +13,7 @@ for genre in genre_json['genres']:
     genre_data = {}
     genre_data['model'] = 'movies.genre'
     genre_data['pk'] = genre.get('id')
-    genre_data['fileds'] = {
+    genre_data['fields'] = {
         'name': genre.get('name')
     }
     genres.append(genre_data)
