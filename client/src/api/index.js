@@ -12,6 +12,9 @@ export default {
   signup(userData) {
     return axios.post(`${SERVER_URL}/accounts/signup/`, userData)
   },
+  getMovies() {
+    return axios.get(`${SERVER_URL}/movies/`)
+  },
   getVideo(movieTitle) {
     return axios({
       url: YOUTUBE_API_URL,

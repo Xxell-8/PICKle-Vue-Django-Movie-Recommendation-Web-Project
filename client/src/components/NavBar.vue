@@ -2,26 +2,23 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
       <router-link class="navbar-brand fw-bold" :to="{ name: 'Home' }">PICKle</router-link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <span v-if="isLogin">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link class="nav-link btn btn-link" :to="{ name: 'Recommendation' }">Recommend</router-link>
+              <router-link class="nav-link" :to="{ name: 'Recommendation' }">Recommend</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link btn btn-link" :to="{ name: 'PickyPick' }">Picky Pick</router-link>
+              <router-link class="nav-link" :to="{ name: 'PickyPick' }">Picky Pick</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link btn btn-link" :to="{ name: 'Search' }">검색</router-link>
+              <router-link class="nav-link" :to="{ name: 'Search' }">검색</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link btn btn-link" @click.native="logout" to="#">로그아웃</router-link>
+              <router-link class="nav-link" @click.native="logout" to="#">로그아웃</router-link>
             </li>
+            <span class="navbar-text text-white">Hello, {{ decodeToken.username }}!</span>
           </ul>
-          <span class="nav-link text-white ms-auto">{{ decodeToken.username }}님 환영합니다!</span>
         </span>
         <span v-else>
           <ul class="navbar-nav">
