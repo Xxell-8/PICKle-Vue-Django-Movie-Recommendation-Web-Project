@@ -13,8 +13,9 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 class CurationListSerializer(serializers.ModelSerializer):
-    comment_set = CommentSerializer(many=True)
-
+    # comment_set = CommentSerializer(many=True)
+    comment_count = serializers.IntegerField(read_only=True, source='comment_set.count')
+    likes = serializers.CharField(source="liked_users.count")
 
     class Meta:
         model = Curation
@@ -24,7 +25,7 @@ class CurationListSerializer(serializers.ModelSerializer):
 class CurationSerializer(serializers.ModelSerializer):
     comment_count = serializers.IntegerField(read_only=True, source='comment_set.count')
     comment_set = CommentSerializer(many=True)
-
+    likes = serializers.CharField(source="liked_users.count")
 
     class Meta:
         model = Curation
