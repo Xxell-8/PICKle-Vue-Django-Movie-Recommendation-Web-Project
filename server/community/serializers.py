@@ -30,3 +30,10 @@ class CurationSerializer(serializers.ModelSerializer):
         model = Curation
         fields = '__all__'
 
+
+class LikeSerializer(serializers.ModelSerializer):
+
+
+    class Meta:
+        model = Curation
+        fields = ('liked_users',)

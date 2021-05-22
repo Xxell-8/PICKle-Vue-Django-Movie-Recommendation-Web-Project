@@ -8,6 +8,7 @@ from .serializers import (
     CurationSerializer,
     CurationListSerializer,
     CommentSerializer,
+    LikeSerializer,
 )
 # from django.contrib.auth import get_user_model
 
@@ -94,4 +95,19 @@ def comment_detail(request, curation_pk, comment_pk):
 #     serializer = CommentSerializer(comments, many=True)
 #     return Response(serializer.data)
 
-
+@api_view(['PUT'])
+def likes(request, curation_pk):
+    curation = get_object_or_404(Curation, pk=curation_pk)
+    user_id = (int(request.data['user']))
+    user = User.objects.get(id=user_id)
+    if curation.liked_users.filter(id=user.id).exists():
+        curation.liked_users.remove(user)
+    else:
+        curation.liked_users.add(user)
+    context = {
+        'liked_user': curation.liked_users,
+    }
+    serializer = LikeSerializer(curation, data=context)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save()
+        return Response(serializer.data)

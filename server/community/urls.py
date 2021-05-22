@@ -9,5 +9,5 @@ urlpatterns = [
     # path('comments/', views.comment_list),
     path('<int:curation_pk>/comments/', views.comment_create),
     path('<int:curation_pk>/comments/<int:comment_pk>/', views.comment_detail),
-    
+    path('<int:curation_pk>/likes/', views.likes),
 ]
