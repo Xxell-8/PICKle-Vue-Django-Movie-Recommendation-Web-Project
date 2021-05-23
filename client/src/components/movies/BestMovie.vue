@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
-    <h1>PICKle's BEST</h1>
-    <button @click="getMovies"></button>
+  <div class="mx-5">
+    <h1 class="chapter-title">PICKle's BEST</h1>
+    <hr>
     <div class="row gap-3 justify-content-center">
-      <BestMovieItem
-        v-for="(movie, idx) in movies"
+      <MovieItem
+        v-for="(movie, idx) in bestMovies"
         :key="idx"
         :movie="movie"
       />
@@ -14,22 +14,38 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
-import BestMovieItem from '@/components/movies/BestMovieItem'
+import MovieItem from '@/components/movies/MovieItem'
 
 export default {
   name: 'BestMovie',
   components: {
-    BestMovieItem,
+    MovieItem,
   },
   methods: {
-    ...mapActions('movie', ['getMovies'])
+    ...mapActions('movie', ['getBestMovies'])
   },
   computed: {
-    ...mapState('movie', ['movies'])
+    ...mapState('movie', ['bestMovies'])
+  },
+  created: function () {
+    this.getBestMovies()
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .chapter-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    /* font-style: italic; */
+    font-size: 3rem;
+    color: #F47B0F;
+    -webkit-text-stroke: 0.1rem #fff;
+  }
+  hr {
+    width: 10rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-top: 0.2rem solid #bbb
+  }
 </style>
