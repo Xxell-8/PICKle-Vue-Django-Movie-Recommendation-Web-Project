@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1>Search</h1>
+  <div class="mt-5">
     <SearchBar/>
     <SearchList/>
   </div>
@@ -19,6 +18,6 @@ export default {
 }
 </script>
 
-<style>
+<style scpoed>
 
 </style>

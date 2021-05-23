@@ -15,11 +15,11 @@
              class="btn btn-primary btn-sm"
              data-bs-toggle="modal"
              :data-bs-target="'#detailModal-' + movie.id">Details</button>
-            <ul class="icons">
-              <li><i class="fas fa-heartbeat fs-4"></i></li>
-              <li><i class="fas fa-star-and-crescent fs-4"></i></li>
-              <li><i class="fas fa-eye fs-4"></i></li>
-              <li><i class="fas fa-times-circle fs-4"></i></li>
+            <ul v-if="isLogin" class="icons">
+              <li><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-4"></i></li>
+              <li><i @click="wishMovie(movie.id)" class="fas fa-star-and-crescent fs-4"></i></li>
+              <li><i @click="watchMovie(movie.id)" class="fas fa-eye fs-4"></i></li>
+              <li><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-4"></i></li>
             </ul>
           </div>
         </div>
@@ -30,9 +30,10 @@
 <script>
 import _ from 'lodash'
 import MovieDetail from '@/components/movies/MovieDetail'
+import { mapState, mapActions } from 'vuex'
 
 export default {
-  name: 'BestMovieItem',
+  name: 'MovieItem',
   components: {
     MovieDetail,
   },
@@ -40,6 +41,12 @@ export default {
     movie: {
       type: Object,
     }
+  },
+  methods: {
+    ...mapActions('auth', ['pickMovie', 'wishMovie', 'watchMovie', 'dislikeMovie'])
+  },
+  computed: {
+    ...mapState('auth', ['isLogin']),
   },
   filters: {
     shorten: function(rawText) {
@@ -58,6 +65,7 @@ export default {
     border-radius: 0;
     width: 13rem;
     overflow: hidden;
+    box-shadow: 15px 15px 25px black;
   }
   .card:before,
   .card:after,

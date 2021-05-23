@@ -5,6 +5,7 @@ import Login from '@/views/accounts/Login'
 import Signup from '@/views/accounts/Signup'
 
 import PickyPick from '@/views/community/PickyPick'
+import CreateArticle from '@/views/community/CreateArticle'
 
 import Home from '@/views/movies/Home'
 import Search from '@/views/movies/Search'
@@ -32,6 +33,11 @@ const routes = [
     path: '/community/pickypick',
     name: 'PickyPick',
     component: PickyPick
+  },
+  {
+    path: '/community/create',
+    name: 'CreateArticle',
+    component: CreateArticle
   },
   {
     path: '/accounts/login',

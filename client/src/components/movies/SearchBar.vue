@@ -1,15 +1,36 @@
 <template>
   <div class="container text-center">
     <div class="form col-12">
-      <input class="col-11" type="text" placeholder="Search">
+      <input 
+        :value="data"
+        @input="insertData"
+        class="col-11" 
+        type="text" 
+        placeholder="Search">
       <span class="col-1"><i class="fas fa-search fs-4"></i></span>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'SearchBar',
+  data: function () {
+    return {
+      data: '',
+    }
+  },
+  methods: {
+    insertData: function (event) {
+      this.data = event.target.value
+      this.$store.dispatch('movie/searchData', this.data)
+    }
+  },
+  computed: {
+    ...mapState('movie', ['searchResult'])
+  }
 }
 </script>
 

@@ -6,6 +6,10 @@ const state = {
   isLogin: false,
   userToken: null,
   register: null,
+  picked: [],
+  wishList: [],
+  watching: [],
+  dislike: [],
 }
 
 const actions = {
@@ -28,7 +32,35 @@ const actions = {
       commit('SET_REGISTER', true)
       router.push({ name: 'Login'})
     }
-  }
+  },
+  async pickMovie ({ state, commit }, moviePk) {
+    const response = await api.pickMovie(moviePk, state.userToken)
+    if (response.status === 200) {
+      //console.log(response)
+      commit('SET_PICK_LIST', moviePk)
+    }
+  },
+  async wishMovie ({ state, commit }, moviePk) {
+    const response = await api.wishMovie(moviePk, state.userToken)
+    if (response.status === 200) {
+      //console.log(response)
+      commit('SET_WISH_LIST', moviePk)
+    }
+  },
+  async watchMovie ({ state, commit }, moviePk) {
+    const response = await api.watchMovie(moviePk, state.userToken)
+    if (response.status === 200) {
+      //console.log(response)
+      commit('SET_WATCH_LIST', moviePk)
+    }
+  },
+  async dislikeMovie ({ state, commit }, moviePk) {
+    const response = await api.dislikeMovie(moviePk, state.userToken)
+    if (response.status === 200) {
+      //console.log(response)
+      commit('SET_DISLIKE_LIST', moviePk)
+    }
+  },
 }
 
 const mutations = {
@@ -41,6 +73,18 @@ const mutations = {
   SET_REGISTER(state, payload) {
     state.register = payload
   },
+  SET_PICK_LIST(state, moviePk) {
+    state.picked.push(moviePk)
+  },
+  SET_WISH_LIST(state, moviePk) {
+    state.wishList.push(moviePk)
+  },
+  SET_WATCH_LIST(state, moviePk) {
+    state.watching.push(moviePk)
+  },
+  SET_DISLIKE_LIST(state, moviePk) {
+    state.dislike.push(moviePk)
+  }
 }
 
 const getters = {
