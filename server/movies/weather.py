@@ -31,9 +31,9 @@ def recommend_movie():
     # IMG_URL = 'http://openweathermap.org/img/wn/10n@2x.png'
 
     if weather == 'Thunderstorm':
-        return ['공포', '범죄', '스릴러', '미스테리'], IMG_URL, loc_name
+        return ['공포', '범죄', '스릴러', '전쟁' ], IMG_URL, loc_name
     elif weather == 'Drizzle':
-        return ['드라마', '애니메이션', ], IMG_URL, loc_name
+        return ['드라마', '애니메이션', '다큐멘터리'], IMG_URL, loc_name
     elif weather == 'Rain':
         return ['로맨스', '음악', '애니메이션'], IMG_URL, loc_name
     elif weather == 'Snow':
@@ -41,8 +41,8 @@ def recommend_movie():
     elif weather == 'Clear':
         return ['모험', '액션', '코미디'], IMG_URL, loc_name
     elif weather == 'Clouds':
-        return ['TV 영화', '전쟁'], IMG_URL, loc_name
+        return ['TV 영화', '미스테리'], IMG_URL, loc_name
     else: # Atmosphere
-        return ['역사', '서부', '다큐멘터리'], IMG_URL, loc_name
+        return ['역사', '서부'], IMG_URL, loc_name
 
 
