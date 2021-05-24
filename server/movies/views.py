@@ -131,7 +131,7 @@ def weather_recommend(request):
     # reco_movies = Movie.objects.all()[:3]
 
     # serializer = MovieCarouselSerializer(reco_movies, many=True)
-    serializer = MovieCarouselSerializer(reco_movies, many=True)
+    serializer = MovieWeatherSerializer(reco_movies, many=True)
     data = {
         'IMG_URL': IMG_URL,
         'loc_name': loc_name,

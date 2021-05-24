@@ -23,9 +23,9 @@ class GenreListSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class MovieCarouselSerializer(serializers.ModelSerializer):
+class MovieWeatherSerializer(serializers.ModelSerializer):
 
-    
+
     class Meta:
         model = Movie
         fields = ('id', 'poster_path')
