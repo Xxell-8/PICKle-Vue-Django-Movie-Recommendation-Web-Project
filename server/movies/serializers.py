@@ -21,3 +21,11 @@ class GenreListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
         fields = '__all__'
+
+
+class MovieCarouselSerializer(serializers.ModelSerializer):
+
+    
+    class Meta:
+        model = Movie
+        fields = ('id', 'poster_path')

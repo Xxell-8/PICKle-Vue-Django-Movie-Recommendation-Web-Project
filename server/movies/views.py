@@ -9,8 +9,9 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer
-
+from .serializers import MovieSerializer, GenreListSerializer, MovieCarouselSerializer
+from . import weather
+from django.db.models import Q
 
 User = get_user_model()
 
@@ -112,4 +113,45 @@ def random_movie_list(request):
 #     my_genre = get_user_model.objects.get('genre')
 #     movies = Movie.objects.filter(genre=my_genre).order_by("?")[:5]
 #     serializer = MovieSerializer(movies, many=True)
+#     return Response(serializer.data)
+
+@api_view(['GET'])
+def weather_recommend(request):
+
+    genre_list, IMG_URL, loc_name = weather.recommend_movie()
+
+    r_movies = []
+    for i in range(5):
+        if i < len(genre_list):
+            r_movies.append(get_object_or_404(Genre, name=genre_list[i]))
+        else:
+            r_movies.append(get_object_or_404(Genre, name=genre_list[0]))
+    # 평점순 5개 추천
+    reco_movies = Movie.objects.filter(Q(genres=r_movies[0]) | Q(genres=r_movies[1]) | Q(genres=r_movies[2]) | Q(genres=r_movies[3]) | Q(genres=r_movies[4])).order_by('?')[:5]
+    # reco_movies = Movie.objects.all()[:3]
+
+    # serializer = MovieCarouselSerializer(reco_movies, many=True)
+    serializer = MovieCarouselSerializer(reco_movies, many=True)
+    data = {
+        'IMG_URL': IMG_URL,
+        'loc_name': loc_name,
+        'genre_list': genre_list,
+        'reco_movies': serializer.data, # id, poster_path
+    }
+
+    return Response(data)
+
+
+# @api_view(['GET'])
+# def movie_list(request):
+#     movies = get_list_or_404(Movie)
+#     serializer = MovieSerializer(movies, many=True)
+#     return Response(serializer.data)
+
+
+# # 1. Default - 단일 영화 상세 데이터
+# @api_view(['GET'])
+# def movie_detail(request, movie_pk):
+#     movie = get_object_or_404(Movie, pk=movie_pk)
+#     serializer = MovieSerializer(movie)
 #     return Response(serializer.data)
