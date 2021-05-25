@@ -4,10 +4,8 @@ from . import views
 app_name = 'community'
 
 urlpatterns = [
-    path('', views.curation_list),
-    path('<int:curation_pk>', views.curation_detail),
-    # path('comments/', views.comment_list),
-    path('<int:curation_pk>/comments/', views.comment_create),
-    path('<int:curation_pk>/comments/<int:comment_pk>/', views.comment_detail),
-    path('<int:curation_pk>/likes/', views.likes),
+    path('', views.article_list),
+    path('<int:article_pk>/', views.article_detail),
+    path('<int:article_pk>/comments/', views.comment_create),
+    path('<int:article_pk>/comments/<int:comment_pk>/', views.comment_detail),
 ]

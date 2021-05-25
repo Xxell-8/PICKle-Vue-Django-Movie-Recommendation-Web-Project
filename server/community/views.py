@@ -1,68 +1,75 @@
 from rest_framework import status
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+
+from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
-from .models import Curation, Comment
-from accounts.models import User
+
+from .models import Article, Comment
 from .serializers import (
-    CurationSerializer,
-    CurationListSerializer,
+    ArticleSerializer,
+    ArticleListSerializer,
     CommentSerializer,
-    LikeSerializer,
 )
-# from django.contrib.auth import get_user_model
 
-# curation 
+User = get_user_model()
+
+
+# Article 전체 조회 및 글 생성
 @api_view(['GET', 'POST'])
-def curation_list(request):
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def article_list(request):
     if request.method == 'GET':
-        curations = get_list_or_404(Curation)
-        context = {
-            'request': request
-        }
-        serializer = CurationListSerializer(curations, many=True, context=context)
+        articles = get_list_or_404(Article)
+        serializer = ArticleListSerializer(articles, many=True)
         return Response(serializer.data)
-
+    
     elif request.method == 'POST':
-        serializer = CurationSerializer(data=request.data)
-        user = request.user
+        serializer = ArticleListSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(user=user)
+            serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-@api_view(['GET', 'DELETE', 'PUT'])
-def curation_detail(request, curation_pk):
-    curation = get_object_or_404(Curation, pk=curation_pk)
+    
+@api_view(['GET', 'PUT', 'DELETE'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def article_detail(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+
     if request.method == 'GET':
-        serializer = CurationSerializer(curation)
+        serializer = ArticleSerializer(article)
         return Response(serializer.data)
 
-    elif request.method == 'DELETE':
-        curation.delete()
-        data = {
-            'delete': f'{curation_pk}번 큐레이션이 삭제되었습니다.',
-        }
-        return Response(data, status=status.HTTP_204_NO_CONTENT)
-    
     elif request.method == 'PUT':
-        serializer = CurationSerializer(curation, data=request.data)
+        serializer = ArticleSerializer(article, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
-            return Response(serializer.data)
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
+    elif request.method == 'DELETE':
+        article.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    
 
 @api_view(['POST'])
-def comment_create(request, curation_pk):
-    curation = get_object_or_404(Curation, pk=curation_pk)
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def comment_create(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
     serializer = CommentSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
-        serializer.save(user=request.user, curation=curation)
+        serializer.save(user=request.user, article=article)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET','DELETE','PUT'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def comment_detail(request, curation_pk, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     if request.method == 'GET':
@@ -95,19 +102,21 @@ def comment_detail(request, curation_pk, comment_pk):
 #     serializer = CommentSerializer(comments, many=True)
 #     return Response(serializer.data)
 
-@api_view(['PUT'])
-def likes(request, curation_pk):
-    curation = get_object_or_404(Curation, pk=curation_pk)
-    user_id = (int(request.data['user']))
-    user = User.objects.get(id=user_id)
-    if curation.liked_users.filter(id=user.id).exists():
-        curation.liked_users.remove(user)
-    else:
-        curation.liked_users.add(user)
-    context = {
-        'liked_user': curation.liked_users,
-    }
-    serializer = LikeSerializer(curation, data=context)
-    if serializer.is_valid(raise_exception=True):
-        serializer.save()
-        return Response(serializer.data)
+# @api_view(['PUT'])
+# @authentication_classes([JSONWebTokenAuthentication])
+# @permission_classes([IsAuthenticated])
+# def likes(request, curation_pk):
+#     curation = get_object_or_404(Article, pk=curation_pk)
+#     user_id = (int(request.data['user']))
+#     user = User.objects.get(id=user_id)
+#     if curation.liked_users.filter(id=user.id).exists():
+#         curation.liked_users.remove(user)
+#     else:
+#         curation.liked_users.add(user)
+#     context = {
+#         'liked_user': curation.liked_users,
+#     }
+#     serializer = LikeSerializer(curation, data=context)
+#     if serializer.is_valid(raise_exception=True):
+#         serializer.save()
+#         return Response(serializer.data)

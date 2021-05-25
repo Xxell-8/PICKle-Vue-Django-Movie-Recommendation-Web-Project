@@ -11,7 +11,7 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer
+from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
 from . import weather
 from django.db.models import Q
 
@@ -114,7 +114,6 @@ def genre_recommend(request):
     return Response(serializer.data)
 
 
-
 @api_view(['GET'])
 def weather_recommend(request):
 
@@ -128,9 +127,7 @@ def weather_recommend(request):
             r_movies.append(get_object_or_404(Genre, name=genre_list[0]))
 
     reco_movies = Movie.objects.filter(Q(genres=r_movies[0]) | Q(genres=r_movies[1]) | Q(genres=r_movies[2]) | Q(genres=r_movies[3]) | Q(genres=r_movies[4])).order_by('?')[:5]
-
     serializer = MovieSerializer(reco_movies, many=True)
-
     return Response(serializer.data)
 
 
@@ -165,7 +162,6 @@ def overview_recommend(request, movie_id):
         s_movies = Movie.objects.filter(Q(id=movie_ids[0]) | Q(id=movie_ids[1]) | Q(id=movie_ids[2]) | Q(id=movie_ids[3]) | Q(id=movie_ids[4])).order_by('?')[:5]
         serializer = MovieSerializer(s_movies, many=True)
         return Response(serializer.data)
-
     return Response(status=status.HTTP_400_BAD_REQUEST)
 
 # 6.
@@ -182,5 +178,3 @@ def overview_recommend(request, movie_id):
 #     movies = Movie.objects.filter(genre=my_genre).order_by("?")[:5]
 #     serializer = MovieSerializer(movies, many=True)
 #     return Response(serializer.data)
-
-

@@ -5,3 +5,6 @@ from movies.models import Genre
 
 class User(AbstractUser):
     genres = models.ManyToManyField(Genre)
+
+    def __str__(self):
+        return self.username

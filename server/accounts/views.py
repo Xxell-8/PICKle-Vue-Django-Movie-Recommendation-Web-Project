@@ -1,8 +1,13 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import UserSerializer
 
+from django.shortcuts import get_object_or_404
+from django.contrib.auth import get_user_model
+
+from .serializers import UserSerializer, UserInfoSerializer
+
+User = get_user_model()
 
 @api_view(['POST'])
 def signup(request):
@@ -20,3 +25,9 @@ def signup(request):
         user.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+
+@api_view(['GET'])
+def profile(request, user_pk):
+    user = get_object_or_404(User, pk=user_pk)
+    serializer = UserInfoSerializer(user)
+    return Response(serializer.data)
