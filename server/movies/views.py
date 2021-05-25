@@ -11,7 +11,7 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
+from .serializers import MovieSerializer, GenreListSerializer
 from . import weather
 from django.db.models import Q
 
@@ -121,17 +121,9 @@ def weather_recommend(request):
             r_movies.append(get_object_or_404(Genre, name=genre_list[i]))
         else:
             r_movies.append(get_object_or_404(Genre, name=genre_list[0]))
-    # 평점순 5개 추천
+
     reco_movies = Movie.objects.filter(Q(genres=r_movies[0]) | Q(genres=r_movies[1]) | Q(genres=r_movies[2]) | Q(genres=r_movies[3]) | Q(genres=r_movies[4])).order_by('?')[:5]
-    # reco_movies = Movie.objects.all()[:3]
 
-    # serializer = MovieCarouselSerializer(reco_movies, many=True)
-    serializer = MovieWeatherSerializer(reco_movies, many=True)
-    data = {
-        'IMG_URL': IMG_URL,
-        'loc_name': loc_name,
-        'genre_list': genre_list,
-        'reco_movies': serializer.data, # id, poster_path
-    }
+    serializer = MovieSerializer(reco_movies, many=True)
 
-    return Response(data)
+    return Response(serializer.data)
