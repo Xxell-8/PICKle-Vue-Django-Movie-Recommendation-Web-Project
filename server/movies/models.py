@@ -11,10 +11,10 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     genres = models.ManyToManyField(Genre)
-    pick_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='pick_users')
-    wish_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='wish_users')
-    watch_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='watch_users')
-    dislike_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='dislike_users')
+    pick_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='pick_movies')
+    wish_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='wish_movies')
+    watch_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='watch_movies')
+    dislike_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='dislike_movies')
     
     title = models.CharField(max_length=50)
     overview = models.TextField()

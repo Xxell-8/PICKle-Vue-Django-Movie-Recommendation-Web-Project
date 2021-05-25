@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-<style scpoped>
+<style scoped>
   .signup-wrap {
     background: #1E1F26;
     padding: 50px;

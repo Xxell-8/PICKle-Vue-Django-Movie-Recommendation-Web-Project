@@ -1,8 +1,6 @@
 import axios from 'axios'
 
 const SERVER_URL = process.env.VUE_APP_SERVER_URL
-// const YOUTUBE_API_URL = process.env.VUE_APP_YOUTUBE_API_URL
-// const YOUTUBE_API_KEY = process.env.VUE_APP_YOUTUBE_API_KEY
 
 export default {
   // auth
@@ -12,10 +10,16 @@ export default {
   signup(userData) {
     return axios.post(`${SERVER_URL}/accounts/signup/`, userData)
   },
+  getUserInfo(userId) {
+    return axios.get(`${SERVER_URL}/accounts/${userId}/`)
+  },
 
   // movie
   getMovies() {
     return axios.get(`${SERVER_URL}/movies/`)
+  },
+  getMovieDetails(movieId) {
+    return axios.get(`${SERVER_URL}/movies/${movieId}/`)
   },
   getBestMovies() {
     return axios.get(`${SERVER_URL}/movies/pickle-best/`)
@@ -25,6 +29,9 @@ export default {
   },
   searchData(inputText) {
     return axios.get(`${SERVER_URL}/movies/search?q=${inputText}`)
+  },
+  getRandomMovies() {
+    return axios.get(`${SERVER_URL}/movies/random/`)
   },
   pickMovie(moviePk, token) {
     return axios({
@@ -63,18 +70,46 @@ export default {
     })
   },
   
+  // article
+  getArticles(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/community/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
+  getArticleDetail(articleId, token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/community/${articleId}`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
+  createArticle(articleInfo, token) {
+    return axios({
+      method: 'post',
+      url: `${SERVER_URL}/community/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+      data: articleInfo,
+    })
+  },
+  addComment(articleId, token, data) {
+    return axios({
+      method: 'post',
+      url: `${SERVER_URL}/community/${articleId}/comments/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+      data,
+    })
+  },
 
 
-  // getVideo(movieTitle) {
-  //   return axios({
-  //     url: YOUTUBE_API_URL,
-  //     method: 'get',
-  //     params: {
-  //       key: YOUTUBE_API_KEY,
-  //       part: 'snippet',
-  //       type: 'video',
-  //       q: movieTitle + 'trailer'
-  //     }
-  //   })
-  // }
+
 }

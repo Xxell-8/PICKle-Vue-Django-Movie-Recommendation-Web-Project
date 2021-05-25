@@ -1,3 +1,5 @@
+import random
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -9,7 +11,7 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer, MovieCarouselSerializer
+from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
 from . import weather
 from django.db.models import Q
 
@@ -97,23 +99,16 @@ def random_movie_list(request):
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
+# 5. Recommend > 선호 장르 기반 추천
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def genre_recommend(request):
+    favorite_genre = random.choice(request.user.genres.all())
+    movies = Genre.objects.get(pk=favorite_genre.pk).movie_set.order_by('?')[:5]
+    serializer = MovieSerializer(movies, many=True)
+    return Response(serializer.data)
 
-
-# 6.
-# @api_view(['GET'])
-# def short_movie_list(request):
-#     movies = Movie.objects.order_by('runtime')[:5]
-#     serializer = MovieSerializer(movies, many=True)
-#     return Response(serializer.data)
-
-
-
-# @api_view(['GET'])
-# def genre_recommended(request):
-#     my_genre = get_user_model.objects.get('genre')
-#     movies = Movie.objects.filter(genre=my_genre).order_by("?")[:5]
-#     serializer = MovieSerializer(movies, many=True)
-#     return Response(serializer.data)
 
 @api_view(['GET'])
 def weather_recommend(request):
@@ -140,18 +135,3 @@ def weather_recommend(request):
     }
 
     return Response(data)
-
-
-# @api_view(['GET'])
-# def movie_list(request):
-#     movies = get_list_or_404(Movie)
-#     serializer = MovieSerializer(movies, many=True)
-#     return Response(serializer.data)
-
-
-# # 1. Default - 단일 영화 상세 데이터
-# @api_view(['GET'])
-# def movie_detail(request, movie_pk):
-#     movie = get_object_or_404(Movie, pk=movie_pk)
-#     serializer = MovieSerializer(movie)
-#     return Response(serializer.data)
