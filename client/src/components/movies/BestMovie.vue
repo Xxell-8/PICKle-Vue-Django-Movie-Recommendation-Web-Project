@@ -35,12 +35,10 @@ export default {
 
 <style scoped>
   .chapter-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    /* font-style: italic; */
-    font-size: 3rem;
-    color: #F47B0F;
-    -webkit-text-stroke: 0.1rem #fff;
+      font-weight: 900;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: -3px -1px #F47B0F, 4px 1px #441DB2;
   }
   hr {
     width: 10rem;

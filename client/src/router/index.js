@@ -5,8 +5,9 @@ import Login from '@/views/accounts/Login'
 import Signup from '@/views/accounts/Signup'
 
 import PickyPick from '@/views/community/PickyPick'
-import CreateArticle from '@/views/community/CreateArticle'
 import ArticleDetail from '@/views/community/ArticleDetail'
+import CreateArticle from '@/views/community/CreateArticle'
+import UpdateArticle from '@/views/community/UpdateArticle'
 
 import Home from '@/views/movies/Home'
 import Search from '@/views/movies/Search'
@@ -39,6 +40,11 @@ const routes = [
     path: '/community/create',
     name: 'CreateArticle',
     component: CreateArticle
+  },
+  {
+    path: '/community/update',
+    name: 'UpdateArticle',
+    component: UpdateArticle
   },
   {
     path: '/community/article/:id',
