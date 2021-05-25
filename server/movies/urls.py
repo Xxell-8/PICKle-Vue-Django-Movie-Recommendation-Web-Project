@@ -11,7 +11,6 @@ urlpatterns = [
    path('search/', views.movie_search_list),
    path('random/', views.random_movie_list),
    path('pickle-best/', views.pick_best),
-   path('genre-recommend/', views.genre_recommended),
-#    path('short-movie', views.short_movie_list),
-# #    path('recommend', views.recommend),
+   path('genre-recommend/', views.genre_recommend),
+   path('weather-recommend/', views.weather_recommend),
 ]

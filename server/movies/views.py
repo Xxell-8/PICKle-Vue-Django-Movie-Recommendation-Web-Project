@@ -11,8 +11,9 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer
-
+from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
+from . import weather
+from django.db.models import Q
 
 User = get_user_model()
 
@@ -102,20 +103,35 @@ def random_movie_list(request):
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def genre_recommended(request):
+def genre_recommend(request):
     favorite_genre = random.choice(request.user.genres.all())
     movies = Genre.objects.get(pk=favorite_genre.pk).movie_set.order_by('?')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-# 6.
-# @api_view(['GET'])
-# def short_movie_list(request):
-#     movies = Movie.objects.order_by('runtime')[:5]
-#     serializer = MovieSerializer(movies, many=True)
-#     return Response(serializer.data)
+@api_view(['GET'])
+def weather_recommend(request):
 
+    genre_list, IMG_URL, loc_name = weather.recommend_movie()
 
+    r_movies = []
+    for i in range(5):
+        if i < len(genre_list):
+            r_movies.append(get_object_or_404(Genre, name=genre_list[i]))
+        else:
+            r_movies.append(get_object_or_404(Genre, name=genre_list[0]))
+    # 평점순 5개 추천
+    reco_movies = Movie.objects.filter(Q(genres=r_movies[0]) | Q(genres=r_movies[1]) | Q(genres=r_movies[2]) | Q(genres=r_movies[3]) | Q(genres=r_movies[4])).order_by('?')[:5]
+    # reco_movies = Movie.objects.all()[:3]
 
+    # serializer = MovieCarouselSerializer(reco_movies, many=True)
+    serializer = MovieWeatherSerializer(reco_movies, many=True)
+    data = {
+        'IMG_URL': IMG_URL,
+        'loc_name': loc_name,
+        'genre_list': genre_list,
+        'reco_movies': serializer.data, # id, poster_path
+    }
 
+    return Response(data)
