@@ -3,9 +3,19 @@ from .models import Article, Comment
 from movies.serializers import MovieSerializer
 
 
-# 전체 글 조회 및 글 생성
+# 전체 글 조회
 class ArticleListSerializer(serializers.ModelSerializer):
     movie = MovieSerializer(many=True)
+    user = serializers.StringRelatedField()
+    like_count = serializers.IntegerField(source='liked_user.count', read_only=True)
+
+    class Meta:
+        model = Article
+        fields = '__all__'
+        read_only_fields = ('user',)
+
+# 새로운 글 작성
+class ArticleFormSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField()
 
     class Meta:
