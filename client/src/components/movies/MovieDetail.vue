@@ -19,10 +19,10 @@
         </div>
         <div class="modal-body d-flex flex-column gap-3">
           <div class="movie-rate d-flex align-items-baseline gap-3">
-            <span><i class="fas fa-heartbeat fs-3 me-2"></i>{{ movie.pick_count }}</span>
-            <span><i class="fas fa-star-and-crescent fs-3 me-2"></i>{{ movie.wish_count }}</span>
-            <span><i class="fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
-            <span><i class="fas fa-times-circle fs-3 me-2"></i>{{ movie.dislike_count }}</span>
+            <span :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-3 me-2"></i>{{ movie.pick_count }}</span>
+            <span :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star-and-crescent fs-3 me-2"></i>{{ movie.wish_count }}</span>
+            <span :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
+            <span :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-3 me-2"></i>{{ movie.dislike_count }}</span>
           </div>
           <p class="mb-0">감독 | {{ movie.director }}</p>
           <p class="mb-0">개봉일 | {{ movie.release_date | moment }}</p>
@@ -41,6 +41,7 @@
 
 <script>
 import moment from 'moment'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'MovieDetail',
@@ -48,6 +49,32 @@ export default {
     movie: {
       type: Object,
     }
+  },
+  methods: {
+    ...mapActions('auth', ['pickMovie', 'wishMovie', 'watchMovie', 'dislikeMovie'])
+  },
+  computed: {
+    ...mapState('auth', ['myProfile']),
+    isPicked: function () {
+      return this.myProfile.pick_movies.some((pickedMovie) => {
+        return pickedMovie.id === this.movie.id
+      })
+    },
+    isWished: function () {
+      return this.myProfile.wish_movies.some((wishedMovie) => {
+        return wishedMovie.id === this.movie.id
+      })
+    },
+    isWatched: function () {
+      return this.myProfile.watch_movies.some((watchedMovie) => {
+        return watchedMovie.id === this.movie.id
+      })
+    },
+    isDisliked: function () {
+      return this.myProfile.dislike_movies.some((dislikedMovie) => {
+        return dislikedMovie.id === this.movie.id
+      })
+    },
   },
   filters: {
     moment: function (date) {
@@ -104,6 +131,10 @@ export default {
 
   .movie-provider img {
     height: 2rem;
+  }
+
+  .orange {
+    color: #F47B0F;
   }
 
 </style>

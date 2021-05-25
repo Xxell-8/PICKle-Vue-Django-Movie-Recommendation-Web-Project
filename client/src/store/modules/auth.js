@@ -6,18 +6,17 @@ const state = {
   isLogin: false,
   userToken: null,
   register: null,
-  picked: [],
-  wishList: [],
-  watching: [],
-  dislike: [],
+  myProfile: null,
+  userProfile: null,
 }
 
 const actions = {
-  async login({ commit }, userData) {
+  async login({ commit, dispatch }, userData) {
     const response = await api.login(userData)
     if (response.status === 200) {
       commit('SET_ISLOGIN', true)
       commit('SET_TOKEN', response.data.token)
+      dispatch('getMyProfile')
       router.push({ name: 'Home' })
     }
   },
@@ -33,32 +32,41 @@ const actions = {
       router.push({ name: 'Login'})
     }
   },
-  async pickMovie ({ state, commit }, moviePk) {
+  async getMyProfile({ commit, getters }) {
+    const response = await api.getUserInfo(getters.decodeToken.user_id)
+    if (response.status === 200) {
+      commit('SET_MY_PROFILE', response.data)
+    }
+  },
+  async getUserProfile({ commit }, userId) {
+    const response = await api.getUserInfo(userId)
+    if (response.status === 200) {
+      commit('SET_USER_PROFILE', response.data)
+    }
+  },
+
+  async pickMovie ({ state, dispatch }, moviePk) {
     const response = await api.pickMovie(moviePk, state.userToken)
     if (response.status === 200) {
-      //console.log(response)
-      commit('SET_PICK_LIST', moviePk)
+      dispatch('getMyProfile')
     }
   },
-  async wishMovie ({ state, commit }, moviePk) {
+  async wishMovie ({ state, dispatch }, moviePk) {
     const response = await api.wishMovie(moviePk, state.userToken)
     if (response.status === 200) {
-      //console.log(response)
-      commit('SET_WISH_LIST', moviePk)
+      dispatch('getMyProfile')
     }
   },
-  async watchMovie ({ state, commit }, moviePk) {
+  async watchMovie ({ state, dispatch }, moviePk) {
     const response = await api.watchMovie(moviePk, state.userToken)
     if (response.status === 200) {
-      //console.log(response)
-      commit('SET_WATCH_LIST', moviePk)
+      dispatch('getMyProfile')
     }
   },
-  async dislikeMovie ({ state, commit }, moviePk) {
+  async dislikeMovie ({ state, dispatch }, moviePk) {
     const response = await api.dislikeMovie(moviePk, state.userToken)
     if (response.status === 200) {
-      //console.log(response)
-      commit('SET_DISLIKE_LIST', moviePk)
+      dispatch('getMyProfile')
     }
   },
 }
@@ -73,17 +81,11 @@ const mutations = {
   SET_REGISTER(state, payload) {
     state.register = payload
   },
-  SET_PICK_LIST(state, moviePk) {
-    state.picked.push(moviePk)
+  SET_MY_PROFILE(state, payload) {
+    state.myProfile = payload
   },
-  SET_WISH_LIST(state, moviePk) {
-    state.wishList.push(moviePk)
-  },
-  SET_WATCH_LIST(state, moviePk) {
-    state.watching.push(moviePk)
-  },
-  SET_DISLIKE_LIST(state, moviePk) {
-    state.dislike.push(moviePk)
+  SET_USER_PROFILE(state, payload) {
+    state.userProfile = payload
   }
 }
 

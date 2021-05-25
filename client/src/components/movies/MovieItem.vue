@@ -1,30 +1,30 @@
 <template>
-    <div class="col-auto my-2" >
-      <MovieDetail :movie="movie"/>
-      <div class="card h-100">
-        <img
-          :src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" 
-          :alt="movie.title"
-        >
-        <div class="content">
-          <div class="inner-content">
-            <p class="title">{{ movie.title }}</p>
-            <hr>
-            <p class="overview">{{ movie.overview|shorten }}</p>
-            <button
-             class="btn btn-primary btn-sm"
-             data-bs-toggle="modal"
-             :data-bs-target="'#detailModal-' + movie.id">Details</button>
-            <ul v-if="isLogin" class="icons">
-              <li><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-4"></i></li>
-              <li><i @click="wishMovie(movie.id)" class="fas fa-star-and-crescent fs-4"></i></li>
-              <li><i @click="watchMovie(movie.id)" class="fas fa-eye fs-4"></i></li>
-              <li><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-4"></i></li>
-            </ul>
-          </div>
+  <div class="col-auto my-2" >
+    <MovieDetail :movie="movie"/>
+    <div class="card h-100">
+      <img
+        :src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" 
+        :alt="movie.title"
+      >
+      <div class="content">
+        <div class="inner-content">
+          <p class="title">{{ movie.title }}</p>
+          <hr>
+          <p class="overview">{{ movie.overview|shorten }}</p>
+          <button
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="modal"
+            :data-bs-target="'#detailModal-' + movie.id">Details</button>
+          <ul v-if="isLogin" class="icons">
+            <li :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-4"></i></li>
+            <li :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star fs-4"></i></li>
+            <li :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-4"></i></li>
+            <li :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-4"></i></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -46,7 +46,27 @@ export default {
     ...mapActions('auth', ['pickMovie', 'wishMovie', 'watchMovie', 'dislikeMovie'])
   },
   computed: {
-    ...mapState('auth', ['isLogin']),
+    ...mapState('auth', ['isLogin', 'myProfile']),
+    isPicked: function () {
+      return this.myProfile.pick_movies.some((pickedMovie) => {
+        return pickedMovie.id === this.movie.id
+      })
+    },
+    isWished: function () {
+      return this.myProfile.wish_movies.some((wishedMovie) => {
+        return wishedMovie.id === this.movie.id
+      })
+    },
+    isWatched: function () {
+      return this.myProfile.watch_movies.some((watchedMovie) => {
+        return watchedMovie.id === this.movie.id
+      })
+    },
+    isDisliked: function () {
+      return this.myProfile.dislike_movies.some((dislikedMovie) => {
+        return dislikedMovie.id === this.movie.id
+      })
+    },
   },
   filters: {
     shorten: function(rawText) {
@@ -163,5 +183,9 @@ export default {
   .icons li {
     display: inline-block;
     margin: 0 0.4rem;
+  }
+
+  .orange {
+    color: #F47B0F;
   }
 </style>

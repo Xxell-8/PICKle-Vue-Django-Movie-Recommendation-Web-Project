@@ -7,7 +7,9 @@ const state = {
   genreOptions: [],
   searchResult: null,
   recommendOptions: ['random', 'genre', 'similar', 'series', 'classic'],
-  picked: false
+  recommendMovies: null,
+  picked: false,
+  movieDetail: [],
 }
 
 const actions = {
@@ -32,21 +34,35 @@ const actions = {
     }
   },
   async searchData ({ commit }, inputText) {
-    if (inputText.length >= 1) {
+    if (inputText.length >= 2) {
       const response = await api.searchData(inputText)
       if (response.status === 200) {
         console.log(response)
         commit('SET_SEARCH_RESULTS', response.data)
       }
-    } else {
-      commit('RESET_SEARCH_RESULTS')
     }
   },
+  async getDetails ({ commit }, movieId) {
+    const response = await api.getMovieDetails(movieId)
+    if (response.status === 200) {
+      commit('SET_DETAIL', response.data)
+    }
+  },
+  async getRandomMovies({ commit }) {
+    const response = await api.getRandomMovies()
+    if (response.status === 200) {
+      commit('SET_RECOMMEND_MOVIES', response.data)
+      return 'DONE'
+    }
+  }
 }
 
 const mutations = {
   SET_MOVIES(state, payload) {
     state.movies = payload
+  },
+  SET_DETAIL(state, payload) {
+    state.movieDetail = payload
   },
   SET_BEST_MOVIES(state, payload) {
     state.bestMovies = payload
@@ -59,7 +75,10 @@ const mutations = {
   },
   RESET_SEARCH_RESULTS(state) {
     state.searchResult = []
-  }, 
+  },
+  SET_RECOMMEND_MOVIES(state, payload) {
+    state.recommendMovies = payload
+  }
 }
 
 const getters = {
