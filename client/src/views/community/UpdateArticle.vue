@@ -2,14 +2,23 @@
   <div class="article-form">
     <h1 class="chapter-title mb-4">Share your PICK</h1>
     <div class="d-flex gap-2 justify-content-end mb-4 me-1">
-      <button class="btn btn-outline-warning" @click="newArticle">Create</button>
+      <button class="btn btn-outline-warning" @click="updateArticle">Update</button>
       <button class="btn btn-outline-light" @click="backToCommunity">Back</button>
     </div>
     <div class="mb-3">
-      <input class="form-control" type="text" placeholder="Theme" v-model="articleInfo.title" required>
+      <input
+        class="form-control"
+        type="text"
+        v-model="updateInfo.title"
+        required
+      >
     </div>
     <div class="mb-3">
-      <textarea class="form-control content-input" type="text" placeholder="Content" v-model="articleInfo.content"></textarea>
+      <textarea 
+        class="form-control content-input" 
+        type="text" 
+        v-model="updateInfo.content"
+      ></textarea>
     </div>
     <p>테마에 맞는 영화를 PICK해주세요↓</p>
     <button class="btn btn-outline-dark mb-3 btn-add" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">PICK</button>
@@ -55,18 +64,13 @@ import SearchResultItem from '@/components/community/SearchResultItem'
 import PickedMovieItem from '@/components/community/PickedMovieItem'
 
 export default {
-  name: 'CreateArticle',
+  name: 'UpdateArticle',
   components: {
     SearchResultItem,
     PickedMovieItem,
   },
   data: function () {
     return {
-      articleInfo: {
-        title: null,
-        content: null,
-        movie: [],
-      },
       data: '',
     }
   },
@@ -76,14 +80,14 @@ export default {
       this.data = event.target.value
       this.$store.dispatch('movie/searchData', this.data)
     },
-    newArticle: function () {
-      this.articleInfo.movie = this.selectedMovieIds
-      this.$store.dispatch('article/createArticle', this.articleInfo)
+    updateArticle: function () {
+      this.updateInfo.movie = this.selectedMovieIds
+      this.$store.dispatch('article/updateArticle', this.updateInfo)
     },
   },
   computed: {
     ...mapState('movie', ['searchResult']),
-    ...mapState('article', ['selectedMovies']),
+    ...mapState('article', ['selectedMovies', 'updateInfo']),
     ...mapState('auth', ['userToken']),
     ...mapGetters('article', ['selectedMovieIds'])
   }

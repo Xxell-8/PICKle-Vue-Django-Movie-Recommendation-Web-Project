@@ -20,7 +20,7 @@
         <div class="modal-body d-flex flex-column gap-3">
           <div class="movie-rate d-flex align-items-baseline gap-3">
             <span :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-3 me-2"></i>{{ movie.pick_count }}</span>
-            <span :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star-and-crescent fs-3 me-2"></i>{{ movie.wish_count }}</span>
+            <span :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star fs-3 me-2"></i>{{ movie.wish_count }}</span>
             <span :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
             <span :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-3 me-2"></i>{{ movie.dislike_count }}</span>
           </div>

@@ -31,7 +31,16 @@ export default {
     return axios.get(`${SERVER_URL}/movies/search?q=${inputText}`)
   },
   getRandomMovies() {
-    return axios.get(`${SERVER_URL}/movies/random/`)
+    return axios.get(`${SERVER_URL}/movies/recommend/random/`)
+  },
+  getGenreMovies(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/movies/genre-recommend/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
   },
   pickMovie(moviePk, token) {
     return axios({
@@ -99,6 +108,34 @@ export default {
       data: articleInfo,
     })
   },
+  deleteArticle(articleId, token) {
+    return axios({
+      method: 'delete',
+      url: `${SERVER_URL}/community/${articleId}/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
+  updateArticle(articleId, token, articleInfo) {
+    return axios({
+      method: 'put',
+      url: `${SERVER_URL}/community/${articleId}/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+      data: articleInfo
+    })
+  },
+  likeArticle(articleId, token) {
+    return axios({
+      method: 'post',
+      url: `${SERVER_URL}/community/${articleId}/like/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
   addComment(articleId, token, data) {
     return axios({
       method: 'post',
@@ -107,6 +144,15 @@ export default {
         Authorization: `JWT ${token}`
       },
       data,
+    })
+  },
+  deleteComment(token, commentPk) {
+    return axios({
+      method: 'delete',
+      url: `${SERVER_URL}/community/comments/${commentPk}`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
     })
   },
 

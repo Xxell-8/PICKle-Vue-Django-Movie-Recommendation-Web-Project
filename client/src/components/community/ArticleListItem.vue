@@ -1,19 +1,32 @@
 <template>
   <div class="col-auto my-2">
-    <div class="card" style="width: 18rem;">
-      <img :src="'https://image.tmdb.org/t/p/w780/' + article.movie[0].backdrop_path" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{ article.title }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ article.user }}</h6>
-        <router-link 
-          :to="{ name: 'ArticleDetail', params: {id: article.id} }"
-        >Details</router-link>
+    <div class="card h-100">
+      <div
+        class="backdrop"
+        :style="{ backgroundImage: `linear-gradient(rgba(30, 31, 38, 0.2), rgba(30, 31, 38, 1)), url('https://image.tmdb.org/t/p/w780/${article.movie[0].backdrop_path}')`}"
+      >
       </div>
+      <div class="article-info d-flex flex-column">
+        <router-link
+          class="article-title text-start"
+          :to="{ name: 'ArticleDetail', params: {id: article.id} }"
+        >{{ article.title }}</router-link>
+        <h6 class="article-subtitle text-muted text-start">{{ article.user }}</h6>
+        <p class="pub-date text-start">{{ article.create_at|moment }}</p>
+      </div>
+      <span class="like-icon">
+        <i class="fas fa-heart me-1"></i>
+        <span>{{ article.like_count }}</span>
+      </span>
+    </div>
+    <div class="card-body">
     </div>
   </div>
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   name: 'ArticleListItem',
   props: {
@@ -21,11 +34,56 @@ export default {
       type: Object,
     }
   },
+  filters: {
+    moment: function (date) {
+      return moment(date).startOf('day').fromNow();
+    }
+  }
 }
 </script>
 
 <style scoped>
   .card {
-    color: black;
+    width: 18rem;
+    border-radius: 0;
+    color: white;
+    box-shadow: 15px 15px 25px black;
+    border: 0;
+    background-color: #1E1F26;
+    overflow: hidden;
+    position: relative;
+  }
+  .card-body {
+    height: 2rem;
+    padding: 0.2rem 1rem 0.5rem;
+  }
+  .backdrop {
+    position: relative;
+    height: 10rem;
+    background-size: cover;
+  }
+  .article-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  .article-title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  .pub-date {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  .like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(244, 123, 15, 0.8);
+    padding: 0 5px;
+    border-radius: 0.25rem;
   }
 </style>

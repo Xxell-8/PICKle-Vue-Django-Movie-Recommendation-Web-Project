@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="chapter-title">PICK TODAY's MOVIE</h1>
+    <h1 class="chapter-title">PICK TODAY's Keyword</h1>
     <p>오늘의 추천 키워드를 선택해주세요</p>
     <hr>
     <div v-if="pickTheme" class="row gap-3 justify-content-center">
@@ -19,7 +19,7 @@
       </div>
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img src="../../assets/recommend/genre.svg" alt="genre">
+          <img @click="genrePick" src="../../assets/recommend/genre.svg" alt="genre">
         </div>
       </div>
       <div class="col-auto my-2" >
@@ -62,6 +62,12 @@ export default {
         this.pickTheme = true
       }
     },
+    genrePick: async function () {
+      const response = await this.$store.dispatch('movie/getGenreMovies')
+      if (response === 'DONE') {
+        this.pickTheme = true
+      }
+    },
     resetCard: function () {
       this.pickTheme = false
     }
@@ -74,12 +80,10 @@ export default {
 
 <style scoped>
   .chapter-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    /* font-style: italic; */
     font-size: 3rem;
-    color: #F47B0F;
-    -webkit-text-stroke: 0.1rem #fff; 
+    color: #fff;
+    text-shadow: -3px -1px #F47B0F, 4px 1px #441DB2;
   }
   hr {
     width: 10rem;

@@ -54,7 +54,15 @@ const actions = {
       commit('SET_RECOMMEND_MOVIES', response.data)
       return 'DONE'
     }
-  }
+  },
+  async getGenreMovies({ commit, rootState }) {
+    const userToken = rootState.auth.userToken
+    const response = await api.getRandomMovies(userToken)
+    if (response.status === 200) {
+      commit('SET_RECOMMEND_MOVIES', response.data)
+      return 'DONE'
+    }
+  },
 }
 
 const mutations = {

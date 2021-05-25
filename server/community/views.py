@@ -11,6 +11,7 @@ from .models import Article, Comment
 from .serializers import (
     ArticleSerializer,
     ArticleListSerializer,
+    ArticleFormSerializer,
     CommentSerializer,
 )
 
@@ -28,7 +29,7 @@ def article_list(request):
         return Response(serializer.data)
     
     elif request.method == 'POST':
-        serializer = ArticleListSerializer(data=request.data)
+        serializer = ArticleFormSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -46,7 +47,7 @@ def article_detail(request, article_pk):
         return Response(serializer.data)
 
     elif request.method == 'PUT':
-        serializer = ArticleSerializer(article, data=request.data)
+        serializer = ArticleFormSerializer(article, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
@@ -70,7 +71,7 @@ def comment_create(request, article_pk):
 @api_view(['GET','DELETE','PUT'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def comment_detail(request, curation_pk, comment_pk):
+def comment_detail(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     if request.method == 'GET':
         serializer = CommentSerializer(comment)
@@ -96,27 +97,16 @@ def comment_detail(request, curation_pk, comment_pk):
         else:
             return Response(status=status.HTTP_403_FORBIDDEN)
 
-# @api_view(['GET'])
-# def comment_list(request):
-#     comments = get_list_or_404(Comment)
-#     serializer = CommentSerializer(comments, many=True)
-#     return Response(serializer.data)
 
-# @api_view(['PUT'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated])
-# def likes(request, curation_pk):
-#     curation = get_object_or_404(Article, pk=curation_pk)
-#     user_id = (int(request.data['user']))
-#     user = User.objects.get(id=user_id)
-#     if curation.liked_users.filter(id=user.id).exists():
-#         curation.liked_users.remove(user)
-#     else:
-#         curation.liked_users.add(user)
-#     context = {
-#         'liked_user': curation.liked_users,
-#     }
-#     serializer = LikeSerializer(curation, data=context)
-#     if serializer.is_valid(raise_exception=True):
-#         serializer.save()
-#         return Response(serializer.data)
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def like_article(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+
+    if article.liked_user.filter(pk=request.user.pk).exists():
+        article.liked_user.remove(request.user)
+    else:
+        article.liked_user.add(request.user)
+    
+    return Response(status=status.HTTP_200_OK)
