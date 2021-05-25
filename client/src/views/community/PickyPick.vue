@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h1>큐레이션 페이지</h1>
-    <button @click="moveToCreate">Create</button>
-    <ArticleList/>
+  <div class="mt-5">
+    <h1 class="chapter-title">PICKy Pick</h1>
+    <button class="btn btn-outline-warning my-3" @click="moveToCreate">Create</button>
+    <div class="container">
+      <ArticleList/>
+    </div>
   </div>
 </template>
 
@@ -22,6 +24,20 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .chapter-title {
+      font-weight: 900;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: -3px -1px #F47B0F, 4px 1px #441DB2;
+    }
+  .btn-outline-warning {
+    color: #F47B0F;
+    border: 2px solid #F47B0F;
+  }
+  .btn-outline-warning:hover {
+    color: #fff;
+    background-color: #441DB2;
+    border: 2px solid #F47B0F;
+  }
 </style>
