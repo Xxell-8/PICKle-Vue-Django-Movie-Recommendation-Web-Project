@@ -15,6 +15,10 @@ from .serializers import MovieSerializer, GenreListSerializer
 from . import weather
 from django.db.models import Q
 
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+import pandas as pd
+
 User = get_user_model()
 
 # 1. Default - 전체 영화 데이터
@@ -110,6 +114,7 @@ def genre_recommend(request):
     return Response(serializer.data)
 
 
+
 @api_view(['GET'])
 def weather_recommend(request):
 
@@ -127,3 +132,38 @@ def weather_recommend(request):
     serializer = MovieSerializer(reco_movies, many=True)
 
     return Response(serializer.data)
+
+
+def get_recommend_movie_list(movie, movies, similar, top=100):
+    search_movie_idx = movie.index.values
+    similar_idx = similar[search_movie_idx, :top].reshape(-1)
+    similar_idx = similar_idx[similar_idx != search_movie_idx] #제목이 movie_title 인 영화 제외
+    result = movies.iloc[similar_idx].sort_values('id', ascending=False)[:5]
+    return result
+
+
+@api_view(['GET'])
+# @authentication_classes([JSONWebTokenAuthentication])
+# @permission_classes([IsAuthenticated])
+def overview_recommend(request, movie_id):
+    if Movie.objects.get(id=movie_id):
+        
+        movies = pd.DataFrame(list(Movie.objects.all().values()))
+        movie = movies[movies['id'] == movie_id]
+
+        transformer = CountVectorizer()
+        genres_vector = transformer.fit_transform(movies['overview'])
+        similar = cosine_similarity(genres_vector, genres_vector)
+        similar = similar.argsort()
+        similar = similar[:, ::-1]
+        res = get_recommend_movie_list(movie, movies, similar)
+
+        movie_ids = []
+        for i in range(5):
+            movie_ids.append(list(res['id'])[i])
+
+        s_movies = Movie.objects.filter(Q(id=movie_ids[0]) | Q(id=movie_ids[1]) | Q(id=movie_ids[2]) | Q(id=movie_ids[3]) | Q(id=movie_ids[4])).order_by('?')[:5]
+        serializer = MovieSerializer(s_movies, many=True)
+        return Response(serializer.data)
+
+    return Response(status=status.HTTP_400_BAD_REQUEST)

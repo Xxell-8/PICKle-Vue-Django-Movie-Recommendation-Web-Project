@@ -13,4 +13,5 @@ urlpatterns = [
    path('pickle-best/', views.pick_best),
    path('genre-recommend/', views.genre_recommend),
    path('weather-recommend/', views.weather_recommend),
+   path('overview-recommend/<int:movie_id>/', views.overview_recommend),
 ]
