@@ -6,14 +6,14 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from django.db.models import Count
+from django.db.models import Count, Q
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
 from .models import Movie, Genre
 from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
 from . import weather
-from django.db.models import Q
+
 
 User = get_user_model()
 
@@ -99,7 +99,8 @@ def random_movie_list(request):
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
-# 5. Recommend > 선호 장르 기반 추천
+
+# 4. Recommend > 선호 장르 기반 추천
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
@@ -108,6 +109,26 @@ def genre_recommend(request):
     movies = Genre.objects.get(pk=favorite_genre.pk).movie_set.order_by('?')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
+
+
+# 4. Recommend > 비슷한 유저의 Pick 기반 추천
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def similar_recommend(request):
+    pass
+
+
+# 4. Recommend > 최근 Pick한 영화
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def recently_pick(request):
+    # 사용자가 최근에 pick한 영화 추출
+    movie = request.user.pick_movies.first()
+    serializer = MovieSerializer(movie)
+    return Response(serializer.data)
+
 
 
 @api_view(['GET'])
