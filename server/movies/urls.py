@@ -14,4 +14,5 @@ urlpatterns = [
    path('recommend/genre/', views.genre_recommend),
    path('recommend/weather/', views.weather_recommend),
    path('recommend/recent-pick/', views.recently_pick),
+   path('recommend/overview/<int:movie_id>/', views.overview_recommend),
 ]
