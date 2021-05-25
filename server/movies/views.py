@@ -1,3 +1,5 @@
+import random
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -96,6 +98,15 @@ def random_movie_list(request):
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
+# 5. Recommend > 선호 장르 기반 추천
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def genre_recommended(request):
+    favorite_genre = random.choice(request.user.genres.all())
+    movies = Genre.objects.get(pk=favorite_genre.pk).movie_set.order_by('?')[:5]
+    serializer = MovieSerializer(movies, many=True)
+    return Response(serializer.data)
 
 
 # 6.
@@ -107,9 +118,4 @@ def random_movie_list(request):
 
 
 
-# @api_view(['GET'])
-# def genre_recommended(request):
-#     my_genre = get_user_model.objects.get('genre')
-#     movies = Movie.objects.filter(genre=my_genre).order_by("?")[:5]
-#     serializer = MovieSerializer(movies, many=True)
-#     return Response(serializer.data)
+
