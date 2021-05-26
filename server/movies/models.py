@@ -20,10 +20,12 @@ class Movie(models.Model):
     overview = models.TextField()
     poster_path = models.CharField(max_length=200)
     backdrop_path = models.CharField(max_length=200, null=True)
-    release_date = models.DateField()
-    director = models.CharField(max_length=50)
-    runtime = models.CharField(max_length=50)
-    country = models.CharField(max_length=50)
+    release_date = models.DateField(null=True)
+    popular = models.FloatField()
+    rating = models.FloatField()
+
+    trailer = models.CharField(max_length=200, null=True)
+
     netflix = models.BooleanField()
     watcha = models.BooleanField()
     wavve = models.BooleanField()

@@ -32,19 +32,34 @@ const actions = {
       router.push({ name: 'Login'})
     }
   },
+  async follow({ state, dispatch }, userInfo) {
+    const userId = userInfo.id
+    const username = userInfo.username
+    const response = await api.follow(userId, state.userToken)
+    if (response.status === 200) {
+      dispatch('getMyProfile')
+      dispatch('resetProfile', username)
+    }
+  },
   async getMyProfile({ commit, getters }) {
-    const response = await api.getUserInfo(getters.decodeToken.user_id)
+    const response = await api.getUserInfo(getters.decodeToken.username)
     if (response.status === 200) {
       commit('SET_MY_PROFILE', response.data)
     }
   },
-  async getUserProfile({ commit }, userId) {
-    const response = await api.getUserInfo(userId)
+  async getUserProfile({ commit }, username) {
+    const response = await api.getUserInfo(username)
+    if (response.status === 200) {
+      commit('SET_USER_PROFILE', response.data)
+      router.push({ name: 'UserProfile', params: { username: username }})
+    }
+  },
+  async resetProfile({ commit }, username) {
+    const response = await api.getUserInfo(username)
     if (response.status === 200) {
       commit('SET_USER_PROFILE', response.data)
     }
   },
-
   async pickMovie ({ state, dispatch }, moviePk) {
     const response = await api.pickMovie(moviePk, state.userToken)
     if (response.status === 200) {

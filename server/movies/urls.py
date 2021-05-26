@@ -10,9 +10,9 @@ urlpatterns = [
    path('<int:movie_pk>/<options>/', views.rating),
    path('search/', views.movie_search_list),
    path('pickle-best/', views.pick_best),
-   path('recommend/random/', views.random_movie_list),
+   path('recommend/random/', views.random_recommend),
    path('recommend/genre/', views.genre_recommend),
+   path('recommend/follow/', views.follow_recommend),
    path('recommend/weather/', views.weather_recommend),
-   path('recommend/recent-pick/', views.recently_pick),
-   path('recommend/overview/<int:movie_id>/', views.overview_recommend),
+   path('recommend/overview/', views.overview_recommend),
 ]

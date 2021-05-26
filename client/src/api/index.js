@@ -10,8 +10,17 @@ export default {
   signup(userData) {
     return axios.post(`${SERVER_URL}/accounts/signup/`, userData)
   },
-  getUserInfo(userId) {
-    return axios.get(`${SERVER_URL}/accounts/${userId}/`)
+  getUserInfo(username) {
+    return axios.get(`${SERVER_URL}/accounts/${username}/`)
+  },
+  follow(userId, token) {
+    return axios({
+      method: 'post',
+      url: `${SERVER_URL}/accounts/${userId}/follow/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      }
+    })
   },
 
   // movie
@@ -36,11 +45,32 @@ export default {
   getGenreMovies(token) {
     return axios({
       method: 'get',
-      url: `${SERVER_URL}/movies/genre-recommend/`,
+      url: `${SERVER_URL}/movies/recommend/genre/`,
       headers: {
         Authorization: `JWT ${token}`
       },
     })
+  },
+  getFollowingsMovies(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/movies/recommend/follow/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
+  getSimilarMovies(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/movies/recommend/overview/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
+  },
+  getMoodMovies() {
+    return axios.get(`${SERVER_URL}/movies/recommend/weather/`)
   },
   pickMovie(moviePk, token) {
     return axios({

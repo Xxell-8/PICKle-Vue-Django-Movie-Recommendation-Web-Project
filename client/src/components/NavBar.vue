@@ -17,6 +17,9 @@
             <li class="nav-item">
               <router-link class="nav-link" @click.native="logout" to="#">로그아웃</router-link>
             </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'MyProfile' }">My Pick</router-link>
+            </li>
             <span class="navbar-text text-white">Hello, {{ decodeToken.username }}!</span>
           </ul>
         </span>
