@@ -123,7 +123,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .article-box {
     background-color: #1E1F26;
   }
@@ -153,7 +153,7 @@ export default {
     margin-bottom: 2px;
   }
   .article-content {
-    max-width: 10rem;
+    max-width: 50rem;
   }
   .article-plus {
     font-weight: 400;

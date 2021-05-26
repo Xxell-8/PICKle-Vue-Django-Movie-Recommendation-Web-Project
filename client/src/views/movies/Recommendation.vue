@@ -1,15 +1,21 @@
 <template>
   <div>
     <h1 class="chapter-title">PICK TODAY's Keyword</h1>
-    <p>오늘의 추천 키워드를 선택해주세요</p>
-    <hr>
+    <button 
+      v-if="pickTheme" 
+      @click="resetCard"
+      class="btn btn-outline-warning my-3"
+    >다시뽑기</button>
+    <div v-else>
+      <p>오늘의 추천 키워드를 선택해주세요</p>
+      <hr>
+    </div>
     <div v-if="pickTheme" class="row gap-3 justify-content-center">
       <MovieItem
         v-for="(movie, idx) in recommendMovies"
         :key="idx"
         :movie="movie"
       />
-      <button @click="resetCard">다시뽑기</button>
     </div>
     <div v-else class="row gap-3 justify-content-center">
       <div class="col-auto my-2" >
@@ -24,17 +30,17 @@
       </div>
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img src="../../assets/recommend/similar.svg" alt="similar">
+          <img @click="followPick" src="../../assets/recommend/follow.svg" alt="follow">
         </div>
       </div>
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img src="../../assets/recommend/classic.svg" alt="classic">
+          <img @click="moodPick" src="../../assets/recommend/weather.svg" alt="weather">
         </div>
       </div>
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img src="../../assets/recommend/series.svg" alt="series">
+          <img @click="similarPick" src="../../assets/recommend/similar.svg" alt="similar">
         </div>
       </div>
     </div>    
@@ -68,6 +74,24 @@ export default {
         this.pickTheme = true
       }
     },
+    followPick: async function () {
+      const response = await this.$store.dispatch('movie/getFollowingsMovies')
+      if (response === 'DONE') {
+        this.pickTheme = true
+      }
+    },
+    moodPick: async function () {
+      const response = await this.$store.dispatch('movie/getMoodMovies')
+      if (response === 'DONE') {
+        this.pickTheme = true
+      }
+    },
+    similarPick: async function () {
+      const response = await this.$store.dispatch('movie/getSimilarMovies')
+      if (response === 'DONE') {
+        this.pickTheme = true
+      }
+    },
     resetCard: function () {
       this.pickTheme = false
     }
@@ -97,5 +121,14 @@ export default {
     width: 13rem;
     overflow: hidden;
     box-shadow: 15px 15px 25px black;
+  }
+  .btn-outline-warning {
+    color: #F47B0F;
+    border: 2px solid #F47B0F;
+  }
+  .btn-outline-warning:hover {
+    color: #fff;
+    background-color: #441DB2;
+    border: 2px solid #F47B0F;
   }
 </style>

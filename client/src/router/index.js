@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 import Login from '@/views/accounts/Login'
 import Signup from '@/views/accounts/Signup'
+import MyProfile from '@/views/accounts/MyProfile'
+import UserProfile from '@/views/accounts/UserProfile'
 
 import PickyPick from '@/views/community/PickyPick'
 import ArticleDetail from '@/views/community/ArticleDetail'
@@ -61,7 +63,16 @@ const routes = [
     name: 'Signup',
     component: Signup
   },
-
+  {
+    path: '/accounts/profile/',
+    name: 'MyProfile',
+    component: MyProfile
+  },
+  {
+    path: '/accounts/profile/:username',
+    name: 'UserProfile',
+    component: UserProfile
+  },
 ]
 
 const router = new VueRouter({

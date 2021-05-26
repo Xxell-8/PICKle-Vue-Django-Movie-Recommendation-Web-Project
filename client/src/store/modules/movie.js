@@ -57,7 +57,30 @@ const actions = {
   },
   async getGenreMovies({ commit, rootState }) {
     const userToken = rootState.auth.userToken
-    const response = await api.getRandomMovies(userToken)
+    const response = await api.getGenreMovies(userToken)
+    if (response.status === 200) {
+      commit('SET_RECOMMEND_MOVIES', response.data)
+      return 'DONE'
+    }
+  },
+  async getFollowingsMovies({ commit, rootState }) {
+    const userToken = rootState.auth.userToken
+    const response = await api.getFollowingsMovies(userToken)
+    if (response.status === 200) {
+      commit('SET_RECOMMEND_MOVIES', response.data)
+      return 'DONE'
+    }
+  },
+  async getSimilarMovies({ commit, rootState }) {
+    const userToken = rootState.auth.userToken
+    const response = await api.getSimilarMovies(userToken)
+    if (response.status === 200) {
+      commit('SET_RECOMMEND_MOVIES', response.data)
+      return 'DONE'
+    }
+  },
+  async getMoodMovies({ commit }) {
+    const response = await api.getMoodMovies()
     if (response.status === 200) {
       commit('SET_RECOMMEND_MOVIES', response.data)
       return 'DONE'

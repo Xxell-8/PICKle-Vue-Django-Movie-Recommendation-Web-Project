@@ -24,7 +24,7 @@
             <span :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
             <span :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-3 me-2"></i>{{ movie.dislike_count }}</span>
           </div>
-          <p class="mb-0">감독 | {{ movie.director }}</p>
+          <!-- <p class="mb-0">감독 | {{ movie.director }}</p> -->
           <p class="mb-0">개봉일 | {{ movie.release_date | moment }}</p>
           <p>{{ movie.overview }}</p>
         </div>

@@ -1,23 +1,20 @@
 import random
+import requests
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
 
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-
 from django.db.models import Count, Q
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
-
 from .models import Movie, Genre
-from .serializers import MovieSerializer, GenreListSerializer, MovieWeatherSerializer
-from . import weather
+from .serializers import MovieSerializer, GenreListSerializer
 
-
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
-import pandas as pd
 
 User = get_user_model()
 
@@ -98,7 +95,7 @@ def movie_search_list(request):
 
 # 4. Recommend > 랜덤 영화 추천 
 @api_view(['GET'])
-def random_movie_list(request):
+def random_recommend(request):
     movies = Movie.objects.order_by("?")[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
@@ -109,50 +106,64 @@ def random_movie_list(request):
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def genre_recommend(request):
-    favorite_genre = random.choice(request.user.genres.all())
-    movies = Genre.objects.get(pk=favorite_genre.pk).movie_set.order_by('?')[:5]
+    genres = request.user.genres.all()
+    if not genres:
+        return Response(status=status.HTTP_403_FORBIDDEN)
+    else:
+        length = len(genres)
+        if length == 1:
+            movies = Movie.objects.filter(genres=genres[0]).order_by('?')[:5]
+        elif length == 2:
+            movies = Movie.objects.filter(Q(genres=genres[0]) | Q(genres=genres[1])).order_by('?')[:5]
+        elif length == 3:
+            movies = Movie.objects.filter(Q(genres=genres[0]) | Q(genres=genres[1]) | Q(genres=genres[2])).order_by('?')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-# 4. Recommend > 비슷한 유저의 Pick 기반 추천
+# 4. Recommend > 팔로우한 유저 기반 추천
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def similar_recommend(request):
-    pass
-
-
-# 4. Recommend > 최근 Pick한 영화
-@api_view(['GET'])
-@authentication_classes([JSONWebTokenAuthentication])
-@permission_classes([IsAuthenticated])
-def recently_pick(request):
-    # 사용자가 최근에 pick한 영화 추출
-    movie = request.user.pick_movies.first()
-    serializer = MovieSerializer(movie)
+def follow_recommend(request):
+    user = request.user.followings.order_by('?').first()
+    movies = user.pick_movies.order_by('-pk')[:5]
+    serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-
+# 4. Recommend > 날씨 기반 추천
 @api_view(['GET'])
 def weather_recommend(request):
+    API_KEY = 'd57e371644d9902e233f378564a6257b'
+    API_URL = f'https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid={API_KEY}'
 
-    genre_list, IMG_URL, loc_name = weather.recommend_movie()
+    response = requests.get(API_URL).json()
+    weather = response.get('weather')[0].get('main')
 
-    r_movies = []
-    for i in range(5):
-        if i < len(genre_list):
-            r_movies.append(get_object_or_404(Genre, name=genre_list[i]))
-        else:
-            r_movies.append(get_object_or_404(Genre, name=genre_list[0]))
+    if weather == 'Thunderstorm':
+        genre_list =  ['공포', '범죄', '스릴러', '미스테리']
+    elif weather == 'Drizzle':
+        genre_list =  ['드라마', '애니메이션', '다큐멘터리']
+    elif weather == 'Rain':
+        genre_list =  ['로맨스', '음악', '애니메이션']
+    elif weather == 'Snow':
+        genre_list =  ['모험', '판타지', '가족']
+    elif weather == 'Clear':
+        genre_list =  ['액션', '코미디', '가족']
+    elif weather == 'Clouds':
+        genre_list =  ['TV 영화', '전쟁']
+    else:
+        genre_list =  ['역사', '서부', 'SF']
 
-    reco_movies = Movie.objects.filter(Q(genres=r_movies[0]) | Q(genres=r_movies[1]) | Q(genres=r_movies[2]) | Q(genres=r_movies[3]) | Q(genres=r_movies[4])).order_by('?')[:5]
-    serializer = MovieSerializer(reco_movies, many=True)
+    genre_name = random.choice(genre_list)
+    genre_id = get_object_or_404(Genre, name=genre_name)
+    movies = Movie.objects.filter(genres=genre_id).order_by('?')[:5]
+    serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-def get_recommend_movie_list(movie, movies, similar, top=100):
+def get_recommend_movie_list(movie, movies, similar, top=10):
     search_movie_idx = movie.index.values
     similar_idx = similar[search_movie_idx, :top].reshape(-1)
     similar_idx = similar_idx[similar_idx != search_movie_idx] #제목이 movie_title 인 영화 제외
@@ -160,27 +171,26 @@ def get_recommend_movie_list(movie, movies, similar, top=100):
     return result
 
 
+# 4. Recommend > 최근 Pick한 영화 기준 유사한 줄거리 영화 추천
 @api_view(['GET'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated])
-def overview_recommend(request, movie_id):
-    if Movie.objects.get(id=movie_id):
-        
-        movies = pd.DataFrame(list(Movie.objects.all().values()))
-        movie = movies[movies['id'] == movie_id]
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def overview_recommend(request):
+    movie_id = request.user.pick_movies.first().id
+    movies = pd.DataFrame(list(Movie.objects.all().values()))
+    movie = movies[movies['id'] == movie_id]
 
-        transformer = CountVectorizer()
-        genres_vector = transformer.fit_transform(movies['overview'])
-        similar = cosine_similarity(genres_vector, genres_vector)
-        similar = similar.argsort()
-        similar = similar[:, ::-1]
-        res = get_recommend_movie_list(movie, movies, similar)
+    transformer = CountVectorizer()
+    genres_vector = transformer.fit_transform(movies['overview'])
+    similar = cosine_similarity(genres_vector, genres_vector)
+    similar = similar.argsort()
+    similar = similar[:, ::-1]
+    res = get_recommend_movie_list(movie, movies, similar)
 
-        movie_ids = []
-        for i in range(5):
-            movie_ids.append(list(res['id'])[i])
+    movie_ids = []
+    for i in range(5):
+        movie_ids.append(list(res['id'])[i])
 
-        s_movies = Movie.objects.filter(Q(id=movie_ids[0]) | Q(id=movie_ids[1]) | Q(id=movie_ids[2]) | Q(id=movie_ids[3]) | Q(id=movie_ids[4])).order_by('?')[:5]
-        serializer = MovieSerializer(s_movies, many=True)
-        return Response(serializer.data)
-    return Response(status=status.HTTP_400_BAD_REQUEST)
+    s_movies = Movie.objects.filter(Q(id=movie_ids[0]) | Q(id=movie_ids[1]) | Q(id=movie_ids[2]) | Q(id=movie_ids[3]) | Q(id=movie_ids[4])).order_by('?')[:5]
+    serializer = MovieSerializer(s_movies, many=True)
+    return Response(serializer.data)

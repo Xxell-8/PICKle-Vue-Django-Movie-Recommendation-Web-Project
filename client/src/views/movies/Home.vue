@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <HomeHeader/>
+    <!-- <HomeHeader/> -->
     <BestMovie/>
   </div>
 </template>
 
 <script>
-import HomeHeader from '@/components/movies/HomeHeader'
+// import HomeHeader from '@/components/movies/HomeHeader'
 import BestMovie from '@/components/movies/BestMovie'
 
 export default {
   name: 'Home',
   components: {
-    HomeHeader,
+    // HomeHeader,
     BestMovie,
   },
 }

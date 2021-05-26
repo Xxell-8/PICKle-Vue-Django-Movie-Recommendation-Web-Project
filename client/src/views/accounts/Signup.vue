@@ -19,12 +19,6 @@
               <input class="form-control" type="password" placeholder="Password Confirmation" v-model="userInfo.passwordConfirmation" required>
             </div>
             <div class="mb-3">
-              <input class="form-control" type="text" placeholder="First Name" v-model="userInfo.first_name" required>
-            </div>
-            <div class="mb-3">
-              <input class="form-control" type="text" placeholder="Last Name" v-model="userInfo.last_name" required>
-            </div>
-            <div class="mb-3">
               <multiselect 
                 v-model="tags"
                 label="name"

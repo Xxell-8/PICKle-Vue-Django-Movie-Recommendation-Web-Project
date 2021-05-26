@@ -6,13 +6,12 @@
         :style="{ backgroundImage: `linear-gradient(rgba(30, 31, 38, 0.2), rgba(30, 31, 38, 1)), url('https://image.tmdb.org/t/p/w780/${article.movie[0].backdrop_path}')`}"
       >
       </div>
-      <div class="article-info d-flex flex-column text-start">
+      <div class="article-info d-flex flex-column">
         <router-link
-          class="article-title"
+          class="article-title text-start"
           :to="{ name: 'ArticleDetail', params: {id: article.id} }"
         >{{ article.title }}</router-link>
-        <h6 @click="getUserProfile(article.user)" class="article-user text-muted">{{ article.user }}</h6>
-        <p class="pub-date">{{ article.created_at|moment }}</p>
+        <p class="pub-date text-start">{{ article.created_at|moment }}</p>
       </div>
       <span class="like-icon">
         <i class="fas fa-heart me-1"></i>
@@ -26,7 +25,6 @@
 
 <script>
 import moment from 'moment'
-import { mapActions } from 'vuex'
 
 export default {
   name: 'ArticleListItem',
@@ -34,9 +32,6 @@ export default {
     article: {
       type: Object,
     }
-  },
-  methods: {
-    ...mapActions('auth', ['getUserProfile'])
   },
   filters: {
     moment: function (date) {
@@ -48,7 +43,7 @@ export default {
 
 <style scoped>
   .card {
-    width: 18rem;
+    width: 12rem;
     border-radius: 0;
     color: white;
     box-shadow: 15px 15px 25px black;
@@ -76,9 +71,6 @@ export default {
     font-weight: 700;
     font-size: 1.2rem;
     margin-bottom: 2px;
-  }
-  .article-user {
-    cursor: pointer;
   }
   .pub-date {
     margin: 0;
