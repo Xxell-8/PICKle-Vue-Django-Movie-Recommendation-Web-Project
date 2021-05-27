@@ -221,7 +221,7 @@ def overview_recommend(request):
     for watch in watchs:
         exceptions.append(watch.id)
 
-    movie_id = request.user.pick_movies.first().id
+    movie_id = request.user.pick_movies.exclude(overview='').first().id
     movies = pd.DataFrame(list(Movie.objects.exclude(Q(overview='')|Q(id__in=exceptions)).values()))
     movie = movies[movies['id'] == movie_id]
 
