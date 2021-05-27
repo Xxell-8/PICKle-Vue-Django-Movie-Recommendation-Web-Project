@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-5">
     <div class="profile-header d-flex align-items-center">
       <div class="col-2">
         <img class="logo" src="../../assets/logo.svg" alt="">

@@ -20,8 +20,8 @@
             </div>
             <hr>
             <div>
-              <span>아직 회원이 아니라면? </span>
-              <a @click="moveToSignup" href="#">회원가입</a>
+              <span>PICKLE에 가입해보세요 ▸ </span>
+              <a class="signup-link" @click="moveToSignup" href="#">Signup</a>
             </div>
           </div>
         </div>
@@ -76,6 +76,9 @@ export default {
     color: #fff;
     background-color: #441DB2;
     border: 2px solid #F47B0F;
+  }
+  .signup-link {
+    color: #F47B0F;
   }
   
 </style>

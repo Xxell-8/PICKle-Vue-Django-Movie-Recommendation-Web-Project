@@ -16,10 +16,10 @@
             data-bs-toggle="modal"
             :data-bs-target="'#detailModal-' + movie.id">Details</button>
           <ul v-if="isLogin" class="icons">
-            <li :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-4"></i></li>
-            <li :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star fs-4"></i></li>
-            <li :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-4"></i></li>
-            <li :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-4"></i></li>
+            <li :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="clickable fas fa-heartbeat fs-4"></i></li>
+            <li :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="clickable fas fa-star fs-4"></i></li>
+            <li :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="clickable fas fa-eye fs-4"></i></li>
+            <li :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="clickable fas fa-ban fs-4"></i></li>
           </ul>
         </div>
       </div>
@@ -164,6 +164,7 @@ export default {
   .btn {
     border-radius: 0;
     margin-bottom: 1rem;
+    box-shadow: none;
   }
   .btn-primary {
   color: #fff;
@@ -187,5 +188,9 @@ export default {
 
   .orange {
     color: #F47B0F;
+  }
+
+  .clickable {
+    cursor: pointer;
   }
 </style>

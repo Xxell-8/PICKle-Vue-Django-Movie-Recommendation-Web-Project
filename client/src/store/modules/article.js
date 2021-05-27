@@ -98,11 +98,17 @@ const actions = {
       return 'DONE'
     }
   },
+  resetArticle({ commit }) {
+    commit('RESET_ARTICLE_DETAIL')
+  }
 }
 
 const mutations = {
   SET_ARTICLES(state, payload) {
     state.articles = payload
+  },
+  RESET_ARTICLE_DETAIL(state) {
+    state.articles = []
   },
   SET_ARTICLE_DETAIL(state, payload) {
     state.article = payload

@@ -48,8 +48,9 @@ const actions = {
       commit('SET_DETAIL', response.data)
     }
   },
-  async getRandomMovies({ commit }) {
-    const response = await api.getRandomMovies()
+  async getRandomMovies({ commit, rootState }) {
+    const userToken = rootState.auth.userToken
+    const response = await api.getRandomMovies(userToken)
     if (response.status === 200) {
       commit('SET_RECOMMEND_MOVIES', response.data)
       return 'DONE'
@@ -79,8 +80,9 @@ const actions = {
       return 'DONE'
     }
   },
-  async getMoodMovies({ commit }) {
-    const response = await api.getMoodMovies()
+  async getMoodMovies({ commit, rootState }) {
+    const userToken = rootState.auth.userToken
+    const response = await api.getMoodMovies(userToken)
     if (response.status === 200) {
       commit('SET_RECOMMEND_MOVIES', response.data)
       return 'DONE'

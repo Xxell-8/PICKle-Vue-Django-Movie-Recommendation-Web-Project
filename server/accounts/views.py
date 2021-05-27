@@ -7,7 +7,7 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
 
-from .serializers import UserSerializer, UserInfoSerializer
+from .serializers import UserSerializer, UserInfoSerializer, UserUpdateSerializer
 
 User = get_user_model()
 
@@ -27,6 +27,21 @@ def signup(request):
         user.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+
+@api_view(['GET', 'PUT'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def update_info(request):
+    if request.method == 'GET':
+        serializer = UserUpdateSerializer(request.user)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = UserUpdateSerializer(request.user, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+            
 
 @api_view(['GET'])
 def profile(request, username):

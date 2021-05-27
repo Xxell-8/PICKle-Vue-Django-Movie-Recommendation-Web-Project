@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import datetime
+from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +29,7 @@ SECRET_KEY = 'django-insecure-dtd%%y0+w$w0www%n!5-7)uf!s-wa$jg#9jbwlb(+spe$!e*4+
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+OPEN_WEATHER_MAP_API_KEY = config('OPEN_WEATHER_MAP_API_KEY')
 
 # Application definition
 
@@ -39,7 +41,6 @@ INSTALLED_APPS = [
     # 3rd-party
     'rest_framework',
     'corsheaders',
-    'django_extensions',
     # django
     'django.contrib.admin',
     'django.contrib.auth',

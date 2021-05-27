@@ -13,6 +13,16 @@ export default {
   getUserInfo(username) {
     return axios.get(`${SERVER_URL}/accounts/${username}/`)
   },
+  updateUserInfo(userData, token) {
+    return axios({
+      method: 'put',
+      url: `${SERVER_URL}/accounts/userinfo/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+      data: userData
+    })
+  },
   follow(userId, token) {
     return axios({
       method: 'post',
@@ -39,8 +49,14 @@ export default {
   searchData(inputText) {
     return axios.get(`${SERVER_URL}/movies/search?q=${inputText}`)
   },
-  getRandomMovies() {
-    return axios.get(`${SERVER_URL}/movies/recommend/random/`)
+  getRandomMovies(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/movies/recommend/random/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
   },
   getGenreMovies(token) {
     return axios({
@@ -69,8 +85,14 @@ export default {
       },
     })
   },
-  getMoodMovies() {
-    return axios.get(`${SERVER_URL}/movies/recommend/weather/`)
+  getMoodMovies(token) {
+    return axios({
+      method: 'get',
+      url: `${SERVER_URL}/movies/recommend/weather/`,
+      headers: {
+        Authorization: `JWT ${token}`
+      },
+    })
   },
   pickMovie(moviePk, token) {
     return axios({
