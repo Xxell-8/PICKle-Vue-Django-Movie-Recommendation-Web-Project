@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
+from django.db.models import Count
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404, get_list_or_404
 
@@ -24,7 +25,7 @@ User = get_user_model()
 @permission_classes([IsAuthenticated])
 def article_list(request):
     if request.method == 'GET':
-        articles = get_list_or_404(Article)
+        articles = Article.objects.annotate(like_count=Count('liked_user')).order_by('-like_count', '-created_at')
         serializer = ArticleListSerializer(articles, many=True)
         return Response(serializer.data)
     
