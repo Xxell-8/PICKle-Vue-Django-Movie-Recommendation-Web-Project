@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5">
+  <div class="my-5">
     <div 
       class="backdrop"
       :style="{ backgroundImage: `linear-gradient(rgba(41, 42, 51, 0.2), rgba(41, 42, 51, 1)), url('https://image.tmdb.org/t/p/w780/${article.movie[0].backdrop_path}')`}"
@@ -8,7 +8,7 @@
         <h1 class="article-title">{{ article.title }}</h1>
         <p class="m-1 text-muted article-plus">
           <i class="fas fa-pizza-slice me-2"></i>
-          <span>{{ article.user }}</span> , {{ article.created_at|moment }}</p>
+          <span class="article-user" @click="getUserProfile(article.user)">{{ article.user }}</span> , {{ article.created_at|moment }}</p>
         <p class="m-1 article-content">{{ article.content }}</p>
       </div>
       <span class="article-like">
@@ -75,6 +75,7 @@ export default {
     }
   },
   methods: {
+    ...mapActions('auth', ['getUserProfile']),
     ...mapActions(
       'article', 
       [
@@ -129,7 +130,7 @@ export default {
   }
   .backdrop {
     position: relative;
-    height: 18rem;
+    height: 20rem;
     background-size: cover;
   }
   .article-like {
@@ -151,6 +152,9 @@ export default {
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 2px;
+  }
+  .article-user {
+    cursor: pointer;
   }
   .article-content {
     max-width: 50rem;

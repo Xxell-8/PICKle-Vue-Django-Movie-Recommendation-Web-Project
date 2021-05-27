@@ -12,6 +12,7 @@ import CreateArticle from '@/views/community/CreateArticle'
 import UpdateArticle from '@/views/community/UpdateArticle'
 
 import Home from '@/views/movies/Home'
+import Pickle from '@/views/movies/Pickle'
 import Search from '@/views/movies/Search'
 import Recommendation from '@/views/movies/Recommendation'
 
@@ -19,9 +20,14 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/movies',
+    path: '',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/movies',
+    name: 'Pickle',
+    component: Pickle
   },
   {
     path: '/movies/search',

@@ -49,7 +49,7 @@ export default {
     color: #bbb;
     background:none;
     letter-spacing: 1px;
-    word-spacing: 10px;
+    word-spacing: 2px;
     padding: 0;
     line-height: 25px;
     outline: none;

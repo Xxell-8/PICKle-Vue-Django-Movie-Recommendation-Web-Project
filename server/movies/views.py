@@ -1,6 +1,7 @@
 import random
 import requests
 import pandas as pd
+from decouple import config
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -76,10 +77,10 @@ def rating(request, movie_pk, options):
     return Response(status=status.HTTP_200_OK)
 
 
-# 2. HOME > PICK Best
+# 2. HOME > PICK Best > Pick 많은 순 + 최근 영화 순
 @api_view(['GET'])
 def pick_best(request):
-    movies = Movie.objects.annotate(pick_count=Count('pick_users')).order_by('-pick_count')[:10]
+    movies = Movie.objects.annotate(pick_count=Count('pick_users')).order_by('-pick_count', '-release_date')[:30]
     serializer = MovieSerializer(movies, many =True)
     return Response(serializer.data)
 
@@ -93,15 +94,25 @@ def movie_search_list(request):
     return Response(serializer.data)
 
 
-# 4. Recommend > 랜덤 영화 추천 
+# 4. Recommend > 랜덤 영화 추천 + 본 영화/관심없는 영화 제외
 @api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def random_recommend(request):
-    movies = Movie.objects.order_by("?")[:5]
+    dislikes = request.user.dislike_movies.all()
+    watchs = request.user.watch_movies.all()
+    exceptions = []
+    for dislike in dislikes:
+        exceptions.append(dislike.id)
+    for watch in watchs:
+        exceptions.append(watch.id)
+
+    movies = Movie.objects.exclude(id__in=exceptions).order_by("?")[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-# 4. Recommend > 선호 장르 기반 추천
+# 4. Recommend > 선호 장르 기반 추천 + 본 영화/관심없는 영화 제외
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
@@ -111,31 +122,49 @@ def genre_recommend(request):
         return Response(status=status.HTTP_403_FORBIDDEN)
     else:
         length = len(genres)
+        dislikes = request.user.dislike_movies.all()
+        watchs = request.user.watch_movies.all()
+        exceptions = []
+        for dislike in dislikes:
+            exceptions.append(dislike.id)
+        for watch in watchs:
+            exceptions.append(watch.id)
+
         if length == 1:
-            movies = Movie.objects.filter(genres=genres[0]).order_by('?')[:5]
+            movies = Movie.objects.exclude(id__in=exceptions).filter(genres=genres[0]).order_by('?')[:5]
         elif length == 2:
-            movies = Movie.objects.filter(Q(genres=genres[0]) | Q(genres=genres[1])).order_by('?')[:5]
+            movies = Movie.objects.exclude(id__in=exceptions).filter(Q(genres=genres[0]) | Q(genres=genres[1])).order_by('?')[:5]
         elif length == 3:
-            movies = Movie.objects.filter(Q(genres=genres[0]) | Q(genres=genres[1]) | Q(genres=genres[2])).order_by('?')[:5]
+            movies = Movie.objects.exclude(id__in=exceptions).filter(Q(genres=genres[0]) | Q(genres=genres[1]) | Q(genres=genres[2])).order_by('?')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-# 4. Recommend > 팔로우한 유저 기반 추천
+# 4. Recommend > 팔로우한 유저 기반 추천 + 본 영화/관심없는 영화 제외
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def follow_recommend(request):
+    dislikes = request.user.dislike_movies.all()
+    watchs = request.user.watch_movies.all()
+    exceptions = []
+    for dislike in dislikes:
+        exceptions.append(dislike.id)
+    for watch in watchs:
+        exceptions.append(watch.id)
+
     user = request.user.followings.order_by('?').first()
-    movies = user.pick_movies.order_by('-pk')[:5]
+    movies = user.pick_movies.exclude(id__in=exceptions).order_by('-pk')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-# 4. Recommend > 날씨 기반 추천
+# 4. Recommend > 날씨 기반 추천 + 본 영화/관심없는 영화 제외
 @api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
 def weather_recommend(request):
-    API_KEY = 'd57e371644d9902e233f378564a6257b'
+    API_KEY= config('OPEN_WEATHER_MAP_API_KEY')
     API_URL = f'https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid={API_KEY}'
 
     response = requests.get(API_URL).json()
@@ -156,9 +185,17 @@ def weather_recommend(request):
     else:
         genre_list =  ['역사', '서부', 'SF']
 
+    dislikes = request.user.dislike_movies.all()
+    watchs = request.user.watch_movies.all()
+    exceptions = []
+    for dislike in dislikes:
+        exceptions.append(dislike.id)
+    for watch in watchs:
+        exceptions.append(watch.id)
+
     genre_name = random.choice(genre_list)
     genre_id = get_object_or_404(Genre, name=genre_name)
-    movies = Movie.objects.filter(genres=genre_id).order_by('?')[:5]
+    movies = Movie.objects.exclude(id__in=exceptions).filter(genres=genre_id).order_by('?')[:5]
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
@@ -171,13 +208,21 @@ def get_recommend_movie_list(movie, movies, similar, top=10):
     return result
 
 
-# 4. Recommend > 최근 Pick한 영화 기준 유사한 줄거리 영화 추천
+# 4. Recommend > 최근 Pick한 영화 기준 유사한 줄거리 영화 추천 + 본 영화/관심없는 영화 제외
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def overview_recommend(request):
+    dislikes = request.user.dislike_movies.all()
+    watchs = request.user.watch_movies.all()
+    exceptions = []
+    for dislike in dislikes:
+        exceptions.append(dislike.id)
+    for watch in watchs:
+        exceptions.append(watch.id)
+
     movie_id = request.user.pick_movies.first().id
-    movies = pd.DataFrame(list(Movie.objects.all().values()))
+    movies = pd.DataFrame(list(Movie.objects.exclude(Q(overview='')|Q(id__in=exceptions)).values()))
     movie = movies[movies['id'] == movie_id]
 
     transformer = CountVectorizer()

@@ -1,7 +1,5 @@
 <template>
   <div class="mx-5">
-    <h1 class="chapter-title">PICKle's BEST</h1>
-    <hr>
     <div class="row gap-3 justify-content-center">
       <MovieItem
         v-for="(movie, idx) in bestMovies"
@@ -27,7 +25,7 @@ export default {
   computed: {
     ...mapState('movie', ['bestMovies'])
   },
-  created: function () {
+  mounted: function () {
     this.getBestMovies()
   }
 }

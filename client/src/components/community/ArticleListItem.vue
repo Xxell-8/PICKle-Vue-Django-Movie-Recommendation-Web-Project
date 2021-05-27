@@ -42,6 +42,9 @@ export default {
     moment: function (date) {
       return moment(date).fromNow()
     }
+  },
+  destroyed: function () {
+    this.$store.dispatch('article/resetArticle')
   }
 }
 </script>

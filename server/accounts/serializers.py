@@ -1,6 +1,4 @@
-from django.db import models
 from rest_framework import serializers
-from django.db.models import fields
 from django.contrib.auth import get_user_model
 from movies.serializers import MovieSerializer
 from community.serializers import ArticleSerializer
@@ -13,6 +11,13 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = ('username', 'password', 'genres')
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = get_user_model()
+        fields = ('introduce', 'genres')
 
 
 class UserInfoSerializer(serializers.ModelSerializer):
@@ -34,7 +39,7 @@ class UserInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = (
-            'id', 'username',
+            'id', 'username', 'is_superuser',
             'introduce', 'genres', 'article_set', 'liked_articles',
             'pick_movies', 'wish_movies', 'watch_movies', 'dislike_movies',
             'pick_count', 'wish_count', 'watch_count', 'dislike_count',

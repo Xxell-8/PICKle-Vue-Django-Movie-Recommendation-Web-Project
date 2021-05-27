@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-5">
+  <div>
     <h1 class="chapter-title">PICKy Pick</h1>
     <button class="btn btn-outline-warning my-3" @click="moveToCreate">Create</button>
-    <div class="container">
+    <div class="mx-5">
       <ArticleList/>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
-    <router-view/>
+    <router-view style="margin-top: 5rem;"/>
   </div>
 </template>
 
@@ -24,18 +24,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #FFF;
-}
-
-#nav a.router-link-exact-active {
-  color: #F47B0F;
 }
 </style>

@@ -19,13 +19,11 @@
         </div>
         <div class="modal-body d-flex flex-column gap-3">
           <div class="movie-rate d-flex align-items-baseline gap-3">
-            <span :class="{orange : isPicked}"><i @click="pickMovie(movie.id)" class="fas fa-heartbeat fs-3 me-2"></i>{{ movie.pick_count }}</span>
-            <span :class="{orange : isWished}"><i @click="wishMovie(movie.id)" class="fas fa-star fs-3 me-2"></i>{{ movie.wish_count }}</span>
-            <span :class="{orange : isWatched}"><i @click="watchMovie(movie.id)" class="fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
-            <span :class="{orange : isDisliked}"><i @click="dislikeMovie(movie.id)" class="fas fa-times-circle fs-3 me-2"></i>{{ movie.dislike_count }}</span>
+            <span :class="{orange : isPicked}"><i @click="onPick" class="clickable fas fa-heartbeat fs-3 me-2"></i>{{ pickCnt }}</span>
+            <span :class="{orange : isWished}"><i @click="onWish" class="clickable fas fa-star fs-3 me-2"></i>{{ movie.wish_count }}</span>
+            <span :class="{orange : isWatched}"><i @click="onWatch" class="clickable fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
+            <span :class="{orange : isDisliked}"><i @click="onDislike" class="clickable fas fa-ban fs-3 me-2"></i>{{ movie.dislike_count }}</span>
           </div>
-          <!-- <p class="mb-0">감독 | {{ movie.director }}</p> -->
-          <p class="mb-0">개봉일 | {{ movie.release_date | moment }}</p>
           <p>{{ movie.overview }}</p>
         </div>
         <hr class="mx-4">
@@ -45,13 +43,73 @@ import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'MovieDetail',
+  data: function () {
+    return {
+      pickCnt: '',
+      wishCnt: '',
+      watchCnt: '',
+      dislikeCnt: '',
+    }
+  },
   props: {
     movie: {
       type: Object,
     }
   },
   methods: {
-    ...mapActions('auth', ['pickMovie', 'wishMovie', 'watchMovie', 'dislikeMovie'])
+    ...mapActions('auth', ['pickMovie', 'wishMovie', 'watchMovie', 'dislikeMovie']),
+    onPick: async function () {
+      const isPick = this.myProfile.pick_movies.some((pickedMovie) => {
+        return pickedMovie.id === this.movie.id
+      })
+      const response = await this.pickMovie(this.movie.id)
+      if (response === 'DONE') {
+          if (isPick) {
+            this.pickCnt -= 1
+          } else {
+            this.pickCnt += 1
+          }
+      }
+    },
+    onWish: async function () {
+      const isWish = this.myProfile.wish_movies.some((wishedMovie) => {
+        return wishedMovie.id === this.movie.id
+      })
+      const response = await this.wishMovie(this.movie.id)
+      if (response === 'DONE') {
+          if (isWish) {
+            this.wishCnt -= 1
+          } else {
+            this.wishCnt += 1
+          }
+      }
+    },
+    onWatch: async function () {
+      const isWatch = this.myProfile.watch_movies.some((watchedMovie) => {
+        return watchedMovie.id === this.movie.id
+      })
+      const response = await this.watchMovie(this.movie.id)
+      if (response === 'DONE') {
+          if (isWatch) {
+            this.watchCnt -= 1
+          } else {
+            this.watchCnt += 1
+          }
+      }
+    },
+    onDislike: async function () {
+      const isDislike = this.myProfile.dislike_movies.some((dislikedMovie) => {
+        return dislikedMovie.id === this.movie.id
+      })
+      const response = await this.dislikeMovie(this.movie.id)
+      if (response === 'DONE') {
+          if (isDislike) {
+            this.dislikeCnt -= 1
+          } else {
+            this.dislikeCnt += 1
+          }
+      }
+    },
   },
   computed: {
     ...mapState('auth', ['myProfile']),
@@ -75,11 +133,29 @@ export default {
         return dislikedMovie.id === this.movie.id
       })
     },
+    pickCount: function () {
+      return this.movie.pick_count
+    },
+    wishCount: function () {
+      return this.movie.wish_count
+    },
+    watchCount: function () {
+      return this.movie.watch_count
+    },
+    dislikeCount: function () {
+      return this.movie.dislike_count
+    },
   },
   filters: {
     moment: function (date) {
-      return moment(date).format('YYYY년 MM월 DD일');
+      return moment(date).format('YYYY. MM. DD.');
     }
+  },
+  mounted: function () {
+    this.pickCnt = this.pickCount
+    this.wishCnt = this.wishCount
+    this.watchCnt = this.watchCount
+    this.dislikeCnt = this.dislikeCount
   }
 }
 </script>
@@ -137,4 +213,7 @@ export default {
     color: #F47B0F;
   }
 
+  .clickable {
+    cursor: pointer;
+  }
 </style>

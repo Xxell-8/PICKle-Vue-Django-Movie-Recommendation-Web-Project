@@ -1,39 +1,21 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container-fluid">
-      <router-link class="navbar-brand fw-bold" :to="{ name: 'Home' }">PICKle</router-link>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <span v-if="isLogin">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Recommendation' }">Recommend</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'PickyPick' }">Picky Pick</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Search' }">검색</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" @click.native="logout" to="#">로그아웃</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'MyProfile' }">My Pick</router-link>
-            </li>
-            <span class="navbar-text text-white">Hello, {{ decodeToken.username }}!</span>
-          </ul>
+  <nav class="fixed-top navbar navbar-expand navbar-dark">
+    <router-link class="navbar-brand fw-bold" :to="{ name: 'Pickle' }">PICKle</router-link>
+    <div v-if="isLogin" class="navbar-nav d-flex justify-content-between">
+      <div class="d-flex gap-1">
+        <router-link class="nav-link" :to="{ name: 'Recommendation' }">Recommend</router-link>
+        <router-link class="nav-link" :to="{ name: 'PickyPick' }">Picky Pick</router-link>
+        <router-link class="nav-link" :to="{ name: 'MyProfile' }">My Pickle</router-link>
+        <span v-if="myProfile.is_superuser">
+          <a class="nav-link" href="http://localhost:8000/admin/">Admin</a>
         </span>
-        <span v-else>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link class="nav-link btn btn-link" :to="{ name: 'Login' }">로그인</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link btn btn-link" :to="{ name: 'Signup' }">회원가입</router-link>
-            </li>
-          </ul>
-        </span>
+        <router-link class="nav-link" @click.native="logout" to="#">Logout</router-link>
+        <router-link class="nav-link" :to="{ name: 'Search' }"><i class="fas fa-search"></i></router-link>
       </div>
+    </div>
+    <div v-else class="navbar-nav">
+      <router-link class="nav-link" :to="{ name: 'Login' }">Login</router-link>
+      <router-link class="nav-link" :to="{ name: 'Signup' }">Signup</router-link>
     </div>
   </nav>
 </template>
@@ -47,12 +29,16 @@ export default {
     ...mapActions('auth', ['logout']),
   },
   computed: {
-    ...mapState('auth', ['username', 'isLogin']),
+    ...mapState('auth', ['username', 'isLogin', 'myProfile']),
     ...mapGetters('auth', ['decodeToken']),
   }
 }
 </script>
 
 <style>
-
+  .navbar-dark {
+    height: 3rem;
+    background-color: rgba(30, 31, 38, 0.9);
+    padding: 0.5rem 3rem;
+  }
 </style>

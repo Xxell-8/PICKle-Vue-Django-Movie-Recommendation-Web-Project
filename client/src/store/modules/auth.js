@@ -17,7 +17,7 @@ const actions = {
       commit('SET_ISLOGIN', true)
       commit('SET_TOKEN', response.data.token)
       dispatch('getMyProfile')
-      router.push({ name: 'Home' })
+      router.push({ name: 'Pickle' })
     }
   },
   logout({ commit }) {
@@ -30,6 +30,12 @@ const actions = {
     if (response.status === 201) {
       commit('SET_REGISTER', true)
       router.push({ name: 'Login'})
+    }
+  },
+  async updateInfo({ state, dispatch }, userData) {
+    const response = await api.updateUserInfo(userData, state.userToken)
+    if (response.status === 200) {
+      dispatch('getMyProfile')
     }
   },
   async follow({ state, dispatch }, userInfo) {
@@ -64,24 +70,28 @@ const actions = {
     const response = await api.pickMovie(moviePk, state.userToken)
     if (response.status === 200) {
       dispatch('getMyProfile')
+      return 'DONE'
     }
   },
   async wishMovie ({ state, dispatch }, moviePk) {
     const response = await api.wishMovie(moviePk, state.userToken)
     if (response.status === 200) {
       dispatch('getMyProfile')
+      return 'DONE'
     }
   },
   async watchMovie ({ state, dispatch }, moviePk) {
     const response = await api.watchMovie(moviePk, state.userToken)
     if (response.status === 200) {
       dispatch('getMyProfile')
+      return 'DONE'
     }
   },
   async dislikeMovie ({ state, dispatch }, moviePk) {
     const response = await api.dislikeMovie(moviePk, state.userToken)
     if (response.status === 200) {
       dispatch('getMyProfile')
+      return 'DONE'
     }
   },
 }

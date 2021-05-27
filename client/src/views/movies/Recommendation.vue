@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-5">
     <h1 class="chapter-title">PICK TODAY's Keyword</h1>
     <button 
       v-if="pickTheme" 
@@ -23,12 +23,12 @@
           <img @click="randomPick" src="../../assets/recommend/random.svg" alt="random">
         </div>
       </div>
-      <div class="col-auto my-2" >
+      <div v-if="hasGenre" class="col-auto my-2" >
         <div class="card h-100">
           <img @click="genrePick" src="../../assets/recommend/genre.svg" alt="genre">
         </div>
       </div>
-      <div class="col-auto my-2" >
+      <div v-if="hasFollow" class="col-auto my-2" >
         <div class="card h-100">
           <img @click="followPick" src="../../assets/recommend/follow.svg" alt="follow">
         </div>
@@ -38,7 +38,7 @@
           <img @click="moodPick" src="../../assets/recommend/weather.svg" alt="weather">
         </div>
       </div>
-      <div class="col-auto my-2" >
+      <div v-if="hasPickedMovie" class="col-auto my-2" >
         <div class="card h-100">
           <img @click="similarPick" src="../../assets/recommend/similar.svg" alt="similar">
         </div>
@@ -97,7 +97,27 @@ export default {
     }
   },
   computed: {
-    ...mapState('movie', ['recommendMovies'])
+    ...mapState('movie', ['recommendMovies']),
+    ...mapState('auth', ['myProfile']),
+    hasGenre: function () {
+      if (this.myProfile.genres.length) {
+        return true
+      }
+      return false
+    },
+    hasFollow: function () {
+      if (this.myProfile.followings.length) {
+        return true
+      }
+      return false
+    },
+    hasPickedMovie: function () {
+      if (this.myProfile.pick_movies.length) {
+        return true
+      }
+      return false
+    }
+
   }
 }
 </script>
