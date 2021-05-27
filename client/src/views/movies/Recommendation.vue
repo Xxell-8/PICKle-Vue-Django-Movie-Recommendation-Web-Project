@@ -20,27 +20,27 @@
     <div v-else class="row gap-3 justify-content-center">
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img @click="randomPick" src="../../assets/recommend/random.svg" alt="random">
+          <img class="pick-options" @click="randomPick" src="../../assets/recommend/random.svg" alt="random">
         </div>
       </div>
       <div v-if="hasGenre" class="col-auto my-2" >
         <div class="card h-100">
-          <img @click="genrePick" src="../../assets/recommend/genre.svg" alt="genre">
+          <img class="pick-options" @click="genrePick" src="../../assets/recommend/genre.svg" alt="genre">
         </div>
       </div>
       <div v-if="hasFollow" class="col-auto my-2" >
         <div class="card h-100">
-          <img @click="followPick" src="../../assets/recommend/follow.svg" alt="follow">
+          <img class="pick-options" @click="followPick" src="../../assets/recommend/follow.svg" alt="follow">
         </div>
       </div>
       <div class="col-auto my-2" >
         <div class="card h-100">
-          <img @click="moodPick" src="../../assets/recommend/weather.svg" alt="weather">
+          <img class="pick-options" @click="moodPick" src="../../assets/recommend/weather.svg" alt="weather">
         </div>
       </div>
       <div v-if="hasPickedMovie" class="col-auto my-2" >
         <div class="card h-100">
-          <img @click="similarPick" src="../../assets/recommend/similar.svg" alt="similar">
+          <img class="pick-options" @click="similarPick" src="../../assets/recommend/similar.svg" alt="similar">
         </div>
       </div>
     </div>    
@@ -150,5 +150,8 @@ export default {
     color: #fff;
     background-color: #441DB2;
     border: 2px solid #F47B0F;
+  }
+  .pick-options {
+    cursor: pointer;
   }
 </style>
