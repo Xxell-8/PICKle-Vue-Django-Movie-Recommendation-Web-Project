@@ -20,9 +20,9 @@
         <div class="modal-body d-flex flex-column gap-3">
           <div class="movie-rate d-flex align-items-baseline gap-3">
             <span :class="{orange : isPicked}"><i @click="onPick" class="clickable fas fa-heartbeat fs-3 me-2"></i>{{ pickCnt }}</span>
-            <span :class="{orange : isWished}"><i @click="onWish" class="clickable fas fa-star fs-3 me-2"></i>{{ movie.wish_count }}</span>
-            <span :class="{orange : isWatched}"><i @click="onWatch" class="clickable fas fa-eye fs-3 me-2"></i>{{ movie.watch_count }}</span>
-            <span :class="{orange : isDisliked}"><i @click="onDislike" class="clickable fas fa-ban fs-3 me-2"></i>{{ movie.dislike_count }}</span>
+            <span :class="{orange : isWished}"><i @click="onWish" class="clickable fas fa-star fs-3 me-2"></i>{{ wishCnt }}</span>
+            <span :class="{orange : isWatched}"><i @click="onWatch" class="clickable fas fa-eye fs-3 me-2"></i>{{ watchCnt }}</span>
+            <span :class="{orange : isDisliked}"><i @click="onDislike" class="clickable fas fa-ban fs-3 me-2"></i>{{ dislikeCnt }}</span>
           </div>
           <p>{{ movie.overview }}</p>
         </div>
@@ -103,6 +103,7 @@ export default {
       })
       const response = await this.dislikeMovie(this.movie.id)
       if (response === 'DONE') {
+          console.log('dislike')
           if (isDislike) {
             this.dislikeCnt -= 1
           } else {

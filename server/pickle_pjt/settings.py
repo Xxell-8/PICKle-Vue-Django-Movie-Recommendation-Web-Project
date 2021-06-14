@@ -64,6 +64,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     # Vue origin 추가
     "http://localhost:8080",
+    "http://localhost:8081",
 ]
 
 
