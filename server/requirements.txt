@@ -1,7 +1,7 @@
 asgiref==3.3.4
 certifi==2020.12.5
 chardet==4.0.0
-Django==3.2.3
+Django==3.2.4
 django-cors-headers==3.7.0
 djangorestframework==3.12.4
 djangorestframework-jwt==1.11.0
@@ -20,4 +20,4 @@ six==1.16.0
 sklearn==0.0
 sqlparse==0.4.1
 threadpoolctl==2.1.0
-urllib3==1.26.4
+urllib3==1.26.5
